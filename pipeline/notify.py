@@ -144,11 +144,12 @@ def build_subject(summary, job_status):
 def main():
     user = os.environ.get("GMAIL_USER")
     password = os.environ.get("GMAIL_APP_PASSWORD")
-    recipient = os.environ.get("NOTIFY_TO")
+    # NOTIFY_TO tanimli degilse gonderen hesabin kendisine gider. Boylece
+    # kisisel adres public depoda durmuyor ama ayri bir secret da gerekmiyor.
+    recipient = os.environ.get("NOTIFY_TO") or user
 
-    if not user or not password or not recipient:
-        print("bildirim atlandi: GMAIL_USER / GMAIL_APP_PASSWORD / NOTIFY_TO "
-              "tanimli degil")
+    if not user or not password:
+        print("bildirim atlandi: GMAIL_USER / GMAIL_APP_PASSWORD tanimli degil")
         return
 
     summary = load_summary()
