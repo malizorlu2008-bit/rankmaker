@@ -55,7 +55,7 @@ jobs:
           mkdir -p .credentials
           printf '%s' "$YT_TOKEN_JSON" > .credentials/token.json
           python3 -m pipeline.check_token
-          sha256sum .credentials/token.json | cut -d' ' -f1 > "$RUNNER_TEMP/token.sha"
+          python3 -m pipeline.check_token --parmak > "$RUNNER_TEMP/token.sha"
 
       - name: Post pending comments
         run: python3 -m pipeline.comment_runner
@@ -90,7 +90,7 @@ jobs:
         run: |
           [ -f .credentials/token.json ] || exit 0
           [ -f "$RUNNER_TEMP/token.sha" ] || exit 0
-          yeni=$(sha256sum .credentials/token.json | cut -d' ' -f1)
+          yeni=$(python3 -m pipeline.check_token --parmak)
           if [ "$yeni" = "$(cat "$RUNNER_TEMP/token.sha")" ]; then
             echo "token degismedi, secret guncellemeye gerek yok"
             exit 0

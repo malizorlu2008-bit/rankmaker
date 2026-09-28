@@ -6,8 +6,17 @@ eksik bir secret'i fark etmezsek hata ancak 40 dakikalik render'in SONUNDA,
 yukleme adiminda ortaya cikiyor ve o calismanin tamami bosa gidiyor. Bu dogrulama
 bunu ilk saniyede yakalar.
 
-Kullanim: python3 -m pipeline.check_token   (hatada exit 1 + tek satir aciklama)
+Kullanim:
+  python3 -m pipeline.check_token            dogrula (hatada exit 1)
+  python3 -m pipeline.check_token --parmak   refresh_token'in sha256'sini bas
+
+--parmak neden var: token.json'in TAMAMINI karsilastirmak ise yaramiyor, cunku
+creds.to_json() her yenilemede erisim jetonunu ve "expiry" alanini da yeniden
+yaziyor — yani dosya neredeyse her calismada degisiyor. Bizi ilgilendiren tek
+sey refresh_token'in DEGISIP degismedigi (Google onu bazen kendiliginden
+yeniliyor, 27.09.2026'da oldu); secret ancak o zaman guncellenmeli.
 """
+import hashlib
 import json
 import os
 import sys
@@ -27,7 +36,18 @@ BEKLENEN_KAPSAMLAR = (
 )
 
 
+def parmak_izi():
+    """refresh_token'in sha256'si. Degerin kendisi hicbir yerde basilmaz."""
+    with open(TOKEN_PATH) as f:
+        rt = json.load(f).get("refresh_token") or ""
+    print(hashlib.sha256(rt.encode()).hexdigest())
+
+
 def main():
+    if "--parmak" in sys.argv:
+        parmak_izi()
+        return
+
     if not os.path.exists(TOKEN_PATH):
         sys.exit("token.json yok — YT_TOKEN_JSON secret'i yazilmamis")
 
