@@ -1503,28 +1503,32 @@
       "topic": "Football Fail",
       "title": "Ranking Funniest Football Fails",
       "video_id": "watch?v=Xx3D1IwXjS0",
-      "question": "Was #5 the biggest fail or does #2 take the crown? 💀"
+      "question": "Was #5 the biggest fail or does #2 take the crown? 💀",
+      "commented": true
     },
     {
       "date": "2026-09-28",
       "topic": "Roblox Moments",
       "title": "Ranking Most Unexpected Roblox Moments",
       "video_id": "watch?v=lMQGP4NjmGc",
-      "question": "Be honest, was clip #2 the right pick for #1? 💀"
+      "question": "Be honest, was clip #2 the right pick for #1? 💀",
+      "commented": true
     },
     {
       "date": "2026-09-28",
       "topic": "Cat Jump Moments",
       "title": "Ranking Craziest Cat Jump Moments",
       "video_id": "watch?v=2gR8u1BtaZM",
-      "question": "Be honest, which cat deserved the #1 spot? 😼"
+      "question": "Be honest, which cat deserved the #1 spot? 😼",
+      "commented": true
     },
     {
       "date": "2026-09-28",
       "topic": "Fortnite Moments",
       "title": "Ranking Weirdest Fortnite Moments",
       "video_id": "watch?v=mwmcL6XM0hw",
-      "question": "Did #3 deserve the top spot or was #1 weirder? 🤔"
+      "question": "Did #3 deserve the top spot or was #1 weirder? 🤔",
+      "commented": true
     }
   ],
   "satisfying_index": 10,
