@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RankMaker — Ranking Shorts Oluşturucu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">👑</span>
+    <span class="brand-name">RankMaker</span>
+  </div>
+  <p class="brand-tagline">RankZilla tarzı "Ranking ... Moments" shorts'ları saniyeler içinde oluştur</p>
+</header>
+
+<main class="layout">
+
+  <section class="panel controls">
+
+    <div class="card">
+      <h2>1. Başlık</h2>
+      <div class="title-grid">
+        <div class="field">
+          <label>Önek</label>
+          <input type="text" id="prefixText" value="Ranking" maxlength="20">
+        </div>
+        <div class="field color-field">
+          <label>Renk</label>
+          <input type="color" id="prefixColor" value="#ffffff">
+        </div>
+
+        <div class="field">
+          <label>Sıfat (vurgulu)</label>
+          <input type="text" id="adjectiveText" value="Best" maxlength="20">
+        </div>
+        <div class="field color-field">
+          <label>Renk</label>
+          <input type="color" id="adjectiveColor" value="#ff3b30">
+        </div>
+
+        <div class="field">
+          <label>Konu (vurgulu)</label>
+          <input type="text" id="topicText" value="Waterpark" maxlength="24">
+        </div>
+        <div class="field color-field">
+          <label>Renk</label>
+          <input type="color" id="topicColor" value="#ffd400">
+        </div>
+
+        <div class="field">
+          <label>Sonek</label>
+          <input type="text" id="suffixText" value="Moments" maxlength="20">
+        </div>
+        <div class="field color-field">
+          <label>Renk</label>
+          <input type="color" id="suffixColor" value="#ffffff">
+        </div>
+      </div>
+
+      <div class="idea-row">
+        <button type="button" class="btn ghost" id="randomIdeaBtn">Rastgele fikir üret</button>
+        <span class="idea-hint">Sıfat + konu kombinasyonu otomatik dener</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>2. Sıralama Klipleri</h2>
+      <p class="card-hint">1. sıraya en iyi/en çok beğenilen videoyu koy. Video oynatılırken sondan başa doğru açılır (5 → 1) ve en iyisi (1.) en son gösterilerek izleyici sona kadar tutulur. Klipler tamamen oynar (aşağıdaki "Maks. klip süresi" sınırına kadar). Uzun klipler için asıl aksiyon anı otomatik bulunur; istersen "An bul" ile tekrar tarat veya "Başlangıç"/"Süre" değerlerini elle gir.</p>
+      <div id="itemsList" class="items-list"></div>
+      <button type="button" class="btn primary" id="addItemBtn">+ Sıra Ekle</button>
+    </div>
+
+    <div class="card">
+      <h2>3. Ayarlar</h2>
+      <div class="settings-grid">
+        <div class="field">
+          <label>Maks. klip süresi (sn)</label>
+          <input type="number" id="defaultTrim" value="15" min="1" max="60" step="0.5">
+        </div>
+        <div class="field">
+          <label>Video FPS</label>
+          <input type="number" id="fpsInput" value="30" min="15" max="60" step="1">
+        </div>
+        <div class="field full">
+          <label>Açıklama (caption)</label>
+          <input type="text" id="captionText" value="DON'T CHECK THE SOUND 😭😭" maxlength="80">
+        </div>
+      </div>
+    </div>
+
+    <div class="card actions-card">
+      <h2>4. Önizle &amp; İndir</h2>
+      <div class="actions-row">
+        <button type="button" class="btn ghost" id="playBtn">Önizlemeyi Oynat</button>
+        <button type="button" class="btn danger" id="exportBtn">Videoyu Oluştur ve İndir</button>
+      </div>
+      <div class="status-row">
+        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+        <span id="statusText">Hazır</span>
+      </div>
+      <a id="manualDownloadLink" class="btn ghost manual-download" style="display:none">Otomatik inmediyse buraya tıkla</a>
+      <p class="card-hint download-hint">Video otomatik olarak İndirilenler klasörüne kaydedilir. Bunun için siteyi <code>index.html</code>'e çift tıklayarak değil, <code>Siteyi_Ac.command</code> dosyasıyla aç (tarayıcı ayarında "her dosya için nereye kaydedileceğini sor" kapalıysa hiç tıklama gerekmeden iner).</p>
+    </div>
+
+  </section>
+
+  <section class="panel preview">
+    <div class="phone-frame">
+      <div class="notch"></div>
+      <canvas id="stage" width="1080" height="1920"></canvas>
+    </div>
+    <p class="preview-caption" id="captionPreview">DON'T CHECK THE SOUND 😭😭</p>
+    <video id="sourceVideo" playsinline style="display:none"></video>
+  </section>
+
+</main>
+
+<template id="itemRowTemplate">
+  <div class="item-row" draggable="false">
+    <div class="item-rank"></div>
+    <div class="item-fields">
+      <div class="link-row">
+        <span class="link-icon" title="TikTok">🎵</span>
+        <input type="text" class="item-tiktok-link" placeholder="TikTok video linkini yapıştır">
+        <button type="button" class="link-fetch-btn" title="Filigransız indir">→</button>
+      </div>
+      <div class="item-link-status"></div>
+      <div class="or-divider"><span>VEYA</span></div>
+      <input type="file" accept="video/*" class="item-file">
+      <div class="item-file-name">Klip seçilmedi</div>
+      <div class="item-inline">
+        <input type="text" class="item-label" placeholder="Etiket (örn. Trust fall)" maxlength="24">
+        <input type="text" class="item-emoji" placeholder="emoji (opsiyonel)" maxlength="4">
+      </div>
+      <div class="item-timing">
+        <label>Başlangıç (sn)<input type="number" class="item-start" min="0" step="0.5" placeholder="0"></label>
+        <label>Süre (sn)<input type="number" class="item-duration" min="0.5" step="0.5" placeholder="tamamı"></label>
+        <button type="button" class="btn ghost detect-btn" title="Klibi tarayıp en hareketli anı bulur">An bul</button>
+      </div>
+      <div class="emoji-quick">
+        <button type="button" data-emoji="😂">😂</button>
+        <button type="button" data-emoji="💀">💀</button>
+        <button type="button" data-emoji="😭">😭</button>
+        <button type="button" data-emoji="🔥">🔥</button>
+        <button type="button" data-emoji="🥵">🥵</button>
+        <button type="button" data-emoji="😳">😳</button>
+        <button type="button" data-emoji="🤯">🤯</button>
+        <button type="button" data-emoji="💯">💯</button>
+      </div>
+    </div>
+    <div class="item-controls">
+      <button type="button" class="icon-btn move-up" title="Yukarı taşı">↑</button>
+      <button type="button" class="icon-btn move-down" title="Aşağı taşı">↓</button>
+      <button type="button" class="icon-btn remove" title="Kaldır">✕</button>
+    </div>
+  </div>
+</template>
+
+<script src="app.js"></script>
+</body>
+</html>

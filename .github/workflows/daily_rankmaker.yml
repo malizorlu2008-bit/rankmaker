@@ -1,0 +1,184 @@
+name: Daily RankMaker Upload
+
+# Ayni anda SADECE BIR calisma. Slot kaydi (filled_slots) calismanin SONUNDA
+# repoya yaziliyor; iki calisma ust uste binerse ikisi de "saat bos" gorup ayni
+# saate video koyuyor. 2026-08-16'da tam bu oldu: 8 dakika arayla iki
+# "Most Satisfying Videos" 20:00'a planlandi. Bekleyen calisma iptal EDILMIYOR,
+# siraya giriyor; sirasi gelince state guncel oldugu icin dogru karari verir.
+concurrency:
+  group: daily-rankmaker
+  cancel-in-progress: false
+
+on:
+  # schedule kaldirildi - GitHub'in kendi cron'u hic ateslenmedi (2026-08-03).
+  # Artik cron-job.org gunluk workflow_dispatch cagirisi yapiyor (09:00 Europe/Istanbul).
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Sadece videolari uret, YouTube a yukleme (test icin)'
+        type: boolean
+        default: false
+      only:
+        description: 'Sadece bu slotu uret (bos = dordu de). 0=18:00, 1=19:00 gaming, 2=20:00, 3=21:00 gaming'
+        type: choice
+        # 'ranking'/'satisfying' eski adlar; kod hala 0 ve 1'e esliyor, o yuzden
+        # eskiden kaydedilmis bir tetikleme kirilmiyor.
+        options: ['', '0', '1', '2', '3', 'ranking', 'satisfying']
+        default: ''
+      publish_times:
+        description: 'Sadece bu calisma icin yayin saatleri, orn: 21:00,21:30 (bos = 18:00,19:00,20:00,21:00)'
+        type: string
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    # 30 -> 60 -> 90 -> 170. Run #16 (2026-08-09) 5 klip x 2 video ile 43m59s
+    # surdu; klip sayisi 6'ya cikinca ~%20 daha uzuyor ve 60 dakika sinira cok
+    # yakinlasiyordu. Render kare kare OpenCV oldugu icin CI'da yavas.
+    # 2026-08-20'de gunluk video sayisi 2'den 4'e cikti: ayni hizla ~88 dakika,
+    # ustune uc gunde bir calisan konu taramasi (~10 dk) biniyor. 90 dakika
+    # gunun son iki videosunu kesecekti — ve is zaman asimina ugradiginda
+    # state commit'i de kaybolur, yani ertesi gun ayni slotlar tekrar denenir.
+    # 170 -> 330 (2026-09-05): slot basina konu deneme siniri kaldirildi
+    # ("gerekirse 100 konu tara"), yani ac kalan bir slot havuzdaki butun
+    # konulari deneyebilir. Sinir konu sayisini kisarak degil sureyi buyuterek
+    # korunuyor; GitHub tek is icin 6 saate izin veriyor.
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+
+      # Banka klipleri (pipeline/bank/*.mp4) 2026-09-28'de repodan cikarildi:
+      # ucuncu kisilerin TikTok klipleri public bir depoda barinmasin diye Actions
+      # cache'ine tasindi. Anahtarda run_id oldugu icin tam isabet HIC olmaz, yani
+      # is sonunda her zaman yeni bir cache yazilir; restore-keys en son olani geri
+      # yukler. Cache iskalarsa bank.prune_missing() manifesti temizler ve uretim
+      # etkilenmez — banka zaten sadece kaynak bloklu gunler icin bir tampon.
+      - name: Restore clip bank
+        uses: actions/cache@v4
+        with:
+          path: pipeline/bank
+          key: clip-bank-${{ github.run_id }}
+          restore-keys: clip-bank-
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      # Depo 2026-09-28'de public'e cevrildi (Actions dakikasi public repoda
+      # ucretsiz). YouTube yetkisi ARTIK REPODA DEGIL: token.json her calismada
+      # YT_TOKEN_JSON secret'indan yaziliyor, hicbir zaman commit edilmiyor.
+      - name: Restore YouTube credentials
+        env:
+          YT_TOKEN_JSON: ${{ secrets.YT_TOKEN_JSON }}
+        run: |
+          if [ -z "$YT_TOKEN_JSON" ]; then
+            echo "YT_TOKEN_JSON secret'i tanimli degil" >&2
+            exit 1
+          fi
+          mkdir -p .credentials
+          printf '%s' "$YT_TOKEN_JSON" > .credentials/token.json
+          python3 -m pipeline.check_token
+          sha256sum .credentials/token.json | cut -d' ' -f1 > "$RUNNER_TEMP/token.sha"
+
+      - name: Run daily pipeline
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          RANKMAKER_OUT_DIR: ${{ github.workspace }}/out
+          # Yedek kutuphanesi 13:00'dan once ACILMAZ. Sabahki calisma kaynaga
+          # erisemezse saatleri bos birakir; gunun ikinci tetikleyicisi (13:00,
+          # cron-job.org) YENI bir sunucuda, yani yeni bir IP ile gercek video
+          # uretmeyi dener. Yedek ancak o da tutmazsa harcanir.
+          # DIKKAT: 13:00 tetikleyicisi silinirse bu satir da kaldirilmali,
+          # yoksa bloklu bir gunde hicbir video yayinlanmaz.
+          RESERVE_AFTER_HOUR: "13"
+          DRY_RUN: ${{ inputs.dry_run }}
+          PUBLISH_TIMES: ${{ inputs.publish_times }}
+          ONLY: ${{ inputs.only }}
+        run: |
+          ARGS=""
+          if [ -n "$ONLY" ]; then ARGS="--only $ONLY"; fi
+          if [ "$DRY_RUN" = "true" ]; then
+            python3 -m pipeline.daily_run --no-upload --no-save $ARGS
+          else
+            python3 -m pipeline.daily_run $ARGS
+          fi
+
+      # Test calismasinda uretilen videolari indirip gozden gecirebilmek icin
+      - name: Upload rendered videos
+        if: ${{ inputs.dry_run }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: rendered-videos
+          path: out/*.mp4
+          if-no-files-found: warn
+
+      # Calisma basarisiz olsa da haber gelsin diye if: always()
+      - name: Send summary email
+        if: always()
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NOTIFY_TO: ${{ secrets.NOTIFY_TO }}
+          RANKMAKER_OUT_DIR: ${{ github.workspace }}/out
+          JOB_STATUS: ${{ job.status }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python3 -m pipeline.notify
+
+      - name: Commit updated state
+        # always(): calisma BASARISIZ bitse bile state commit edilmeli. Yoksa
+        # o calismada yapilan kayitlar kayboluyor. 2026-08-17'de bunun somut
+        # bedeli goruldu: yorum atildi ama "commented" isareti commit edilmedi
+        # (calisma sifir uretimle exit 1 vermisti), ertesi tetikleyiciler ayni
+        # videoya tekrar yorum atti — kullanici ayni yorumdan UC TANE gordu.
+        if: ${{ always() && !inputs.dry_run }}
+        run: |
+          git config user.name "rankmaker-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add pipeline/state/covered_topics.json pipeline/state/used_clips.json \
+            pipeline/state/reserve.json pipeline/reserve \
+            pipeline/state/clip_bank.json \
+            pipeline/state/topic_scores.json
+          git diff --staged --quiet || git commit -m "Update topic/used-clips state [skip ci]"
+          # Calisma 25-45 dakika surdugu icin bu arada main'e baska bir commit
+          # girmis olabilir; duz "git push" o durumda "fetch first" ile
+          # reddediliyor ve state kaydi kayboluyor (2026-08-09, run #16: videolar
+          # yuklendi ama konu/klip kaydi repoya islenemedi). Once rebase et,
+          # birkac kez dene.
+          for attempt in 1 2 3; do
+            git pull --rebase --autostash origin main && git push && exit 0
+            echo "push denemesi $attempt basarisiz, tekrar deniyorum"
+            sleep 5
+          done
+          echo "state push edilemedi" >&2
+          exit 1
+
+      # Google refresh token'i kendiliginden yeniliyor — 27 Eylul 2026'da oldu ve
+      # o gun repoya commit edilerek saklanmisti. Depo public oldugu icin o yol
+      # kapandi; yerine secret'in kendisi guncelleniyor. SECRETS_PAT yoksa is
+      # BASARISIZ OLMUYOR, sadece uyari basiyor: gunun videolari olmesin ama
+      # rotasyon da 27 Eylul'deki gibi sessizce kaybolmasin.
+      - name: Persist refreshed token
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.SECRETS_PAT }}
+        run: |
+          [ -f .credentials/token.json ] || exit 0
+          [ -f "$RUNNER_TEMP/token.sha" ] || exit 0
+          yeni=$(sha256sum .credentials/token.json | cut -d' ' -f1)
+          if [ "$yeni" = "$(cat "$RUNNER_TEMP/token.sha")" ]; then
+            echo "token degismedi, secret guncellemeye gerek yok"
+            exit 0
+          fi
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::warning::Google token'i yeniledi ama SECRETS_PAT secret'i yok - YT_TOKEN_JSON elle guncellenmeli, yoksa bir sonraki rotasyonda boru hatti durur"
+            exit 0
+          fi
+          gh secret set YT_TOKEN_JSON --repo "$GITHUB_REPOSITORY" < .credentials/token.json
+          echo "YT_TOKEN_JSON guncellendi"

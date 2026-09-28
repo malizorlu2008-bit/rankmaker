@@ -1,0 +1,33 @@
+name: Topic Candidate Scan
+
+# Aday konulari OLCER ve gecenlerin icerik orneklerini basar. Uretim yapmaz,
+# hicbir sey yayinlamaz, state'e dokunmaz — sadece log uretir.
+#
+# Neden ayri bir workflow: tikwm bazen gelistirici makinesinin IP'sini
+# blokluyor (2026-09-05'te dokuz saat surdu) ama GitHub runner'lari her
+# calismada farkli IP aliyor. Ayni gun daily_rankmaker dort video uretebildi,
+# yani runner'dan kaynak erisilebilir durumdaydi.
+#
+# Kullanim: Actions -> Topic Candidate Scan -> Run workflow. Ciktinin tamami
+# log'da; gecen adaylarin en begenilen klip aciklamalari da basiliyor cunku
+# eleme SAYIYLA degil ICERIKLE yapiliyor.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Measure candidate topics
+        run: python3 -m pipeline.topic_scan --adaylar --ornekler

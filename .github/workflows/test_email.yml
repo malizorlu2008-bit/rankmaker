@@ -1,0 +1,59 @@
+name: Test Email
+
+# Sadece e-posta ayarlarini dogrulamak icin — tam pipeline ~20 dakika
+# suruyor, bu ise ~30 saniyede bitiyor. Elle tetiklenir.
+on:
+  workflow_dispatch: {}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Write sample summary
+        run: |
+          mkdir -p out
+          cat > out/summary.json <<'JSON'
+          {
+            "date": "TEST",
+            "dry_run": true,
+            "videos": [
+              {
+                "kind": "Ranking",
+                "status": "uploaded",
+                "title": "Ranking Most Painful Camping Fails",
+                "url": "https://youtube.com/watch?v=TEST",
+                "publish_local": "19:00",
+                "clips": [
+                  {"label": "Tent goes swimming", "likes": 1200000, "duration": 12},
+                  {"label": "Bear said hi", "likes": 840000, "duration": 9}
+                ]
+              },
+              {
+                "kind": "Slime",
+                "status": "uploaded",
+                "title": "Most Satisfying Slime Moments",
+                "url": "https://youtube.com/watch?v=TEST2",
+                "publish_local": "20:00",
+                "clips": [
+                  {"label": "Iceberg crunch", "likes": 730000, "duration": 6}
+                ]
+              }
+            ]
+          }
+          JSON
+
+      - name: Send test email
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NOTIFY_TO: ${{ secrets.NOTIFY_TO }}
+          RANKMAKER_OUT_DIR: ${{ github.workspace }}/out
+          JOB_STATUS: success
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python3 -m pipeline.notify

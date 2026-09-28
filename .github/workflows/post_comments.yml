@@ -1,0 +1,103 @@
+name: Post Video Comments
+
+# Yayina girmis videolara sohbet baslatan yorumu atar. Gunluk akistan AYRI,
+# cunku video yuklenirken gizli oluyor; yorum ancak yayina girdikten sonra
+# anlamli. Calisma suresi ~1 dakika: klip aramasi, indirme, render YOK.
+#
+# TETIKLEME (cron-job.org): 18:05, 19:05, 20:05, 21:05 — yani her videonun
+# yayina girmesinden BES DAKIKA sonra bir calisma (kullanici karari
+# 2026-08-20: "hepsi video paylasildiktan 5 dk sonra olsun").
+#
+# Once iki tetikleyici vardi (19:10 + 21:10) ve her biri iki videoyu birden
+# topluyordu; comment_runner zaten BEKLEYEN TUM videolari isliyor, o yuzden bu
+# calisiyordu ama 18:00 videosunun yorumu 70 dakika geciyordu.
+#
+# Bu tasarimin kendi yedegi var: her calisma bekleyen HER videoyu deniyor, yani
+# YouTube yayini birkac dakika gecikirse 18:05'te kacan video 19:05
+# calismasinda yakalaniyor. Sadece gunun SON videosunun (21:00) telafisi
+# ertesi gunun 18:05 calismasi — comment_tries 3'e kadar dayandigi icin
+# kaybolmuyor, sadece geciyor.
+
+concurrency:
+  group: rankmaker-comments
+  cancel-in-progress: false
+
+on:
+  workflow_dispatch:
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      # Depo 2026-09-28'de public'e cevrildi (Actions dakikasi public repoda
+      # ucretsiz). YouTube yetkisi ARTIK REPODA DEGIL: token.json her calismada
+      # YT_TOKEN_JSON secret'indan yaziliyor, hicbir zaman commit edilmiyor.
+      - name: Restore YouTube credentials
+        env:
+          YT_TOKEN_JSON: ${{ secrets.YT_TOKEN_JSON }}
+        run: |
+          if [ -z "$YT_TOKEN_JSON" ]; then
+            echo "YT_TOKEN_JSON secret'i tanimli degil" >&2
+            exit 1
+          fi
+          mkdir -p .credentials
+          printf '%s' "$YT_TOKEN_JSON" > .credentials/token.json
+          python3 -m pipeline.check_token
+          sha256sum .credentials/token.json | cut -d' ' -f1 > "$RUNNER_TEMP/token.sha"
+
+      - name: Post pending comments
+        run: python3 -m pipeline.comment_runner
+
+      - name: Commit updated state
+        if: always()
+        run: |
+          git config user.name "rankmaker-bot"
+          git config user.email "actions@users.noreply.github.com"
+          # DIKKAT: .credentials/token.json BURAYA BIR DAHA EKLENMEZ. 153 commit
+          # boyunca yenilenen refresh token'lar bu satirla repoya islenmisti;
+          # depo public oldugu icin artik Secret'a yaziliyor (asagidaki adim).
+          git add pipeline/state/covered_topics.json
+          git diff --staged --quiet || git commit -m "Mark posted comments [skip ci]"
+          for attempt in 1 2 3; do
+            git pull --rebase --autostash origin main && git push && exit 0
+            echo "push denemesi $attempt basarisiz, tekrar deniyorum"
+            sleep 5
+          done
+          echo "state push edilemedi" >&2
+          exit 1
+
+      # Google refresh token'i kendiliginden yeniliyor — 27 Eylul 2026'da oldu ve
+      # o gun repoya commit edilerek saklanmisti. Depo public oldugu icin o yol
+      # kapandi; yerine secret'in kendisi guncelleniyor. SECRETS_PAT yoksa is
+      # BASARISIZ OLMUYOR, sadece uyari basiyor: gunun videolari olmesin ama
+      # rotasyon da 27 Eylul'deki gibi sessizce kaybolmasin.
+      - name: Persist refreshed token
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.SECRETS_PAT }}
+        run: |
+          [ -f .credentials/token.json ] || exit 0
+          [ -f "$RUNNER_TEMP/token.sha" ] || exit 0
+          yeni=$(sha256sum .credentials/token.json | cut -d' ' -f1)
+          if [ "$yeni" = "$(cat "$RUNNER_TEMP/token.sha")" ]; then
+            echo "token degismedi, secret guncellemeye gerek yok"
+            exit 0
+          fi
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::warning::Google token'i yeniledi ama SECRETS_PAT secret'i yok - YT_TOKEN_JSON elle guncellenmeli, yoksa bir sonraki rotasyonda boru hatti durur"
+            exit 0
+          fi
+          gh secret set YT_TOKEN_JSON --repo "$GITHUB_REPOSITORY" < .credentials/token.json
+          echo "YT_TOKEN_JSON guncellendi"

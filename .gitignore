@@ -1,0 +1,32 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+*.mp4
+*.webm
+*.m4a
+
+# GIZLI DOSYALAR — depo 2026-09-28'de public'e cevrildi.
+# YouTube OAuth bilgileri artik GitHub Actions Secrets'ta duruyor
+# (YT_TOKEN_JSON / YT_CLIENT_SECRET_JSON) ve CI her calismada token.json'i
+# secret'tan yaziyor. Bu dosyalar bir daha ASLA commit edilmez.
+# Yan fayda: "git pull --rebase --autostash" token.json'i artik bozamiyor.
+.credentials/*.json
+
+# Yerel editor ayarlari + ilgisiz projelerin yollari
+.claude/
+
+# Yedek videolar repoda tasiniyor (reserve.py aciklamasina bak): kullanicinin
+# kendi eski kanal videolari, son care olarak CI'da hazir bulunmalari sart.
+!pipeline/reserve/*.mp4
+
+# Banka klipleri (pipeline/bank/*.mp4) ARTIK REPODA DEGIL — ucuncu kisilerin
+# TikTok klipleri public bir depoda barinmasin diye Actions cache'ine tasindi
+# (daily_rankmaker.yml'deki actions/cache adimina ve bank.py'ye bak).
+# Manifest (pipeline/state/clip_bank.json) commit edilmeye devam ediyor.
+
+# Bu klasordeki ilgisiz isler
+3d-baski/
+make_plastic_keyrings.py
+make_split_keyrings.py
+SETUP_GUIDE_YENI_KURULUM.md

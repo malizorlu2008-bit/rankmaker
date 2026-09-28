@@ -1,0 +1,8 @@
+opencv-python-headless>=5.0.0
+pillow>=11.0.0
+numpy>=2.0.0
+requests>=2.32.0
+imageio-ffmpeg>=0.6.0
+google-auth>=2.30.0
+google-auth-oauthlib>=1.2.0
+google-api-python-client>=2.130.0
