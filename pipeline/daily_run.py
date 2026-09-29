@@ -911,14 +911,18 @@ def find_ranking_material(state, used_links, forced_topic=None, grup=None):
             return topic_cfg, part, items, links, metas, source, list(tried)
         print(f"  '{topic}' {len(items)}/{CLIP_COUNT} klip verdi, "
               f"tam video icin baska konu deneniyor")
-        # En iyi UC konu bile ucer klip toplayamadiysa sorun konu secimi degil,
-        # kaynagin o anki hali — kalan konularin skoru daha da dusuk. Denemeye
-        # devam etmek CI suresi harcamaktan baska bir sey degil. (Denemeler
-        # skora gore inen sirada gittigi icin "ilk uc" gercekten en iyi ucu.)
-        if attempt >= 2 and len(best[2]) < 3:
-            print("  en iyi uc konu uc klip bile vermedi — kaynak bugun zayif, "
-                  "konu denemeyi birakiyorum")
-            break
+        # KALDIRILDI (2026-09-29): burada "en iyi uc konu ucer klip veremediyse
+        # birak" diye bir erken cikis vardi. Gerekcesi "devam etmek CI suresi
+        # harcamaktan baska bir sey degil"di — depo 2026-09-28'de public
+        # oldugundan Actions dakikasi artik ucretsiz ve sinirsiz, yani o gerekce
+        # yok. Kullanici kurali zaten bunun tersiydi: "sinir koyma, bulana kadar
+        # dene / gerekirse 100 tane konu tara".
+        #
+        # Somut bedeli olctuk: 29 Eylul 13:00 calismasi gaming slotunda Lethal
+        # Company (1 klip), Roblox (1) ve Valorant (2) denedikten sonra burada
+        # durdu ve 21:00 slotu bos kaldi — oysa havuzda 12 gaming konusundan
+        # 11'i esigi geciyordu, 9 konu hic denenmedi. Artik havuz bitene kadar
+        # deneniyor; timeout-minutes 330 bunun icin zaten genis birakilmisti.
     # Kaynak tam kadro veremedi. Bankada TEK BASINA tam kadroyu dolduran bir
     # konu varsa video ONDAN yapilir. Kullanici kurali 2026-08-15: banka videosu
     # tek konudan olacak ve tam 5 klip olacak; karisik ya da 3 kliplik video
@@ -1732,7 +1736,7 @@ def ranking_videosu_uret(state, used_links, summary, slot, upload, save,
     adjective = random.choice(adjectives_for(suffix))
     part_label = f" Part {part}" if part else ""
     if topic_cfg:
-        print(f"=== Ranking: {adjective} {topic} {suffix}{part_label} "
+        print(f"=== Ranking: {adjective} {title_topic} {suffix}{part_label} "
               f"({len(tried_topics)} konu denendi) ===")
     if len(ranking_items) < MIN_CLIPS_FOR_VIDEO:
         print(f"Yeterli klip bulunamadi (Ranking/{topic}), bu video atlaniyor.")
