@@ -175,7 +175,10 @@
     "Football Fail",
     "Roblox Moments",
     "Cat Jump Moments",
-    "Fortnite Moments"
+    "Fortnite Moments",
+    "Football Fail",
+    "Fortnite Moments",
+    "Cat Jump Moments"
   ],
   "uploads": [
     {
@@ -1529,18 +1532,38 @@
       "video_id": "watch?v=mwmcL6XM0hw",
       "question": "Did #3 deserve the top spot or was #1 weirder? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-09-29",
+      "topic": "Football Fail",
+      "title": "Ranking Unluckiest Football Fails",
+      "video_id": "watch?v=cfa_QWFxDRc",
+      "question": "Did #4 deserve a straight red or was #5 worse? 💀"
+    },
+    {
+      "date": "2026-09-29",
+      "topic": "Fortnite Moments",
+      "title": "Ranking Funniest Fortnite Moments",
+      "video_id": "watch?v=Tv6hoyb8L0Y",
+      "question": "Be honest, did #2 deserve the top spot?"
+    },
+    {
+      "date": "2026-09-29",
+      "topic": "Cat Jump Moments",
+      "title": "Ranking Most Awkward Cat Jump Moments",
+      "video_id": "watch?v=qpE03Vx8uD4",
+      "question": "Be honest, did #1 deserve the top spot or #5? 🤔"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-09-28",
+    "date": "2026-09-29",
     "slots": [
       "18:00",
       "19:00",
-      "20:00",
-      "21:00"
+      "20:00"
     ]
   },
-  "hook_index": 6,
+  "hook_index": 9,
   "part_two_queue": []
 }
