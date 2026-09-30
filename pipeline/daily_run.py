@@ -347,6 +347,33 @@ RANKING_TOPICS = [
      "queries": ["wedding fail", "wedding gone wrong", "bride fail"]},
     {"topic": "Ice Rink", "required": ('skat', 'ice rink'), "title_topic": "Ice Skating", "hashtags": ["iceskatingfail", "iceskating", "icerink"], "suffix": "Moments",
      "queries": ["ice skating fail", "ice rink fall", "first time ice skating fail"]},
+
+    # --- FUTBOL (2026-09-30, kullanici istegi: "football messi ronaldo") ---
+    # Bes aday olculdu, hepsi SAYI esigini gecti ama karar ICERIKLE verildi.
+    # EKLENMEYENLER ve sebepleri (tekrar denenecekse bu not okunsun):
+    #   Messi Moments  (15 aday) — ornek kliplerin etiketleri #UCL #MLS #wc
+    #     #freekick, yani MAC YAYIN GORUNTUSU. UEFA/FIFA/MLS YouTube'un en
+    #     agresif Content ID sahipleri; kanalda zaten iki bolge engeli var.
+    #     Ayrica 15 aday bes kliplik kadro icin ince, hizla tukenirdi.
+    #   Ronaldo Moments (51 aday) — daha bol ama ayni sorun: "Ronaldo 4k",
+    #     "#ronaldoedit", "puskas winner" hep yayin goruntusu kurgusu.
+    #   Football Fan Moments (10 aday) — ince, ustelik icinde #CollegeFootball
+    #     (Amerikan futbolu, yanlis spor) ve iki tane iceriksiz etiket yigini.
+    # Asagidaki ikisi kullanici cekimi: tutorial, drill, sokak/freestyle —
+    # yani Content ID riski dusuk ve konu basligi kliple ortusuyor.
+    #
+    # NOT: mevcut "Football Fail" konusunun izlenme medyani 1.290 ve 09-30'da
+    # rotasyondan dusen dort konudan biri; yani bu kanalda futbol-FAIL tutmadi.
+    # Bunlar farkli bir icerik turu (beceri), o yuzden olculmemis konu olarak
+    # kanal medyaniyla rotasyona giriyorlar.
+    {"topic": "Football Skills", "title_topic": "Football", "suffix": "Skills",  # (30)
+     "required": ('skill', 'dribble', 'freestyle', 'football', 'soccer'),
+     "hashtags": ["footballskills", "dribbling", "footballtiktok", "soccerskills"],
+     "queries": ["football skills", "soccer skills tutorial", "football dribbling skills"]},
+    {"topic": "Freestyle Football", "title_topic": "Freestyle Football", "suffix": "Moments",  # (23)
+     "required": ('freestyle', 'juggling', 'panna', 'street', 'trick'),
+     "hashtags": ["freestylefootball", "panna", "streetfootball", "footballfreestyle"],
+     "queries": ["freestyle football tricks", "street football panna", "football freestyle battle"]},
 ]
 
 # Basligin altina giren merak satiri. Ayni format kanallari bunu grafigin
