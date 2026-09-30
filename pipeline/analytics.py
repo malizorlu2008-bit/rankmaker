@@ -127,8 +127,15 @@ def guncelle(creds, uploads):
 
     except Exception as e:
         mesaj = str(e)
-        if "insufficient" in mesaj.lower() or "scope" in mesaj.lower() \
-                or "forbidden" in mesaj.lower() or "403" in mesaj:
+        dusuk = mesaj.lower()
+        # Uc ayri arizanin uc ayri cozumu var; hepsini "izin yok" diye
+        # raporlamak yanlis yere bakmaya yol aciyor (2026-09-30'da tam bunu
+        # yaptim: kapsam token'da vardi ama API projede kapaliydi).
+        if "has not been used in project" in dusuk or "accessnotconfigured" in dusuk:
+            print("  izlenme orani atlandi: YouTube Analytics API Google Cloud "
+                  "projesinde ETKIN DEGIL (console.cloud.google.com -> APIs -> "
+                  "YouTube Analytics API -> Enable)")
+        elif "insufficient" in dusuk or "scope" in dusuk:
             print("  izlenme orani atlandi: token'da yt-analytics.readonly izni yok "
                   "(.credentials/authorize.py yeniden calistirilmali)")
         else:
