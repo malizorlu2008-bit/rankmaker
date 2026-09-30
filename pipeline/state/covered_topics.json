@@ -178,7 +178,11 @@
     "Fortnite Moments",
     "Football Fail",
     "Fortnite Moments",
-    "Cat Jump Moments"
+    "Cat Jump Moments",
+    "Football Fail",
+    "Fortnite Moments",
+    "Cat Jump Moments",
+    "GTA Moments"
   ],
   "uploads": [
     {
@@ -1556,17 +1560,46 @@
       "video_id": "watch?v=qpE03Vx8uD4",
       "question": "Be honest, did #1 deserve the top spot or #5? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-09-30",
+      "topic": "Football Fail",
+      "title": "Ranking Craziest Football Fails",
+      "video_id": "watch?v=wHr0ctSQSZM",
+      "question": "Be honest, was #1 really the worst fail here?"
+    },
+    {
+      "date": "2026-09-30",
+      "topic": "Fortnite Moments",
+      "title": "Ranking Craziest Fortnite Moments",
+      "video_id": "watch?v=LMynveCKq24",
+      "question": "Be honest, was #1 the most relatable Fortnite moment here? 💀"
+    },
+    {
+      "date": "2026-09-30",
+      "topic": "Cat Jump Moments",
+      "title": "Ranking Funniest Cat Jump Moments",
+      "video_id": "watch?v=t92Lt25TzYk",
+      "question": "Be honest, did #5 deserve the top spot for that fly jump? 😹"
+    },
+    {
+      "date": "2026-09-30",
+      "topic": "GTA Moments",
+      "title": "Ranking Most Awkward GTA Moments",
+      "video_id": "watch?v=FPFHY2BAypI",
+      "question": "Be honest, was #4 or #5 the most awkward GTA moment? 😂"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-09-29",
+    "date": "2026-09-30",
     "slots": [
       "18:00",
       "19:00",
-      "20:00"
+      "20:00",
+      "21:00"
     ]
   },
-  "hook_index": 9,
+  "hook_index": 13,
   "part_two_queue": []
 }
