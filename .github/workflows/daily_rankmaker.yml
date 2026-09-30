@@ -29,6 +29,10 @@ on:
         description: 'Sadece bu calisma icin yayin saatleri, orn: 21:00,21:30 (bos = 18:00,19:00,20:00,21:00)'
         type: string
         default: ''
+      notify:
+        description: 'Ozet e-postasini saat kapisina bakmadan gonder (elle tetiklemede)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -126,6 +130,15 @@ jobs:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           NOTIFY_TO: ${{ secrets.NOTIFY_TO }}
+          # GUNDE TEK MAIL (kullanici karari 2026-09-30). Gunde bes tetikleyici
+          # var ve her biri ayri bir ozet maili atiyordu. Artik sadece Istanbul
+          # saatiyle 16:00'dan sonraki calisma mail atiyor, yani gunun SON
+          # tetikleyicisi (16:30). O noktada uretim bitmis oluyor ama videolar
+          # 18:00'den once yayinlanmadigi icin bir sorun hala duzeltilebilir.
+          # Mail o tek calismayi degil GUNUN TAMAMINI ozetliyor
+          # (notify._gun_ozeti, state dosyasindan okuyor).
+          NOTIFY_AFTER_HOUR: "16"
+          FORCE_NOTIFY: ${{ inputs.notify && '1' || '' }}
           RANKMAKER_OUT_DIR: ${{ github.workspace }}/out
           JOB_STATUS: ${{ job.status }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
@@ -144,7 +157,7 @@ jobs:
           git add pipeline/state/covered_topics.json pipeline/state/used_clips.json \
             pipeline/state/reserve.json pipeline/reserve \
             pipeline/state/clip_bank.json \
-            pipeline/state/topic_scores.json
+            pipeline/state/topic_scores.json pipeline/state/topic_views.json
           git diff --staged --quiet || git commit -m "Update topic/used-clips state [skip ci]"
           # Calisma 25-45 dakika surdugu icin bu arada main'e baska bir commit
           # girmis olabilir; duz "git push" o durumda "fetch first" ile

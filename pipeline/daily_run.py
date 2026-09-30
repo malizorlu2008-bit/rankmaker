@@ -20,7 +20,8 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, REPO_ROOT)
 
 from pipeline import (bank, comment, discovery, labeler, motion,  # noqa: E402
-                      quality, render, reserve, tiktok, visibility)
+                      performance, quality, render, reserve, tiktok,
+                      visibility)
 
 STATE_PATH = os.path.join(REPO_ROOT, "pipeline", "state", "covered_topics.json")
 USED_CLIPS_PATH = os.path.join(REPO_ROOT, "pipeline", "state", "used_clips.json")
@@ -717,6 +718,11 @@ def grup_havuzu(pool, grup):
     return [t for t in pool if t.get("group") == grup]
 
 
+# Rotasyon bandi genisligi: en az kullanilan konudan kac tur fazla kullanilmis
+# konular da aday sayilir. 0 = katı sira (eski davranis).
+ROTASYON_TOLERANSI = 1
+
+
 def pick_ranking_topic(state, exclude=(), forced=None, grup=None,
                        sadece_skor=False):
     """(konu_dict, part) dondurur. part None ya da 2,3,... — "Part 2" mantigi.
@@ -793,9 +799,26 @@ def pick_ranking_topic(state, exclude=(), forced=None, grup=None,
     if unused:
         return en_verimlisi(unused), None
 
-    fewest = min(used_list.count(t["topic"]) for t in pool)
-    candidates = [t for t in pool if used_list.count(t["topic"]) == fewest]
-    return en_verimlisi(candidates), fewest + 1
+    # KANITLANMIS ZAYIF KONULAR ROTASYONDAN DUSER (2026-09-30).
+    # Eski kural "en az kullanilmis konu" idi ve bu, sistemi kacinilmaz olarak
+    # EN ZAYIF konulara itiyordu: bir konunun az kullanilmis olmasinin sebebi
+    # cogu zaman zayif olmasi. Simulasyonda 14 gunun secimleri Lethal Company
+    # (medyan 1.363), Fall Guys (1.126) gibi konularla doluyordu.
+    # Olcumu olmayan konu zayif sayilmaz, yani kesif korunuyor.
+    zayif = performance.zayif_konular()
+    guclu = [t for t in pool if t["topic"] not in zayif]
+    aday_havuz = guclu or pool      # grubun tamami zayifsa yine de uretilir
+
+    # Rotasyon bandi bir tur genisletildi. Tam esitlik (== fewest) siralamayi
+    # tamamen eziyordu: iyi bir konu bir kez fazla kullanildigi icin, cok daha
+    # kotu ama taze bir konuya yeniliyordu. Tolerans 1 ile iyi konu tekrar
+    # gelebiliyor ama havuz da donmuyor (30,7 farkli konu / 14 gun).
+    fewest = min(used_list.count(t["topic"]) for t in aday_havuz)
+    candidates = [t for t in aday_havuz
+                  if used_list.count(t["topic"]) <= fewest + ROTASYON_TOLERANSI]
+    secilen = en_verimlisi(candidates)
+    n = used_list.count(secilen["topic"])
+    return secilen, (n + 1 if n else None)
 
 
 def bol_havuz(pool):
@@ -816,15 +839,38 @@ def bol_havuz(pool):
     return bol or pool
 
 
+def izlenme_sirasi(t, izlenme, varsayilan, skor):
+    """Bir konunun siralama anahtari: (izlenme medyani, klip skoru).
+
+    Izlenme ONCE gelir, klip skoru sadece esitlik bozucu. Gerekcesi
+    pipeline/performance.py'de olculu: klip bollugu ile izlenme arasindaki
+    korelasyon r = +0,21, yani klip skoru izlenmeyi tahmin etmiyor.
+    Gecmisi olmayan konu KANAL MEDYANI ile girer — ne odullendirilir ne
+    cezalandirilir, ortadan baslar ve kendini kanitlama sansi bulur.
+    """
+    ad = t["topic"]
+    return (izlenme.get(ad, varsayilan) or 0, skor.get(ad) or 0)
+
+
 def skora_gore(adaylar):
-    """En cok klip verenden aza dogru, RASTGELELIK YOK.
+    """En cok IZLENENDEN aza dogru, RASTGELELIK YOK.
+
+    2026-09-30'a kadar burada klip skoru kullaniliyordu. Kanalin kendi
+    verisiyle olculdugunde klip skorunun izlenmeyi tahmin etmedigi goruldu
+    (bkz. performance.py): Roblox klip skorunda birinci ama izlenme medyani
+    4.209; Rocket League sondan ucuncu ama 10.651 ve kanalin en iyi
+    videolarinin kaynagi. Klip bollugu artik sadece KAPI (bol_havuz).
 
     Ac kalan bir slot icin tek onemli sey verim: tazelik/cesitlilik tercihi
     (bkz. en_verimlisi ve "unused" onceligi) ilk denemeye ait, sonrakilere
     degil.
     """
     skor = topic_scan_skorlari()
-    return sorted(adaylar, key=lambda t: -(skor.get(t["topic"]) or 0))
+    izlenme = performance.medyanlar()
+    varsayilan = performance.kanal_medyani()
+    return sorted(adaylar,
+                  key=lambda t: izlenme_sirasi(t, izlenme, varsayilan, skor),
+                  reverse=True)
 
 
 def en_verimlisi(adaylar):
@@ -836,14 +882,22 @@ def en_verimlisi(adaylar):
     veren konu one geciyor, kurumus konu geriye dusuyor — kaynagin kendi
     verisiyle, tahminle degil.
 
+    2026-09-30: siralama artik klip skoruna degil O KONUNUN GECMIS IZLENME
+    MEDYANINA gore (bkz. skora_gore ve performance.py). Klip bollugu kapida
+    (bol_havuz) zaten kontrol edildi.
+
     Ilk 3 arasindan rastgele seciliyor: hep en tepedekini almak ayni konuyu
-    ust uste tekrarlatir, oysa amac hem taze malzeme hem cesitlilik."""
+    ust uste tekrarlatir, oysa amac hem iyi performans hem cesitlilik."""
     if not adaylar:
         return None
     skor = topic_scan_skorlari()
-    if not skor:
+    izlenme = performance.medyanlar()
+    if not skor and not izlenme:
         return random.choice(adaylar)
-    sirali = sorted(adaylar, key=lambda t: -skor.get(t["topic"], 0))
+    varsayilan = performance.kanal_medyani()
+    sirali = sorted(adaylar,
+                    key=lambda t: izlenme_sirasi(t, izlenme, varsayilan, skor),
+                    reverse=True)
     return random.choice(sirali[:3])
 
 
@@ -1164,6 +1218,19 @@ def dolu_slotlar(state):
     return gercek
 
 
+def _perf_guncelle(yt):
+    """topic_views.json'i tazele (konu siralamasinin izlenme sinyali)."""
+    try:
+        veri = performance.guncelle(yt, (load_state().get("uploads") or []))
+    except Exception as e:
+        print(f"  izlenme performansi guncellenemedi: {e}")
+        return
+    if veri:
+        print(f"  izlenme performansi guncellendi: {len(veri['konular'])} konu, "
+              f"kanal medyani {veri['kanal_medyani']} "
+              f"({veri['olculen_video']} olgun video)")
+
+
 def kanaldaki_dolu_saatler():
     """Bugun kanalda GERCEKTEN dolu olan yayin saatleri.
 
@@ -1178,6 +1245,11 @@ def kanaldaki_dolu_saatler():
     if creds.expired and creds.refresh_token:
         creds.refresh(Request())
     yt = build("youtube", "v3", credentials=creds)
+    # Konu performansini ayni servisle tazele. Burada yapiliyor cunku bu
+    # fonksiyon her calismada bir kez ve HER ZAMAN cagriliyor, YouTube
+    # servisi zaten kurulu ve maliyeti birkac kota birimi. Hata durumunda
+    # performance.guncelle sessizce None doner, eski veri korunur.
+    _perf_guncelle(yt)
     ch = yt.channels().list(part="contentDetails", mine=True).execute()["items"][0]
     pl = yt.playlistItems().list(
         part="contentDetails",

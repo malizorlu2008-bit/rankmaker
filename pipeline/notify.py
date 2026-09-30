@@ -8,6 +8,7 @@ Bu adım asla workflow'u düşürmez: e-posta gönderilemezse hata yazdırılır
 çıkış kodu 0 kalır (videolar zaten yüklenmiş olabilir, bildirim yüzünden
 çalışma "başarısız" görünmesin).
 """
+import datetime as dt
 import json
 import os
 import smtplib
@@ -38,6 +39,63 @@ def format_clip(clip):
     return f"      - {label} ({likes_text} begeni, {clip.get('duration')}sn)"
 
 
+# Bildirim saat kapisi. daily_run.reserve_after_hour/son_deneme_mi ile ayni
+# desen: Istanbul saati bu degerin altindaysa mail ATILMAZ.
+# Neden (kullanici karari 2026-09-30): gunde 5 tetikleyici var ve her biri
+# ayri bir "video yuklendi" maili atiyordu. Kullanici gunde TEK mail istiyor,
+# o da gunun SON calismasindan — o noktada uretim bitmis oluyor ama videolar
+# 18:00'den once yayinlanmadigi icin bir sorun hala duzeltilebilir durumda.
+ISTANBUL_OFFSET = dt.timedelta(hours=3)   # Europe/Istanbul, yil boyu UTC+3
+
+
+def bildirim_zamani_mi():
+    """Bu calisma gunun mail atacak calismasi mi?
+
+    FORCE_NOTIFY=1 elle tetiklenen calismada saati beklemeden acar.
+    NOTIFY_AFTER_HOUR tanimli degilse eski davranis: her calisma mail atar."""
+    if os.environ.get("FORCE_NOTIFY") == "1":
+        return True
+    esik = os.environ.get("NOTIFY_AFTER_HOUR")
+    if not esik:
+        return True
+    try:
+        esik = int(esik)
+    except ValueError:
+        return True
+    return (dt.datetime.now(dt.timezone.utc) + ISTANBUL_OFFSET).hour >= esik
+
+
+def gunun_videolari():
+    """Bugun YAYIMLANMAK UZERE yuklenmis videolar (state dosyasindan).
+
+    Mail gunde bir kez atildigi icin o tek mail SADECE son calismayi degil
+    GUNUN TAMAMINI anlatmali; sabahki calismanin urettigi videolar da
+    gorunsun. Kaynak covered_topics.json, yani boru hattinin kendi kaydi."""
+    yol = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                       "pipeline", "state", "covered_topics.json")
+    bugun = (dt.datetime.now(dt.timezone.utc) + ISTANBUL_OFFSET).strftime("%Y-%m-%d")
+    try:
+        with open(yol) as f:
+            kayit = json.load(f)
+    except Exception:
+        return bugun, []
+    return bugun, [u for u in (kayit.get("uploads") or []) if u.get("date") == bugun]
+
+
+def _gun_ozeti(lines):
+    bugun, ups = gunun_videolari()
+    lines.append("")
+    lines.append(f"--- {bugun} GUNUN TAMAMI: {len(ups)}/4 video ---")
+    if not ups:
+        lines.append("  (state dosyasinda bugune ait kayit yok)")
+        return
+    for u in ups:
+        yorum = "yorum atildi" if u.get("commented") else "yorum bekliyor"
+        lines.append(f"  - {u.get('topic')}: {u.get('title')}  [{yorum}]")
+    if len(ups) < 4:
+        lines.append(f"  NOT: {4 - len(ups)} slot bos kaldi.")
+
+
 def build_body(summary, job_status, run_url):
     lines = []
     if summary:
@@ -62,6 +120,7 @@ def build_body(summary, job_status, run_url):
             lines.append("Hic video uretilemedi.")
     _havuz_notu(summary, lines)
     _grup_notu(summary, lines)
+    _gun_ozeti(lines)
     for v in videos:
         kind = v.get("kind")
         status = v.get("status")
@@ -169,6 +228,12 @@ def main():
 
     if not user or not password:
         print("bildirim atlandi: GMAIL_USER / GMAIL_APP_PASSWORD tanimli degil")
+        return
+
+    if not bildirim_zamani_mi():
+        print(f"bildirim atlandi: gunun son calismasi degil "
+              f"(NOTIFY_AFTER_HOUR={os.environ.get('NOTIFY_AFTER_HOUR')}). "
+              f"Gunluk tek ozet mail son tetikleyiciden gidiyor.")
         return
 
     summary = load_summary()
