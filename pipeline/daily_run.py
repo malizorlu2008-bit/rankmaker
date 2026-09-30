@@ -19,8 +19,8 @@ from datetime import datetime, timedelta, timezone
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, REPO_ROOT)
 
-from pipeline import (bank, comment, discovery, labeler, quality,  # noqa: E402
-                      render, reserve, tiktok, visibility)
+from pipeline import (bank, comment, discovery, labeler, motion,  # noqa: E402
+                      quality, render, reserve, tiktok, visibility)
 
 STATE_PATH = os.path.join(REPO_ROOT, "pipeline", "state", "covered_topics.json")
 USED_CLIPS_PATH = os.path.join(REPO_ROOT, "pipeline", "state", "used_clips.json")
@@ -874,11 +874,28 @@ def find_ranking_material(state, used_links, forced_topic=None, grup=None):
     if KAYNAK_BLOKLU:
         print("  kaynak bu calismada bloklu bulundu — konu denenmiyor")
         return None, None, [], [], [], "kaynak", tried
-    for attempt in range(max_topic_attempts()):
+    # GRUP GECISI (kullanici karari 2026-09-30): slotun kendi grubundaki TUM
+    # konular denenip tam kadro cikmazsa, slot bos kalmasin diye diger gruba
+    # geciliyor. 29 Eylul'de gaming havuzu tam kadro veremedi ve 21:00 slotu
+    # bos kaldi; gunde 4 video kurali bundan onceliklidir.
+    #
+    # GECIS TEK YONLU: sadece gaming -> gaming disi. Tersi olsaydi gaming disi
+    # bir slot gaming konusuyla dolabilir ve gunde UC gaming videosu cikardi —
+    # kullanici tam bundan sikayet etmisti (2026-09-05). Gecis ayrica loglanir,
+    # yani grup_havuzu'nun eski sessiz sizintisi geri gelmiyor.
+    aktif_grup = grup
+    grup_gecildi = False
+    for attempt in range(max_topic_attempts() * 2):
         topic_cfg, part = pick_ranking_topic(
             state, exclude=tried, forced=forced_topic if attempt == 0 else None,
-            grup=grup, sadece_skor=(attempt > 0))
+            grup=aktif_grup, sadece_skor=(attempt > 0))
         if topic_cfg is None:
+            if grup == "gaming" and not grup_gecildi:
+                grup_gecildi = True
+                aktif_grup = None
+                print(f"  gaming havuzunda ({len(tried)} konu denendi) tam kadro "
+                      f"cikmadi — slot gaming disi konuyla doldurulmaya calisiliyor")
+                continue
             break
         topic = topic_cfg["topic"]
         tried.append(topic)
@@ -1524,16 +1541,43 @@ def gather_items(queries, count=5, used_links=None, must_include=None, hashtags=
         if not quality.has_audio(path):
             print(f"  atlandi (sessiz): {link}")
             continue
+        # KLIP BASINA TEK ANALIZ. Eskiden looks_like_compilation ve is_static
+        # ayri ayri motion.analyze_motion cagiriyordu, yani her klip en az IKI
+        # kez bastan sona (0.3sn adimlarla) cozuluyordu. Bir kez cozup ikisine
+        # de veriyoruz; hem CI suresi dusuyor hem de asagidaki pencere hesabi
+        # icin ornekler zaten elimizde oluyor.
+        try:
+            sure, ornekler = motion.analyze_motion(path)
+        except Exception as e:
+            print(f"  hareket analizi yapilamadi ({link}): {e}")
+            sure, ornekler = 0, None
+
         # Derleme filtresi, UZUN klibi kirpinca ortaya cikan kopukluk icin var.
         # Klip tam oynuyorsa (tam_oynuyor) izleyicinin gordugu sey creator'in
         # kendi videosu; 7 saniyelik bir klipteki ic kesme derleme degil.
         # Kullanici karari 2026-08-16: satisfying tarafinda bu filtre kapali,
-        # cunku adaylarin ucte biri buna takilip kadro dolmuyordu. Ranking
-        # tarafinda filtre aynen duruyor.
-        if not tam_oynuyor and quality.looks_like_compilation(path):
+        # cunku adaylarin ucte biri buna takilip kadro dolmuyordu.
+        #
+        # 2026-09-29: ranking tarafinda filtre KLIBIN TAMAMINA bakiyordu, oysa
+        # videoya sadece clip_cap(CLIP_COUNT) kadari giriyor (aday tavani 25sn,
+        # giren ~10sn). #174 calismasinda begeni barini gecen 83 adaydan sadece
+        # 4'u bu filtreden gecti ve 21:00 slotu bos kaldi. Artik SADECE
+        # gosterilecek pencere taraniyor — render'in kullanacagi pencerenin
+        # ayni hesapla bulunmus hali (motion.best_motion_window, ki o zaten
+        # kesmelerin ARASINDAKI segmentten secim yapiyor). Esik degismedi.
+        pencere = None
+        if ornekler and not tam_oynuyor:
+            kapak = clip_cap(CLIP_COUNT)
+            if bastan_kes:
+                pencere = (0.0, kapak)
+            elif sure:
+                secim = motion.best_motion_window(ornekler, sure, min(kapak, sure))
+                pencere = (secim["start"], secim["length"])
+        if not tam_oynuyor and quality.looks_like_compilation(
+                path, pencere=pencere, samples=ornekler):
             print(f"  atlandi (derleme): {link}")
             continue
-        if quality.is_static(path):
+        if quality.is_static(path, samples=ornekler):
             print(f"  atlandi (hareketsiz/ekran goruntusu): {link}")
             continue
         mute = not discovery.is_original_sound(v)
@@ -1733,6 +1777,13 @@ def ranking_videosu_uret(state, used_links, summary, slot, upload, save,
     topic = topic_cfg["topic"] if topic_cfg else "-"
     title_topic = (topic_cfg.get("title_topic") or topic) if topic_cfg else "-"
     suffix = topic_cfg["suffix"] if topic_cfg else "Fails"
+    # Grup gecisi olduysa ozete yazilir: slotun grubu ile secilen konunun grubu
+    # tutmuyorsa (bkz. find_ranking_material) o gun 2 yerine 1 gaming videosu
+    # cikmis demektir ve bunun bildirim e-postasinda gorunmesi gerekiyor.
+    if topic_cfg and (topic_cfg.get("group") or None) != (grup or None):
+        summary["group_fallback"] = summary.get("group_fallback", 0) + 1
+        print(f"  NOT: bu slot {grup or 'gaming disi'} grubundaydi, "
+              f"{topic_cfg.get('group') or 'gaming disi'} konuyla dolduruldu")
     adjective = random.choice(adjectives_for(suffix))
     part_label = f" Part {part}" if part else ""
     if topic_cfg:

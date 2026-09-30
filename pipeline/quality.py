@@ -37,25 +37,44 @@ def has_audio(path):
 COMPILATION_HIST_THRESHOLD = 1.0
 
 
-def looks_like_compilation(path, ilk_saniye=None):
+def looks_like_compilation(path, ilk_saniye=None, pencere=None, samples=None):
     """Klip tam oynatıldığı için içindeki her sahne kesmesi izleyiciye
     'tek sırada 2 ayrı video' olarak görünüyor.
 
-    ilk_saniye verilirse SADECE klibin o kadarlık başı incelenir. Neden:
-    videoya klibin tamamı girmiyorsa, girmeyen kısımdaki sahne kesmesinin
-    izleyici için bir anlamı yok. 2026-08-16'da satisfying videosunda 14
-    adayın 10'u bu filtreye takıldı; ölçünce reddedilenlerin sahne değişimi
-    25. saniyedeydi ve ilk 10 saniyedeki histDiff 0.63-0.77'ydi, yani biz
-    ELİMİZDEKİ 10 SANİYEYİ değil, hiç kullanmayacağımız kuyruğu eliyorduk.
-    Eşik (COMPILATION_HIST_THRESHOLD) değişmedi, sadece bakılan pencere
-    kullanılan parçayla eşitlendi."""
-    try:
-        _, samples = motion.analyze_motion(path)
-    except Exception:
-        return False  # analiz edilemiyorsa klibi bu yüzden elemeyelim
+    BAKILAN PENCERE, VIDEOYA GIRECEK PARCAYLA AYNI OLMALI. Videoya klibin
+    tamamı girmiyorsa, girmeyen kısımdaki sahne kesmesinin izleyici için bir
+    anlamı yok. 2026-08-16'da satisfying videosunda 14 adayın 10'u bu filtreye
+    takıldı; ölçünce reddedilenlerin sahne değişimi 25. saniyedeydi ve ilk 10
+    saniyedeki histDiff 0.63-0.77'ydi, yani biz ELİMİZDEKİ 10 SANİYEYİ değil,
+    hiç kullanmayacağımız kuyruğu eliyorduk.
 
-    if ilk_saniye:
-        samples = [s for s in samples if (s.get("t") or 0) <= ilk_saniye]
+    Aynı hata ranking tarafında 2026-09-29'a kadar sürdü: orada hiçbir pencere
+    geçilmiyordu, yani 25 saniyelik aday klibin tamamı taranıp videoya girecek
+    ~10 saniye yüzünden değil, hiç görünmeyecek kuyruk yüzünden eleniyordu.
+    29 Eylül #174 çalışmasında beğeni barını geçen 83 adaydan sadece 4'ü bu
+    filtreden geçti ve 21:00 slotu boş kaldı. Üstelik motion.best_motion_window
+    zaten kesmeleri bulup pencereyi KESMELERIN ARASINDAKI tek bir segmentten
+    seçiyor — yani render temiz parçayı seçecekken biz klibi baştan atıyorduk.
+
+    pencere: (start, length) ikilisi — sadece bu aralıktaki örnekler taranır.
+    ilk_saniye: pencere=(0, ilk_saniye) ile aynı (eski çağrılar bozulmasın).
+    samples: analiz dışarıda yapıldıysa tekrar çözmemek için geçilir.
+
+    Eşik (COMPILATION_HIST_THRESHOLD) DEĞİŞMEDİ. Bu bir gevşetme değil isabet
+    düzeltmesi: gösterilecek pencerede gerçekten kesme varsa klip yine elenir.
+    """
+    if samples is None:
+        try:
+            _, samples = motion.analyze_motion(path)
+        except Exception:
+            return False  # analiz edilemiyorsa klibi bu yüzden elemeyelim
+
+    if pencere is None and ilk_saniye:
+        pencere = (0.0, ilk_saniye)
+    if pencere:
+        bas, uzunluk = pencere
+        son = bas + uzunluk
+        samples = [s for s in samples if bas <= (s.get("t") or 0) <= son]
 
     for i in range(1, len(samples) - 1):
         d = samples[i].get("histDiff") or 0
@@ -75,7 +94,7 @@ def looks_like_compilation(path, ilk_saniye=None):
 STATIC_MOTION_THRESHOLD = 10.0
 
 
-def is_static(path):
+def is_static(path, samples=None):
     """Klip pratikte hareketsizse True — ekran goruntusu, tweet/post paylasimi,
     sabit resim uzerine muzik gibi seyler.
 
@@ -86,7 +105,8 @@ def is_static(path):
     (kullanici bildirdi). Aciklamadan anlasilmiyor, ama goruntuden anlasiliyor:
     boyle klipler neredeyse hic hareket icermiyor.
     """
-    _, samples = motion.analyze_motion(path)
+    if samples is None:
+        _, samples = motion.analyze_motion(path)
     if not samples:
         return False
     ort = sum(s["motion"] for s in samples) / len(samples)

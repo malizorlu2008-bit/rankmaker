@@ -61,6 +61,7 @@ def build_body(summary, job_status, run_url):
         else:
             lines.append("Hic video uretilemedi.")
     _havuz_notu(summary, lines)
+    _grup_notu(summary, lines)
     for v in videos:
         kind = v.get("kind")
         status = v.get("status")
@@ -113,6 +114,24 @@ def _havuz_notu(summary, lines):
                  "formatli re-upload yayinlamak yerine slot bos kaliyor.")
     lines.append("Bu tekrar ederse konu havuzunu genislet "
                  "(python3 -m pipeline.topic_scan --adaylar).")
+
+
+def _grup_notu(summary, lines):
+    """Gaming slotu gaming disi bir konuyla dolduysa haber ver.
+
+    2026-09-30 kullanici karari: gaming havuzu tam kadro veremezse slot bos
+    kalmasin, gaming disi konuyla dolsun. Gunde 4 video korunuyor ama o gun 2
+    yerine 1 gaming videosu cikiyor — bu sessiz kalmamali, cunku surekli
+    tekrar ederse gaming havuzunun genisletilmesi gerektigini gosterir."""
+    n = (summary or {}).get("group_fallback")
+    if not n:
+        return
+    lines.append("")
+    lines.append(f"{n} gaming slotu GAMING DISI konuyla dolduruldu: gaming "
+                 "havuzundaki konularin hicbiri tam kadro veremedi. Video "
+                 "sayisi korundu, ama bugun beklenenden az gaming videosu var.")
+    lines.append("Bu tekrar ederse gaming konularini genislet/olc "
+                 "(Actions -> Topic Candidate Scan).")
 
 
 def build_subject(summary, job_status):
