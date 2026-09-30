@@ -33,6 +33,11 @@ ZORUNLU_ALANLAR = ("refresh_token", "client_id", "client_secret")
 BEKLENEN_KAPSAMLAR = (
     "https://www.googleapis.com/auth/youtube.upload",
     "https://www.googleapis.com/auth/youtube.force-ssl",
+    # Salt okunur izlenme orani verisi (2026-09-30). Eksikse calisma DUSMEZ:
+    # analytics.py tek satir uyarip gecer, video uretimi etkilenmez. O yuzden
+    # bu liste hata degil UYARI uretiyor ve oyle kalmali — secret eski token'la
+    # kaldigi surece de gunluk is calismaya devam etsin.
+    "https://www.googleapis.com/auth/yt-analytics.readonly",
 )
 
 

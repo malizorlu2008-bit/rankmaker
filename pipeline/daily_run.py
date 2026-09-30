@@ -19,8 +19,8 @@ from datetime import datetime, timedelta, timezone
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, REPO_ROOT)
 
-from pipeline import (bank, comment, discovery, labeler, motion,  # noqa: E402
-                      performance, quality, render, reserve, tiktok,
+from pipeline import (analytics, bank, comment, discovery, labeler,  # noqa: E402
+                      motion, performance, quality, render, reserve, tiktok,
                       visibility)
 
 STATE_PATH = os.path.join(REPO_ROOT, "pipeline", "state", "covered_topics.json")
@@ -1076,8 +1076,13 @@ def find_satisfying_material(state, used_links):
     return topic, variant, n + 1, items, links, metas, source
 
 
+# "Skills" de olumlu bir son ek: fail sifatlari ("Worst", "Most Painful")
+# beceri videosuna uymuyordu. 2026-09-30'da futbol konulariyla eklendi.
+OLUMLU_SONEKLER = ("Moments", "Skills")
+
+
 def adjectives_for(suffix):
-    return ADJECTIVES_MOMENT if suffix == "Moments" else ADJECTIVES_FAIL
+    return ADJECTIVES_MOMENT if suffix in OLUMLU_SONEKLER else ADJECTIVES_FAIL
 
 
 UPLOAD_LOG_CAP = 200
@@ -1231,6 +1236,19 @@ def _perf_guncelle(yt):
               f"({veri['olculen_video']} olgun video)")
 
 
+def _retention_guncelle(creds):
+    """topic_retention.json'i tazele. Sessiz: ciktisi hicbir karara girmiyor."""
+    try:
+        veri = analytics.guncelle(creds, (load_state().get("uploads") or []))
+    except Exception as e:
+        print(f"  izlenme orani guncellenemedi: {e}")
+        return
+    if veri:
+        print(f"  izlenme orani guncellendi: {len(veri['konular'])} konu, "
+              f"kanal orani %{veri['kanal_orani']} "
+              f"({veri['olculen_video']} video)")
+
+
 def kanaldaki_dolu_saatler():
     """Bugun kanalda GERCEKTEN dolu olan yayin saatleri.
 
@@ -1250,6 +1268,10 @@ def kanaldaki_dolu_saatler():
     # servisi zaten kurulu ve maliyeti birkac kota birimi. Hata durumunda
     # performance.guncelle sessizce None doner, eski veri korunur.
     _perf_guncelle(yt)
+    # Izlenme ORANI (retention) sessizce biriktiriliyor — hicbir yere bagli
+    # degil, sadece dosyaya yaziliyor (bkz. pipeline/analytics.py). Token'da
+    # izin yoksa tek satir uyarip geciyor, calisma etkilenmiyor.
+    _retention_guncelle(creds)
     ch = yt.channels().list(part="contentDetails", mine=True).execute()["items"][0]
     pl = yt.playlistItems().list(
         part="contentDetails",

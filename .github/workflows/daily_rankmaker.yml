@@ -157,7 +157,8 @@ jobs:
           git add pipeline/state/covered_topics.json pipeline/state/used_clips.json \
             pipeline/state/reserve.json pipeline/reserve \
             pipeline/state/clip_bank.json \
-            pipeline/state/topic_scores.json pipeline/state/topic_views.json
+            pipeline/state/topic_scores.json pipeline/state/topic_views.json \
+            pipeline/state/topic_retention.json
           git diff --staged --quiet || git commit -m "Update topic/used-clips state [skip ci]"
           # Calisma 25-45 dakika surdugu icin bu arada main'e baska bir commit
           # girmis olabilir; duz "git push" o durumda "fetch first" ile

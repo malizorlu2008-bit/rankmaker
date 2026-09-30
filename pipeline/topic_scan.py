@@ -150,6 +150,47 @@ ADAY_KONULAR = [
      "required": ("monkey", "macaque", "ape"), "hashtags": ["monkeystealing", "funnymonkey", "monkeytiktok"]},
     {"topic": "Forklift Fail", "title_topic": "Forklift", "suffix": "Fails",
      "required": ("forklift", "warehouse", "pallet"), "hashtags": ["forkliftfail", "warehousefail", "forkliftfails"]},
+
+    # --- FUTBOL DALGASI (2026-09-30, kullanici istegi: "football messi ronaldo") ---
+    #
+    # ONEMLI TELIF NOTU: Messi/Ronaldo etiketleri MAC YAYIN GORUNTUSU cekiyor.
+    # Bu kanalin en yuksek Content ID riski olan icerik turu ve bu dosyanin
+    # basinda zaten yazili ("yayin goruntusu #fifa/#messi gibi goruntu bazli
+    # Content ID riski demek"). Kanalda hali hazirda iki bolge engeli var.
+    # Kullanici karari: ikisi de olculsun, VERI VE ICERIK karar versin — yani
+    # ornek kliplere bakilacak ve yayin goruntusu agir basiyorsa o konu
+    # EKLENMEYECEK. Yaninda telif riski dusuk (kullanici uretimi) futbol
+    # konulari da olculuyor ki, unlu isim konulari elenirse futbol kategorisi
+    # tamamen bos kalmasin.
+    #
+    # Ek baglam: mevcut "Football Fail" konusunun izlenme medyani 1.290 ve
+    # 2026-09-30'da rotasyondan dusen dort konudan biri. Yani bu kanalda
+    # futbol-fail tutmadi; asagidakiler FARKLI bir icerik turu (beceri/an).
+    #
+    # required icine turnuva/lig kelimesi (champions, world cup, la liga)
+    # BILEREK konmuyor — o kelimeler dogrudan yayin goruntusu getiriyor.
+
+    # Istenen isim konulari (yuksek risk, icerik kontrolu sart):
+    {"topic": "Messi Moments", "title_topic": "Messi", "suffix": "Moments",
+     "required": ("messi", "inter miami", "argentina"),
+     "hashtags": ["messi", "messiskills", "messimagic", "messifans"]},
+    {"topic": "Ronaldo Moments", "title_topic": "Ronaldo", "suffix": "Moments",
+     "required": ("ronaldo", "cr7", "siu", "al nassr"),
+     "hashtags": ["ronaldo", "cr7", "ronaldoskills", "siuuu"]},
+
+    # Telif riski dusuk, kullanici uretimi futbol:
+    # suffix "Skills": "Ranking Craziest Football Skills" -> "... Football
+    # Skills Moments"tan cok daha temiz. adjectives_for OLUMLU_SONEKLER'e
+    # eklendi, yoksa "Worst Football Skills" gibi bir baslik cikardi.
+    {"topic": "Football Skills", "title_topic": "Football", "suffix": "Skills",
+     "required": ("skill", "dribble", "football", "soccer"),
+     "hashtags": ["footballskills", "dribbling", "footballtiktok", "soccerskills"]},
+    {"topic": "Freestyle Football", "title_topic": "Freestyle Football", "suffix": "Moments",
+     "required": ("freestyle", "juggling", "panna", "street"),
+     "hashtags": ["freestylefootball", "panna", "streetfootball", "footballfreestyle"]},
+    {"topic": "Football Fan Moments", "title_topic": "Football Fan", "suffix": "Moments",
+     "required": ("fan", "crowd", "stadium", "celebration"),
+     "hashtags": ["footballfans", "stadiumvibes", "footballcelebration", "footballculture"]},
 ]
 
 
