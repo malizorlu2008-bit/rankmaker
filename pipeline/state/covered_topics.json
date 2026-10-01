@@ -182,7 +182,11 @@
     "Football Fail",
     "Fortnite Moments",
     "Cat Jump Moments",
-    "GTA Moments"
+    "GTA Moments",
+    "Freestyle Football",
+    "GTA Moments",
+    "Football Skills",
+    "Valorant Moments"
   ],
   "uploads": [
     {
@@ -1592,11 +1596,39 @@
       "video_id": "watch?v=FPFHY2BAypI",
       "question": "Be honest, was #4 or #5 the most awkward GTA moment? 😂",
       "commented": true
+    },
+    {
+      "date": "2026-10-01",
+      "topic": "Freestyle Football",
+      "title": "Ranking Funniest Freestyle Football Moments",
+      "video_id": "watch?v=2Uftuz0dc7g",
+      "question": "Which freestyle clip deserved the #1 spot? ⚽"
+    },
+    {
+      "date": "2026-10-01",
+      "topic": "GTA Moments",
+      "title": "Ranking Wildest GTA Moments",
+      "video_id": "watch?v=mMJUDyMPJtM",
+      "question": "Was #1 really the wildest moment or did #4 get robbed? 🤔"
+    },
+    {
+      "date": "2026-10-01",
+      "topic": "Football Skills",
+      "title": "Ranking Most Epic Football Skills",
+      "video_id": "watch?v=zc2PjpvWYaY",
+      "question": "Be honest, was #1 really better than #5? ⚽"
+    },
+    {
+      "date": "2026-10-01",
+      "topic": "Valorant Moments",
+      "title": "Ranking Funniest Valorant Moments",
+      "video_id": "watch?v=rP_Z8I959tA",
+      "question": "Be honest, was #1 actually the funniest clip? 💀"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-09-30",
+    "date": "2026-10-01",
     "slots": [
       "18:00",
       "19:00",
@@ -1604,6 +1636,6 @@
       "21:00"
     ]
   },
-  "hook_index": 13,
+  "hook_index": 17,
   "part_two_queue": []
 }
