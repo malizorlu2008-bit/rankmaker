@@ -186,7 +186,11 @@
     "Freestyle Football",
     "GTA Moments",
     "Football Skills",
-    "Valorant Moments"
+    "Valorant Moments",
+    "Football Skills",
+    "Horror Game Reaction",
+    "Snow Fail",
+    "Minecraft Moments"
   ],
   "uploads": [
     {
@@ -1628,11 +1632,39 @@
       "video_id": "watch?v=rP_Z8I959tA",
       "question": "Be honest, was #1 actually the funniest clip? 💀",
       "commented": true
+    },
+    {
+      "date": "2026-10-02",
+      "topic": "Football Skills",
+      "title": "Ranking Funniest Football Skills",
+      "video_id": "watch?v=ritO0XL455Q",
+      "question": "Be honest, did #1 actually have the best skill or was it overrated? 🤔"
+    },
+    {
+      "date": "2026-10-02",
+      "topic": "Horror Game Reaction",
+      "title": "Ranking Most Unexpected Horror Game Moments",
+      "video_id": "watch?v=rOBgTI_Qe6I",
+      "question": "Which clip was actually the scariest, #1 or #5? 💀"
+    },
+    {
+      "date": "2026-10-02",
+      "topic": "Snow Fail",
+      "title": "Ranking Most Embarrassing Snow Fails",
+      "video_id": "watch?v=hvk5mvXuAfA",
+      "question": "Be honest, was #2 or #3 the most embarrassing fail here? 💀"
+    },
+    {
+      "date": "2026-10-02",
+      "topic": "Minecraft Moments",
+      "title": "Ranking Weirdest Minecraft Moments",
+      "video_id": "watch?v=7VvMQRcEv7g",
+      "question": "Was #5 really the weirdest moment or did #3 deserve #1? 🤔"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-01",
+    "date": "2026-10-02",
     "slots": [
       "18:00",
       "19:00",
@@ -1640,6 +1672,6 @@
       "21:00"
     ]
   },
-  "hook_index": 17,
+  "hook_index": 21,
   "part_two_queue": []
 }
