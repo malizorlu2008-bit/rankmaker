@@ -190,7 +190,11 @@
     "Football Skills",
     "Horror Game Reaction",
     "Snow Fail",
-    "Minecraft Moments"
+    "Minecraft Moments",
+    "Football Skills",
+    "Roblox Moments",
+    "Golf Fail",
+    "Fortnite Moments"
   ],
   "uploads": [
     {
@@ -1664,11 +1668,39 @@
       "video_id": "watch?v=7VvMQRcEv7g",
       "question": "Was #5 really the weirdest moment or did #3 deserve #1? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-10-03",
+      "topic": "Football Skills",
+      "title": "Ranking Most Awkward Football Skills",
+      "video_id": "watch?v=xrB2MtSBDVU",
+      "question": "Which skill was actually the most awkward: #1 or #5? 🤔"
+    },
+    {
+      "date": "2026-10-03",
+      "topic": "Roblox Moments",
+      "title": "Ranking Craziest Roblox Moments",
+      "video_id": "watch?v=axuY5ahVXh8",
+      "question": "Which clip was actually the craziest, #2 or #5? 🤔"
+    },
+    {
+      "date": "2026-10-03",
+      "topic": "Golf Fail",
+      "title": "Ranking Most Painful Golf Fails",
+      "video_id": "watch?v=AzcG-d6YaMw",
+      "question": "Which fail was actually the most painful? 😳"
+    },
+    {
+      "date": "2026-10-03",
+      "topic": "Fortnite Moments",
+      "title": "Ranking Most Epic Fortnite Moments",
+      "video_id": "watch?v=196d1_EAHkk",
+      "question": "Be honest, did #1 or #5 deserve the top spot? 💀"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-02",
+    "date": "2026-10-03",
     "slots": [
       "18:00",
       "19:00",
@@ -1676,6 +1708,6 @@
       "21:00"
     ]
   },
-  "hook_index": 21,
+  "hook_index": 25,
   "part_two_queue": []
 }
