@@ -194,7 +194,11 @@
     "Football Skills",
     "Roblox Moments",
     "Golf Fail",
-    "Fortnite Moments"
+    "Fortnite Moments",
+    "Capybara",
+    "Fortnite Moments",
+    "Raccoon Stealing",
+    "GTA Moments"
   ],
   "uploads": [
     {
@@ -1700,11 +1704,39 @@
       "video_id": "watch?v=196d1_EAHkk",
       "question": "Be honest, did #1 or #5 deserve the top spot? 💀",
       "commented": true
+    },
+    {
+      "date": "2026-10-04",
+      "topic": "Capybara",
+      "title": "Ranking Craziest Capybara Moments",
+      "video_id": "watch?v=hlQgZx8WKlI",
+      "question": "Be honest, was #1 the craziest capybara moment or should the party have won?"
+    },
+    {
+      "date": "2026-10-04",
+      "topic": "Fortnite Moments",
+      "title": "Ranking Most Epic Fortnite Moments",
+      "video_id": "watch?v=mrHud1WxdrY",
+      "question": "Be honest, was #2 or #5 the most epic moment? 🤔"
+    },
+    {
+      "date": "2026-10-04",
+      "topic": "Raccoon Stealing",
+      "title": "Ranking Funniest Raccoon Moments",
+      "video_id": "watch?v=Kbys9PQkblU",
+      "question": "Which raccoon deserved the #1 spot? 🤔"
+    },
+    {
+      "date": "2026-10-04",
+      "topic": "GTA Moments",
+      "title": "Ranking Most Awkward GTA Moments",
+      "video_id": "watch?v=C6Fk4l89bqc",
+      "question": "Which clip deserved #1: the mountain spawn or the cop car escape?"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-03",
+    "date": "2026-10-04",
     "slots": [
       "18:00",
       "19:00",
@@ -1712,6 +1744,6 @@
       "21:00"
     ]
   },
-  "hook_index": 25,
+  "hook_index": 1,
   "part_two_queue": []
 }
