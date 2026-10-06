@@ -202,15 +202,13 @@
     "Dog Zoomies",
     "GTA Moments",
     "Cow Moments",
-    "Lethal Company"
+    "Lethal Company",
+    "Ice Rink",
+    "Fortnite Moments",
+    "Freestyle Football",
+    "GTA Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-08-12",
-      "topic": "Unboxing",
-      "title": "Ranking Craziest Unboxing Fails",
-      "video_id": "watch?v=eUhOs9zeaVQ"
-    },
     {
       "date": "2026-08-12",
       "topic": "Slime",
@@ -1772,11 +1770,39 @@
       "video_id": "watch?v=iBE5JKrHy5c",
       "question": "Did the dancing lootbugs deserve #1 or was #5 way weirder? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-10-06",
+      "topic": "Ice Rink",
+      "title": "Ranking Wildest Ice Skating Moments",
+      "video_id": "watch?v=S8RhHZLxlEQ",
+      "question": "Be honest, did the slush skate or that crazy throw deserve #1? ⛸️"
+    },
+    {
+      "date": "2026-10-06",
+      "topic": "Fortnite Moments",
+      "title": "Ranking Craziest Fortnite Moments",
+      "video_id": "watch?v=p39DFRkzBNY",
+      "question": "Be honest, was #1 actually the craziest clip here? 🤔"
+    },
+    {
+      "date": "2026-10-06",
+      "topic": "Freestyle Football",
+      "title": "Ranking Most Epic Freestyle Football Moments",
+      "video_id": "watch?v=DFBmap7c83s",
+      "question": "Which panna was dirtier, #4 or #5? ⚽"
+    },
+    {
+      "date": "2026-10-06",
+      "topic": "GTA Moments",
+      "title": "Ranking Most Savage GTA Moments",
+      "video_id": "watch?v=Fhazm-oXXos",
+      "question": "Did that ultra instinct guard deserve #1, or was the flying car more savage? 🤔"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-05",
+    "date": "2026-10-06",
     "slots": [
       "18:00",
       "19:00",
@@ -1784,6 +1810,6 @@
       "21:00"
     ]
   },
-  "hook_index": 5,
+  "hook_index": 9,
   "part_two_queue": []
 }
