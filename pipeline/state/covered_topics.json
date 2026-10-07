@@ -206,33 +206,13 @@
     "Ice Rink",
     "Fortnite Moments",
     "Freestyle Football",
-    "GTA Moments"
+    "GTA Moments",
+    "Freestyle Football",
+    "Rocket League Moments",
+    "Scared Cat",
+    "Minecraft Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-08-12",
-      "topic": "Slime",
-      "title": "Most Satisfying Slime Moments",
-      "video_id": "watch?v=rXOXlq8OxpI"
-    },
-    {
-      "date": "2026-08-13",
-      "topic": "Kinetic Sand",
-      "title": "Most Satisfying Kinetic Sand Cuts",
-      "video_id": "watch?v=ZbzJK-02kes"
-    },
-    {
-      "date": "2026-08-13",
-      "topic": "Raccoon Stealing",
-      "title": "Ranking Most Awkward Raccoon Stealing Moments",
-      "video_id": "watch?v=FqcuzW05SNU"
-    },
-    {
-      "date": "2026-08-13",
-      "topic": "Ring Camera",
-      "title": "Ranking Wildest Ring Camera Moments",
-      "video_id": "watch?v=MTtcRTI6nGo"
-    },
     {
       "date": "2026-08-13",
       "topic": "Raccoon Stealing",
@@ -1802,11 +1782,39 @@
       "video_id": "watch?v=Fhazm-oXXos",
       "question": "Did that ultra instinct guard deserve #1, or was the flying car more savage? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-10-07",
+      "topic": "Freestyle Football",
+      "title": "Ranking Most Unexpected Freestyle Football Moments",
+      "video_id": "watch?v=ejXAqqeJdTY",
+      "question": "Which unexpected moment totally deserved the #1 spot?"
+    },
+    {
+      "date": "2026-10-07",
+      "topic": "Rocket League Moments",
+      "title": "Ranking Most Unexpected Rocket League Moments",
+      "video_id": "watch?v=Yg0CdnNqUGM",
+      "question": "Be honest, was clip #1 actually the most unexpected?"
+    },
+    {
+      "date": "2026-10-07",
+      "topic": "Scared Cat",
+      "title": "Ranking Wildest Scared Cat Moments",
+      "video_id": "watch?v=KPnWM87MznA",
+      "question": "Be honest, was #3 actually the scariest one?"
+    },
+    {
+      "date": "2026-10-07",
+      "topic": "Minecraft Moments",
+      "title": "Ranking Most Savage Minecraft Moments",
+      "video_id": "watch?v=riiqtC8DUvw",
+      "question": "Was #3 really more savage than #5?"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-06",
+    "date": "2026-10-07",
     "slots": [
       "18:00",
       "19:00",
@@ -1814,6 +1822,6 @@
       "21:00"
     ]
   },
-  "hook_index": 9,
+  "hook_index": 13,
   "part_two_queue": []
 }
