@@ -210,37 +210,13 @@
     "Freestyle Football",
     "Rocket League Moments",
     "Scared Cat",
-    "Minecraft Moments"
+    "Minecraft Moments",
+    "Cake Fail",
+    "Horror Game Reaction",
+    "Puppy Moments",
+    "Call Of Duty Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-08-13",
-      "topic": "Raccoon Stealing",
-      "title": "Ranking Most Unreal Raccoon Moments Part 2",
-      "video_id": "watch?v=WUEwW1631rU"
-    },
-    {
-      "date": "2026-08-13",
-      "topic": "Slime",
-      "title": "Most Satisfying Slime Moments",
-      "video_id": "watch?v=euvCJNUpnlY"
-    },
-    {
-      "date": "2026-08-13",
-      "topic": "Satisfying Mix",
-      "title": "Most Satisfying ASMR Compilation",
-      "video_id": "watch?v=qRaM2R7v5zQ"
-    },
-    {
-      "date": "2026-08-16",
-      "topic": "Ice Rink",
-      "title": "Ranking Most Unexpected Ice Skating Moments",
-      "video_id": "watch?v=21Ga5tr6fRg",
-      "question": "Did #5 or #1 deserve the top spot for worst moment? ⛸️",
-      "comment_tries": 1,
-      "commented": true,
-      "note": "video iptal/silindi, yorum atilmayacak"
-    },
     {
       "date": "2026-08-16",
       "topic": "Satisfying Mix",
@@ -1814,11 +1790,39 @@
       "video_id": "watch?v=riiqtC8DUvw",
       "question": "Was #3 really more savage than #5?",
       "commented": true
+    },
+    {
+      "date": "2026-10-08",
+      "topic": "Cake Fail",
+      "title": "Ranking Most Savage Cake Fails",
+      "video_id": "watch?v=Tl4zt7QY9vo",
+      "question": "Be honest, was #5 the worst cake fail or #2? 💀"
+    },
+    {
+      "date": "2026-10-08",
+      "topic": "Horror Game Reaction",
+      "title": "Ranking Most Unexpected Horror Game Moments",
+      "video_id": "watch?v=aAzU97VcqUU",
+      "question": "Be honest, was #4 robbed of the top spot?"
+    },
+    {
+      "date": "2026-10-08",
+      "topic": "Puppy Moments",
+      "title": "Ranking Weirdest Puppy Moments",
+      "video_id": "watch?v=vm8SWzyQ2P0",
+      "question": "Be honest, was the honking dachshund really #1 worthy? 😂"
+    },
+    {
+      "date": "2026-10-08",
+      "topic": "Call Of Duty Moments",
+      "title": "Ranking Most Awkward Call Of Duty Moments",
+      "video_id": "watch?v=qIQ_TPSWLqE",
+      "question": "Be honest, was #4 or #2 the most awkward COD moment? 🤔"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-07",
+    "date": "2026-10-08",
     "slots": [
       "18:00",
       "19:00",
@@ -1826,6 +1830,6 @@
       "21:00"
     ]
   },
-  "hook_index": 13,
+  "hook_index": 17,
   "part_two_queue": []
 }
