@@ -214,46 +214,13 @@
     "Cake Fail",
     "Horror Game Reaction",
     "Puppy Moments",
-    "Call Of Duty Moments"
+    "Call Of Duty Moments",
+    "Goat Screaming",
+    "Rocket League Moments",
+    "Jet Ski Fail",
+    "CS2 Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-08-16",
-      "topic": "Satisfying Mix",
-      "title": "Best Satisfying Sounds ",
-      "video_id": "watch?v=6DIgjazvFi8",
-      "question": "Be honest, was the paint mixing or the soft slime ASMR #1?",
-      "comment_tries": 1,
-      "commented": true,
-      "note": "video iptal/silindi, yorum atilmayacak"
-    },
-    {
-      "date": "2026-08-16",
-      "topic": "Dog Zoomies",
-      "title": "Ranking Most Unexpected Zoomies Moments",
-      "video_id": "watch?v=krPmv6arU2A",
-      "question": "Be honest, which animal had the most chaotic zoomies? 🐾",
-      "comment_tries": 1,
-      "commented": true,
-      "note": "video iptal/silindi, yorum atilmayacak"
-    },
-    {
-      "date": "2026-08-16",
-      "topic": "Satisfying Mix",
-      "title": "Most Addictive Satisfying Clips",
-      "video_id": "watch?v=y-fg_jEg4vE",
-      "question": ""
-    },
-    {
-      "date": "2026-08-16",
-      "topic": "Satisfying Mix",
-      "title": "Most Satisfying Videos ",
-      "video_id": "watch?v=gzF-hNJ5WNo",
-      "question": "Was the paint mixing or wax cracking #1 for you? 🤔",
-      "comment_tries": 1,
-      "commented": true,
-      "note": "video iptal/silindi, yorum atilmayacak"
-    },
     {
       "date": "2026-08-16",
       "topic": "Satisfying Mix",
@@ -1822,11 +1789,39 @@
       "video_id": "watch?v=qIQ_TPSWLqE",
       "question": "Be honest, was #4 or #2 the most awkward COD moment? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-10-09",
+      "topic": "Goat Screaming",
+      "title": "Ranking Craziest Goat Moments",
+      "video_id": "watch?v=b77zXg3sNpU",
+      "question": "Be honest, was #1 really the craziest goat moment? 🐐"
+    },
+    {
+      "date": "2026-10-09",
+      "topic": "Rocket League Moments",
+      "title": "Ranking Most Unexpected Rocket League Moments",
+      "video_id": "watch?v=oGhOHRG9Jzk",
+      "question": "Be honest, was #1 really the most unexpected clip? 🤔"
+    },
+    {
+      "date": "2026-10-09",
+      "topic": "Jet Ski Fail",
+      "title": "Ranking Most Embarrassing Jet Ski Fails",
+      "video_id": "watch?v=fvVFNYYcjR4",
+      "question": "Which jet ski fail was actually the most embarrassing? 💀"
+    },
+    {
+      "date": "2026-10-09",
+      "topic": "CS2 Moments",
+      "title": "Ranking Most Unreal CS2 Moments",
+      "video_id": "watch?v=Uz-LSxcyuNQ",
+      "question": "Which moment was actually the most unreal, #2 or #5? 💀"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-08",
+    "date": "2026-10-09",
     "slots": [
       "18:00",
       "19:00",
@@ -1834,6 +1829,6 @@
       "21:00"
     ]
   },
-  "hook_index": 17,
+  "hook_index": 21,
   "part_two_queue": []
 }
