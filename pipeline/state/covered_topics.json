@@ -218,42 +218,13 @@
     "Goat Screaming",
     "Rocket League Moments",
     "Jet Ski Fail",
-    "CS2 Moments"
+    "CS2 Moments",
+    "Parrot Talking",
+    "Horror Game Reaction",
+    "Unboxing",
+    "Rage Quit"
   ],
   "uploads": [
-    {
-      "date": "2026-08-16",
-      "topic": "Satisfying Mix",
-      "title": "Most Relaxing ASMR Moments",
-      "video_id": "watch?v=f_FngUsoB7Y",
-      "question": "Be honest, which clip was actually the most relaxing, #3 or #5?",
-      "comment_tries": 1,
-      "commented": true
-    },
-    {
-      "date": "2026-08-16",
-      "topic": "Satisfying Mix",
-      "title": "Oddly Satisfying Moments",
-      "video_id": "watch?v=zAIKkDzW9bE",
-      "question": "Which clip actually scratched your brain the most? 🧠",
-      "commented": true
-    },
-    {
-      "date": "2026-08-17",
-      "topic": "Dog Zoomies",
-      "title": "Ranking Most Savage Zoomies Moments Part 2",
-      "video_id": "watch?v=CT5Qt0rZ6ZY",
-      "question": "Was #5 really the most savage zoomie or did #2 steal the show? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-08-17",
-      "topic": "Satisfying Mix",
-      "title": "Most Satisfying ASMR Compilation",
-      "video_id": "watch?v=eD8Z-EA468M",
-      "question": "Be honest, did sand cutting or slime deserve the #1 spot? 🤔",
-      "commented": true
-    },
     {
       "date": "2026-08-18",
       "topic": "Snow Fail",
@@ -1821,11 +1792,39 @@
       "video_id": "watch?v=Uz-LSxcyuNQ",
       "question": "Which moment was actually the most unreal, #2 or #5? 💀",
       "commented": true
+    },
+    {
+      "date": "2026-10-10",
+      "topic": "Parrot Talking",
+      "title": "Ranking Most Epic Parrot Moments",
+      "video_id": "watch?v=O2FbU136xIo",
+      "question": "Was #1 really the most epic parrot moment or did #3 steal the show? 🦜"
+    },
+    {
+      "date": "2026-10-10",
+      "topic": "Horror Game Reaction",
+      "title": "Ranking Most Unexpected Horror Game Moments",
+      "video_id": "watch?v=L-nNIQ_HrWs",
+      "question": "Which unexpected moment actually scared you the most? 😳"
+    },
+    {
+      "date": "2026-10-10",
+      "topic": "Unboxing",
+      "title": "Ranking Weirdest Unboxing Moments",
+      "video_id": "watch?v=jKgh0Ku0QB4",
+      "question": "Was the puppy unboxing really #1 or did Dyson get robbed? 🤔"
+    },
+    {
+      "date": "2026-10-10",
+      "topic": "Rage Quit",
+      "title": "Ranking Weirdest Rage Quit Moments",
+      "video_id": "watch?v=RI4B-xVAFSs",
+      "question": "Be honest, was #4 the ultimate crashout or did #3 take it? 💀"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-09",
+    "date": "2026-10-10",
     "slots": [
       "18:00",
       "19:00",
@@ -1833,6 +1832,6 @@
       "21:00"
     ]
   },
-  "hook_index": 21,
+  "hook_index": 25,
   "part_two_queue": []
 }
