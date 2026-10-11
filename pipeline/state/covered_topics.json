@@ -1823,7 +1823,8 @@
       "topic": "Golf Fail",
       "title": "Ranking Funniest Golf Fails",
       "video_id": "watch?v=WBCuFHOY-aY",
-      "question": "Did #3 go too far or was #5 worse? 🤔"
+      "question": "Did #3 go too far or was #5 worse? 🤔",
+      "commented": true
     }
   ],
   "satisfying_index": 10,
