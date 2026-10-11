@@ -225,17 +225,10 @@
     "Rage Quit",
     "Horror Game Reaction",
     "Toddler And Dog",
-    "Minecraft Moments"
+    "Minecraft Moments",
+    "Golf Fail"
   ],
   "uploads": [
-    {
-      "date": "2026-08-19",
-      "topic": "Horse Moments",
-      "title": "Ranking Most Painful Horse Fails",
-      "video_id": "watch?v=iXit2s1y8f4",
-      "question": "Which clip actually deserved the #1 spot? 🐴",
-      "commented": true
-    },
     {
       "date": "2026-08-20",
       "topic": "Parrot Talking",
@@ -1824,6 +1817,13 @@
       "title": "Ranking Weirdest Minecraft Moments",
       "video_id": "watch?v=4mG0m-WlUJA",
       "question": "Was #1 really weirder than the Herobrine clip? 💀"
+    },
+    {
+      "date": "2026-10-11",
+      "topic": "Golf Fail",
+      "title": "Ranking Funniest Golf Fails",
+      "video_id": "watch?v=WBCuFHOY-aY",
+      "question": "Did #3 go too far or was #5 worse? 🤔"
     }
   ],
   "satisfying_index": 10,
@@ -1832,9 +1832,10 @@
     "slots": [
       "19:00",
       "20:00",
-      "21:00"
+      "21:00",
+      "18:00"
     ]
   },
-  "hook_index": 0,
+  "hook_index": 1,
   "part_two_queue": []
 }
