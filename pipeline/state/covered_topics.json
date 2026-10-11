@@ -222,33 +222,12 @@
     "Parrot Talking",
     "Horror Game Reaction",
     "Unboxing",
-    "Rage Quit"
+    "Rage Quit",
+    "Horror Game Reaction",
+    "Toddler And Dog",
+    "Minecraft Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-08-18",
-      "topic": "Snow Fail",
-      "title": "Ranking Weirdest Snow Fails",
-      "video_id": "watch?v=xcfzh9YlJ9I",
-      "question": "Was #1 really the worst fail or did #5 take the crown? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-08-18",
-      "topic": "Football Fail",
-      "title": "Ranking Unluckiest Football Fails",
-      "video_id": "watch?v=uQLICFRzDQ8",
-      "question": "Be honest, was #5 or #1 the most unlucky fail? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-08-19",
-      "topic": "Cat Jump Moments",
-      "title": "Ranking Wildest Cat Jump Fails",
-      "video_id": "watch?v=pR7n7Dfll3M",
-      "question": "Be honest, did #3 or #5 have the funniest fail? 🤔",
-      "commented": true
-    },
     {
       "date": "2026-08-19",
       "topic": "Horse Moments",
@@ -1824,18 +1803,38 @@
       "video_id": "watch?v=RI4B-xVAFSs",
       "question": "Be honest, was #4 the ultimate crashout or did #3 take it? 💀",
       "commented": true
+    },
+    {
+      "date": "2026-10-11",
+      "topic": "Horror Game Reaction",
+      "title": "Ranking Wildest Horror Game Moments",
+      "video_id": "watch?v=Xf4fQTfsbBo",
+      "question": "Which moment actually deserved the #1 spot? 💀"
+    },
+    {
+      "date": "2026-10-11",
+      "topic": "Toddler And Dog",
+      "title": "Ranking Most Savage Toddler And Dog Moments",
+      "video_id": "watch?v=nhNXFBm1K2Q",
+      "question": "Did #1 deserve the top spot or was #4 the real winner?"
+    },
+    {
+      "date": "2026-10-11",
+      "topic": "Minecraft Moments",
+      "title": "Ranking Weirdest Minecraft Moments",
+      "video_id": "watch?v=4mG0m-WlUJA",
+      "question": "Was #1 really weirder than the Herobrine clip? 💀"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-10",
+    "date": "2026-10-11",
     "slots": [
-      "18:00",
       "19:00",
       "20:00",
       "21:00"
     ]
   },
-  "hook_index": 25,
+  "hook_index": 0,
   "part_two_queue": []
 }
