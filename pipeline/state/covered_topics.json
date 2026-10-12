@@ -226,41 +226,13 @@
     "Horror Game Reaction",
     "Toddler And Dog",
     "Minecraft Moments",
-    "Golf Fail"
+    "Golf Fail",
+    "Golf Fail",
+    "Fortnite Moments",
+    "Monkey Stealing",
+    "Call Of Duty Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-08-20",
-      "topic": "Parrot Talking",
-      "title": "Ranking Wildest Parrot Moments",
-      "video_id": "watch?v=ixXMGN90P0Y",
-      "question": "Did #3 get robbed or was #1 clearly the winner? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-08-20",
-      "topic": "Goat Screaming",
-      "title": "Ranking Most Unreal Goat Moments",
-      "video_id": "watch?v=x4lqWsSaidQ",
-      "question": "Which clip deserved #1: the tiny baby goat or the talking one? 🐐",
-      "commented": true
-    },
-    {
-      "date": "2026-08-21",
-      "topic": "Skate Fail",
-      "title": "Ranking Most Savage Skateboard Fails",
-      "video_id": "watch?v=tA9vc6ngYrA",
-      "question": "Was #5 the worst fail or did #4 take the crown? 🛹",
-      "commented": true
-    },
-    {
-      "date": "2026-08-21",
-      "topic": "Fortnite Moments",
-      "title": "Ranking Wildest Fortnite Moments",
-      "video_id": "watch?v=QUtOCAQwm3k",
-      "question": "Which clip deserved #1? Be honest 💀",
-      "commented": true
-    },
     {
       "date": "2026-08-21",
       "topic": "Slip And Slide",
@@ -1828,18 +1800,46 @@
       "video_id": "watch?v=WBCuFHOY-aY",
       "question": "Did #3 go too far or was #5 worse? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-10-12",
+      "topic": "Golf Fail",
+      "title": "Ranking Most Savage Golf Fails",
+      "video_id": "watch?v=GOAq8UUgajs",
+      "question": "Did the kid throwing the club deserve #1 or #3? 💀"
+    },
+    {
+      "date": "2026-10-12",
+      "topic": "Fortnite Moments",
+      "title": "Ranking Most Savage Fortnite Moments",
+      "video_id": "watch?v=aa9aWGJSbzA",
+      "question": "Be honest, was #4 really more savage than #1?"
+    },
+    {
+      "date": "2026-10-12",
+      "topic": "Monkey Stealing",
+      "title": "Ranking Craziest Monkey Moments",
+      "video_id": "watch?v=dMrU6ACY-UE",
+      "question": "Which monkey moment actually deserved #1?"
+    },
+    {
+      "date": "2026-10-12",
+      "topic": "Call Of Duty Moments",
+      "title": "Ranking Most Unexpected Call Of Duty Moments",
+      "video_id": "watch?v=sskvxgPys0g",
+      "question": "Did #1 or #5 deserve the top spot? 💀"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-11",
+    "date": "2026-10-12",
     "slots": [
+      "18:00",
       "19:00",
       "20:00",
-      "21:00",
-      "18:00"
+      "21:00"
     ]
   },
-  "hook_index": 1,
+  "hook_index": 5,
   "part_two_queue": []
 }
