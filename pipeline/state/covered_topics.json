@@ -230,41 +230,13 @@
     "Golf Fail",
     "Fortnite Moments",
     "Monkey Stealing",
-    "Call Of Duty Moments"
+    "Call Of Duty Moments",
+    "Treadmill Fail",
+    "Rocket League Moments",
+    "Skate Fail",
+    "CS2 Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-08-21",
-      "topic": "Slip And Slide",
-      "title": "Ranking Most Embarrassing Slip And Slide Fails",
-      "video_id": "watch?v=vAY2VcYoN_M",
-      "question": "Be honest, did Unc deserve #1 or was the ice slide worse? 😂",
-      "commented": true
-    },
-    {
-      "date": "2026-08-21",
-      "topic": "Rocket League Moments",
-      "title": "Ranking Craziest Rocket League Moments",
-      "video_id": "watch?v=5hsuzD2ASdY",
-      "question": "Which clip deserved #1: the Minecraft air dribble or the anime angle? ⚽",
-      "commented": true
-    },
-    {
-      "date": "2026-08-22",
-      "topic": "Call Of Duty Moments",
-      "title": "Ranking Most Savage Call Of Duty Moments",
-      "video_id": "watch?v=Mg0cT5GVlho",
-      "question": "Be honest, was #1 actually the most savage clip? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-08-22",
-      "topic": "Roblox Moments",
-      "title": "Ranking Wildest Roblox Moments",
-      "video_id": "watch?v=oK38ZzgAbus",
-      "question": "Which clip was truly the wildest, #1 or #5? 🤔",
-      "commented": true
-    },
     {
       "date": "2026-08-22",
       "topic": "Snow Fail",
@@ -1832,11 +1804,39 @@
       "video_id": "watch?v=sskvxgPys0g",
       "question": "Did #1 or #5 deserve the top spot? 💀",
       "commented": true
+    },
+    {
+      "date": "2026-10-13",
+      "topic": "Treadmill Fail",
+      "title": "Ranking Worst Treadmill Fails",
+      "video_id": "watch?v=nzCA2qv8oTg",
+      "question": "Did the pinned squat deserve #1 or was the ego lift worse? 💀"
+    },
+    {
+      "date": "2026-10-13",
+      "topic": "Rocket League Moments",
+      "title": "Ranking Funniest Rocket League Moments",
+      "video_id": "watch?v=BtyK6qBaJOQ",
+      "question": "Be honest, did the fake at #1 deserve first place? 🤔"
+    },
+    {
+      "date": "2026-10-13",
+      "topic": "Skate Fail",
+      "title": "Ranking Most Painful Skateboard Fails",
+      "video_id": "watch?v=5vPgYdVFU_k",
+      "question": "Did #1 actually hurt the most or should #5 have won? 💀"
+    },
+    {
+      "date": "2026-10-13",
+      "topic": "CS2 Moments",
+      "title": "Ranking Wildest CS2 Moments",
+      "video_id": "watch?v=gP09R2zM5Ks",
+      "question": "Did the hitreg fail deserve #1 or was the silver lobby worse? 🤔"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-12",
+    "date": "2026-10-13",
     "slots": [
       "18:00",
       "19:00",
@@ -1844,6 +1844,6 @@
       "21:00"
     ]
   },
-  "hook_index": 5,
+  "hook_index": 9,
   "part_two_queue": []
 }
