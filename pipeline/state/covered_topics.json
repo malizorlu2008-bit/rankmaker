@@ -234,41 +234,13 @@
     "Treadmill Fail",
     "Rocket League Moments",
     "Skate Fail",
-    "CS2 Moments"
+    "CS2 Moments",
+    "Golf Fail",
+    "CS2 Moments",
+    "Slip And Slide",
+    "Fortnite Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-08-22",
-      "topic": "Snow Fail",
-      "title": "Ranking Worst Snow Fails",
-      "video_id": "watch?v=zSphys-cqjo",
-      "question": "Did #3 deserve #1 or was the rail crash worse? 😳",
-      "commented": true
-    },
-    {
-      "date": "2026-08-22",
-      "topic": "Football Fail",
-      "title": "Ranking Most Embarrassing Football Fails",
-      "video_id": "watch?v=QMWD52VferQ",
-      "question": "Be honest, which clip was the most embarrassing fail? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-08-23",
-      "topic": "Animals Being Derps",
-      "title": "Ranking Most Epic Animal Moments",
-      "video_id": "watch?v=d4WvFSsZg54",
-      "question": "Was #5 really the most epic moment, or did the buck get robbed? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-08-23",
-      "topic": "Minecraft Moments",
-      "title": "Ranking Weirdest Minecraft Moments",
-      "video_id": "watch?v=D5A0ELDQ-K4",
-      "question": "Be honest, which clip deserved the #1 spot? 🤔",
-      "commented": true
-    },
     {
       "date": "2026-08-23",
       "topic": "Gender Reveal",
@@ -1836,11 +1808,39 @@
       "video_id": "watch?v=gP09R2zM5Ks",
       "question": "Did the hitreg fail deserve #1 or was the silver lobby worse? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-10-14",
+      "topic": "Golf Fail",
+      "title": "Ranking Funniest Golf Fails",
+      "video_id": "watch?v=q8hLSf1DGwk",
+      "question": "Be honest, was #1 actually the funniest fail?"
+    },
+    {
+      "date": "2026-10-14",
+      "topic": "CS2 Moments",
+      "title": "Ranking Wildest CS2 Moments",
+      "video_id": "watch?v=e-vdCakCOnU",
+      "question": "Be honest, was #1 actually the wilder clip or Dust2 Long? 💀"
+    },
+    {
+      "date": "2026-10-14",
+      "topic": "Slip And Slide",
+      "title": "Ranking Best Slip And Slide Fails",
+      "video_id": "watch?v=pY1GvB_W9xk",
+      "question": "Be honest, was the last one robbed of #1?"
+    },
+    {
+      "date": "2026-10-14",
+      "topic": "Fortnite Moments",
+      "title": "Ranking Most Epic Fortnite Moments",
+      "video_id": "watch?v=kHN4uRsIqag",
+      "question": "Was #1 actually the best play or did #4 take it? 🤔"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-13",
+    "date": "2026-10-14",
     "slots": [
       "18:00",
       "19:00",
@@ -1848,6 +1848,6 @@
       "21:00"
     ]
   },
-  "hook_index": 9,
+  "hook_index": 13,
   "part_two_queue": []
 }
