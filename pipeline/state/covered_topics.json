@@ -238,41 +238,13 @@
     "Golf Fail",
     "CS2 Moments",
     "Slip And Slide",
+    "Fortnite Moments",
+    "Golf Fail",
+    "CS2 Moments",
+    "Puppy Moments",
     "Fortnite Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-08-23",
-      "topic": "Gender Reveal",
-      "title": "Ranking Best Gender Reveal Fails",
-      "video_id": "watch?v=kNX_W07gmVQ",
-      "question": "Be honest, was #5 or #2 the ultimate fail? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-08-23",
-      "topic": "Horror Game Reaction",
-      "title": "Ranking Wildest Horror Game Moments",
-      "video_id": "watch?v=8edM33navuo",
-      "question": "Be honest, was #1 actually the scariest moment here? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-08-24",
-      "topic": "Water Prank",
-      "title": "Ranking Most Unreal Water Prank Moments",
-      "video_id": "watch?v=OCkq3PpK6xw",
-      "question": "Be honest, did #5 go way too far or was #3 worse? 😳",
-      "commented": true
-    },
-    {
-      "date": "2026-08-24",
-      "topic": "GTA Moments",
-      "title": "Ranking Most Epic GTA Moments",
-      "video_id": "watch?v=9zg1s01tRdw",
-      "question": "Was #3's Beyblade glitch or #4's flying launch the real #1 winner? 🚗",
-      "commented": true
-    },
     {
       "date": "2026-08-24",
       "topic": "Husky Talking",
@@ -1840,11 +1812,39 @@
       "video_id": "watch?v=kHN4uRsIqag",
       "question": "Was #1 actually the best play or did #4 take it? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-10-15",
+      "topic": "Golf Fail",
+      "title": "Ranking Most Awkward Golf Fails",
+      "video_id": "watch?v=fVGfTHfMGsI",
+      "question": "Was #4 really the most embarrassing fail on the list or did #2 take it? 💀"
+    },
+    {
+      "date": "2026-10-15",
+      "topic": "CS2 Moments",
+      "title": "Ranking Funniest CS2 Moments",
+      "video_id": "watch?v=MUCx8EJmf2s",
+      "question": "Which was funnier: the failed reload at #3 or the rage at #5? 💀"
+    },
+    {
+      "date": "2026-10-15",
+      "topic": "Puppy Moments",
+      "title": "Ranking Wildest Puppy Moments",
+      "video_id": "watch?v=KzHO0ioHTBQ",
+      "question": "Be honest, did the swinging lab or the spoiled yorkie deserve #1? 🤔"
+    },
+    {
+      "date": "2026-10-15",
+      "topic": "Fortnite Moments",
+      "title": "Ranking Weirdest Fortnite Moments",
+      "video_id": "watch?v=wO_OCe5xQhs",
+      "question": "Did the blind aim clip deserve #1 or was Chica weirder? 🤔"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-14",
+    "date": "2026-10-15",
     "slots": [
       "18:00",
       "19:00",
@@ -1852,6 +1852,6 @@
       "21:00"
     ]
   },
-  "hook_index": 13,
+  "hook_index": 17,
   "part_two_queue": []
 }
