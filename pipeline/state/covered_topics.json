@@ -242,41 +242,13 @@
     "Golf Fail",
     "CS2 Moments",
     "Puppy Moments",
-    "Fortnite Moments"
+    "Fortnite Moments",
+    "Bike Fail",
+    "Rocket League Moments",
+    "Gender Reveal",
+    "GTA Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-08-24",
-      "topic": "Husky Talking",
-      "title": "Ranking Funniest Husky Talking Moments",
-      "video_id": "watch?v=L7OXcn7PmHw",
-      "question": "Be honest, was #1 really the most dramatic or did #5 deserve top spot?",
-      "commented": true
-    },
-    {
-      "date": "2026-08-24",
-      "topic": "Roblox Moments",
-      "title": "Ranking Wildest Roblox Moments",
-      "video_id": "watch?v=rWS9KX7ZAJY",
-      "question": "Which moment was actually the wildest, #1 or #4? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-08-25",
-      "topic": "Cat Jump Fail",
-      "title": "Ranking Most Savage Cat Jump Fails",
-      "video_id": "watch?v=F6_fs5HhVeY",
-      "question": "Be honest, was #1 really the worst jump fail? 😭",
-      "commented": true
-    },
-    {
-      "date": "2026-08-25",
-      "topic": "Animals Being Derps",
-      "title": "Ranking Funniest Animal Moments",
-      "video_id": "watch?v=5WWbVZGzxmI",
-      "question": "Be honest, did the jumping monkeys deserve #1? 🐒",
-      "commented": true
-    },
     {
       "date": "2026-08-25",
       "topic": "Minecraft Moments",
@@ -1844,11 +1816,39 @@
       "video_id": "watch?v=wO_OCe5xQhs",
       "question": "Did the blind aim clip deserve #1 or was Chica weirder? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-10-16",
+      "topic": "Bike Fail",
+      "title": "Ranking Most Awkward Bike Fails",
+      "video_id": "watch?v=IMpRDACLg8w",
+      "question": "Which was worse: falling on indoor rollers or laying in the grass at #1? 🤔"
+    },
+    {
+      "date": "2026-10-16",
+      "topic": "Rocket League Moments",
+      "title": "Ranking Most Savage Rocket League Moments",
+      "video_id": "watch?v=XrJKUsFCqYM",
+      "question": "Be honest, did #2 deserve the #1 spot or #5? 🤔"
+    },
+    {
+      "date": "2026-10-16",
+      "topic": "Gender Reveal",
+      "title": "Ranking Worst Gender Reveal Fails",
+      "video_id": "watch?v=D87qZXhvaWo",
+      "question": "Did the cake puncher deserve #1 or was the truck fail worse? 🤔"
+    },
+    {
+      "date": "2026-10-16",
+      "topic": "GTA Moments",
+      "title": "Ranking Wildest GTA Moments",
+      "video_id": "watch?v=OcqpRNCwaU0",
+      "question": "Be honest, did #1 deserve the top spot or was #4 wilder? 🤔"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-15",
+    "date": "2026-10-16",
     "slots": [
       "18:00",
       "19:00",
@@ -1856,6 +1856,6 @@
       "21:00"
     ]
   },
-  "hook_index": 17,
+  "hook_index": 21,
   "part_two_queue": []
 }
