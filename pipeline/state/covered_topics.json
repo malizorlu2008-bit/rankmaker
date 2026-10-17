@@ -246,41 +246,13 @@
     "Bike Fail",
     "Rocket League Moments",
     "Gender Reveal",
-    "GTA Moments"
+    "GTA Moments",
+    "Animals Being Derps",
+    "Lethal Company",
+    "Golf Fail",
+    "Valorant Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-08-25",
-      "topic": "Minecraft Moments",
-      "title": "Ranking Most Savage Minecraft Moments",
-      "video_id": "watch?v=m-y-IpfCO6Y",
-      "question": "Was #1 really the most savage moment or did #4 take it? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-08-26",
-      "topic": "Jump Scare",
-      "title": "Ranking Most Unexpected Jump Scare Moments",
-      "video_id": "watch?v=SqDA9p-2UtA",
-      "question": "Be honest, did #2 or #4 make you jump harder? 😳",
-      "commented": true
-    },
-    {
-      "date": "2026-08-26",
-      "topic": "Rage Quit",
-      "title": "Ranking Most Unreal Rage Quit Moments",
-      "video_id": "watch?v=uiH1KqOwwtI",
-      "question": "Be honest, was #2 or #5 the worst rage quit here? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-08-26",
-      "topic": "Cat Knocking Things",
-      "title": "Ranking Wildest Cat Moments",
-      "video_id": "watch?v=nQaZPBYdCao",
-      "question": "Be honest, which of these cat moments actually deserved #1?",
-      "commented": true
-    },
     {
       "date": "2026-08-26",
       "topic": "GTA Moments",
@@ -1848,11 +1820,39 @@
       "video_id": "watch?v=OcqpRNCwaU0",
       "question": "Be honest, did #1 deserve the top spot or was #4 wilder? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-10-17",
+      "topic": "Animals Being Derps",
+      "title": "Ranking Most Unexpected Animal Moments",
+      "video_id": "watch?v=05j7rob4k_8",
+      "question": "Be honest, was #1 actually the most unexpected animal clip?"
+    },
+    {
+      "date": "2026-10-17",
+      "topic": "Lethal Company",
+      "title": "Ranking Craziest Lethal Company Moments",
+      "video_id": "watch?v=EI00iwoZ_jA",
+      "question": "Did #1 deserve top spot or was #4 the craziest clip? 💀"
+    },
+    {
+      "date": "2026-10-17",
+      "topic": "Golf Fail",
+      "title": "Ranking Best Golf Fails",
+      "video_id": "watch?v=dDTYMJZ-Hxs",
+      "question": "Be honest, which clip deserved the #1 spot? ⛳"
+    },
+    {
+      "date": "2026-10-17",
+      "topic": "Valorant Moments",
+      "title": "Ranking Funniest Valorant Moments",
+      "video_id": "watch?v=6Fn_LrZcYRk",
+      "question": "Be honest, was #1 really the funniest clip? 😂"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-16",
+    "date": "2026-10-17",
     "slots": [
       "18:00",
       "19:00",
@@ -1860,6 +1860,6 @@
       "21:00"
     ]
   },
-  "hook_index": 21,
+  "hook_index": 25,
   "part_two_queue": []
 }
