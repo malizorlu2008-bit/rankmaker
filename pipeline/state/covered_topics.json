@@ -250,41 +250,13 @@
     "Animals Being Derps",
     "Lethal Company",
     "Golf Fail",
-    "Valorant Moments"
+    "Valorant Moments",
+    "Sheep Moments",
+    "Fortnite Moments",
+    "Puppy Moments",
+    "GTA Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-08-26",
-      "topic": "GTA Moments",
-      "title": "Ranking Most Awkward GTA Moments",
-      "video_id": "watch?v=f1CabxHiEV0",
-      "question": "Be honest, which clip was actually the most awkward? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-08-27",
-      "topic": "GTA Moments",
-      "title": "Ranking Funniest GTA Moments",
-      "video_id": "watch?v=Por0rWXmU3Q",
-      "question": "Was Trevor stopping the train at #1 deserved, or did the laser fail rob it? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-08-28",
-      "topic": "Wedding",
-      "title": "Ranking Weirdest Wedding Fails",
-      "video_id": "watch?v=swf2KO-PZYY",
-      "question": "Was the hair disaster the clear #1 fail, or clip 1? 👇",
-      "commented": true
-    },
-    {
-      "date": "2026-08-28",
-      "topic": "Rocket League Moments",
-      "title": "Ranking Most Epic Rocket League Moments",
-      "video_id": "watch?v=nMUE6JNYA7U",
-      "question": "Be honest, did #1 deserve the top spot or was it overrated? 🤔",
-      "commented": true
-    },
     {
       "date": "2026-08-28",
       "topic": "Cat Jump Moments",
@@ -1852,11 +1824,39 @@
       "video_id": "watch?v=6Fn_LrZcYRk",
       "question": "Be honest, was #1 really the funniest clip? 😂",
       "commented": true
+    },
+    {
+      "date": "2026-10-18",
+      "topic": "Sheep Moments",
+      "title": "Ranking Wildest Sheep Moments",
+      "video_id": "watch?v=w3AbeF_fHG0",
+      "question": "Did the baby sheep at #5 deserve the top spot, or was #1 unbeatable?"
+    },
+    {
+      "date": "2026-10-18",
+      "topic": "Fortnite Moments",
+      "title": "Ranking Funniest Fortnite Moments",
+      "video_id": "watch?v=gyYW6mEDyhk",
+      "question": "Be honest, was #4 or #2 the funniest moment? 🤔"
+    },
+    {
+      "date": "2026-10-18",
+      "topic": "Puppy Moments",
+      "title": "Ranking Funniest Puppy Moments",
+      "video_id": "watch?v=-p7hJJISqis",
+      "question": "Was #1 actually the funniest puppy or did #3 steal the show? 🤔"
+    },
+    {
+      "date": "2026-10-18",
+      "topic": "GTA Moments",
+      "title": "Ranking Most Unexpected GTA Moments",
+      "video_id": "watch?v=6qGQTtrmaLk",
+      "question": "Was #1 really the most unexpected GTA moment? 🤔"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-17",
+    "date": "2026-10-18",
     "slots": [
       "18:00",
       "19:00",
@@ -1864,6 +1864,6 @@
       "21:00"
     ]
   },
-  "hook_index": 25,
+  "hook_index": 1,
   "part_two_queue": []
 }
