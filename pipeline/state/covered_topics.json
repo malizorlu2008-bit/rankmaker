@@ -254,41 +254,13 @@
     "Sheep Moments",
     "Fortnite Moments",
     "Puppy Moments",
-    "GTA Moments"
+    "GTA Moments",
+    "Puppy Moments",
+    "GTA Moments",
+    "Freestyle Football",
+    "Fall Guys"
   ],
   "uploads": [
-    {
-      "date": "2026-08-28",
-      "topic": "Cat Jump Moments",
-      "title": "Ranking Wildest Cat Jump Moments",
-      "video_id": "watch?v=LXwW6Ljaqz4",
-      "question": "Which cat jump deserved the #1 spot?",
-      "commented": true
-    },
-    {
-      "date": "2026-08-28",
-      "topic": "Call Of Duty Moments",
-      "title": "Ranking Most Unreal Call Of Duty Moments",
-      "video_id": "watch?v=kbr7sq0X1t4",
-      "question": "Be honest, did #2 get robbed of the #1 spot? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-08-29",
-      "topic": "Horse Moments",
-      "title": "Ranking Craziest Horse Moments",
-      "video_id": "watch?v=Du1vyjyGnFg",
-      "question": "Did clip 5 deserve #1 or was the noodle horse robbed? 🐴",
-      "commented": true
-    },
-    {
-      "date": "2026-08-29",
-      "topic": "Horror Game Reaction",
-      "title": "Ranking Most Savage Horror Game Moments",
-      "video_id": "watch?v=XcofVeIesWw",
-      "question": "Be honest, which moment actually scared you the most? 💀",
-      "commented": true
-    },
     {
       "date": "2026-08-29",
       "topic": "Cat Knocking Things",
@@ -1856,11 +1828,39 @@
       "video_id": "watch?v=6qGQTtrmaLk",
       "question": "Was #1 really the most unexpected GTA moment? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-10-19",
+      "topic": "Puppy Moments",
+      "title": "Ranking Most Unreal Puppy Moments",
+      "video_id": "watch?v=uWm4lTSJcLU",
+      "question": "Be honest, was the stair slide puppy robbed of #1? 🐶"
+    },
+    {
+      "date": "2026-10-19",
+      "topic": "GTA Moments",
+      "title": "Ranking Most Unexpected GTA Moments",
+      "video_id": "watch?v=dBpUyUas3wI",
+      "question": "Be honest, did #5 actually deserve #1 for that landing? 💀"
+    },
+    {
+      "date": "2026-10-19",
+      "topic": "Freestyle Football",
+      "title": "Ranking Funniest Freestyle Football Moments",
+      "video_id": "watch?v=WluLeJIssNs",
+      "question": "Be honest, was grandpa at #3 the real #1 winner? 🤔"
+    },
+    {
+      "date": "2026-10-19",
+      "topic": "Fall Guys",
+      "title": "Ranking Most Awkward Fall Guys Moments",
+      "video_id": "watch?v=Ei1Tk9nZUjE",
+      "question": "Be honest, was #5 or #1 the most awkward fail? 🤔"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-18",
+    "date": "2026-10-19",
     "slots": [
       "18:00",
       "19:00",
@@ -1868,6 +1868,6 @@
       "21:00"
     ]
   },
-  "hook_index": 1,
+  "hook_index": 5,
   "part_two_queue": []
 }
