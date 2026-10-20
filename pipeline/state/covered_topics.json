@@ -258,41 +258,13 @@
     "Puppy Moments",
     "GTA Moments",
     "Freestyle Football",
+    "Fall Guys",
+    "Puppy Moments",
+    "Horror Game Reaction",
+    "Horse Moments",
     "Fall Guys"
   ],
   "uploads": [
-    {
-      "date": "2026-08-29",
-      "topic": "Cat Knocking Things",
-      "title": "Ranking Funniest Cat Moments",
-      "video_id": "watch?v=l4EK7KHKFAg",
-      "question": "Be honest, was #1 actually the funniest or did the bread thief get robbed? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-08-29",
-      "topic": "Fortnite Moments",
-      "title": "Ranking Most Savage Fortnite Moments",
-      "video_id": "watch?v=Z3zvpFcXBSk",
-      "question": "Be honest, was #1 actually savage or just pure luck? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-08-30",
-      "topic": "Ice Rink",
-      "title": "Ranking Wildest Ice Skating Moments",
-      "video_id": "watch?v=erU85UUp_78",
-      "question": "Which clip deserved #1: the epic lake spin or the ultimate fail?",
-      "commented": true
-    },
-    {
-      "date": "2026-08-30",
-      "topic": "Call Of Duty Moments",
-      "title": "Ranking Most Unexpected Call Of Duty Moments",
-      "video_id": "watch?v=bK1sF2fX6mA",
-      "question": "Which moment deserved #1: Snoop Dogg or the spin tech? 🤔",
-      "commented": true
-    },
     {
       "date": "2026-08-30",
       "topic": "Goat Screaming",
@@ -1860,11 +1832,39 @@
       "video_id": "watch?v=Ei1Tk9nZUjE",
       "question": "Be honest, was #5 or #1 the most awkward fail? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-10-20",
+      "topic": "Puppy Moments",
+      "title": "Ranking Most Awkward Puppy Moments",
+      "video_id": "watch?v=t8ccE0v1i8w",
+      "question": "Be honest, did #1 deserve the top spot or was #3 way more awkward? 🐶"
+    },
+    {
+      "date": "2026-10-20",
+      "topic": "Horror Game Reaction",
+      "title": "Ranking Weirdest Horror Game Moments",
+      "video_id": "watch?v=0X4WJ5A3xD4",
+      "question": "Did #1 actually deserve top spot or was #5 weirder?"
+    },
+    {
+      "date": "2026-10-20",
+      "topic": "Horse Moments",
+      "title": "Ranking Weirdest Horse Moments",
+      "video_id": "watch?v=MgS_GZ1bKQM",
+      "question": "Was #3 actually the weirdest moment or did #5 get robbed?"
+    },
+    {
+      "date": "2026-10-20",
+      "topic": "Fall Guys",
+      "title": "Ranking Most Awkward Fall Guys Moments",
+      "video_id": "watch?v=Bm4EEeNaIk4",
+      "question": "Did #1 really deserve top spot or was #3 stolen?"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-19",
+    "date": "2026-10-20",
     "slots": [
       "18:00",
       "19:00",
@@ -1872,6 +1872,6 @@
       "21:00"
     ]
   },
-  "hook_index": 5,
+  "hook_index": 9,
   "part_two_queue": []
 }
