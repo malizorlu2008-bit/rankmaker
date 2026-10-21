@@ -262,41 +262,13 @@
     "Puppy Moments",
     "Horror Game Reaction",
     "Horse Moments",
-    "Fall Guys"
+    "Fall Guys",
+    "Puppy Moments",
+    "Roblox Moments",
+    "Horse Moments",
+    "Fortnite Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-08-30",
-      "topic": "Goat Screaming",
-      "title": "Ranking Most Unreal Goat Moments",
-      "video_id": "watch?v=2_owhsfTEbk",
-      "question": "Which goat deserved #1: the screaming dramatic one or the cute baby? 🐐",
-      "commented": true
-    },
-    {
-      "date": "2026-08-30",
-      "topic": "Minecraft Moments",
-      "title": "Ranking Most Awkward Minecraft Moments",
-      "video_id": "watch?v=EDV-bGRqMMw",
-      "question": "Be honest, was #3 really the most awkward clip here? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-08-31",
-      "topic": "Fortnite Moments",
-      "title": "Ranking Most Awkward Fortnite Moments",
-      "video_id": "watch?v=dKsXk01ckuI",
-      "question": "Be honest, was #5 the most painful awkward moment or #1? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-08-31",
-      "topic": "Skate Fail",
-      "title": "Ranking Craziest Skateboard Fails",
-      "video_id": "watch?v=ZlA3-cz4MYM",
-      "question": "Be honest, was #1 really the worst fail in this video? 🛹",
-      "commented": true
-    },
     {
       "date": "2026-08-31",
       "topic": "Rocket League Moments",
@@ -1864,11 +1836,39 @@
       "video_id": "watch?v=Bm4EEeNaIk4",
       "question": "Did #1 really deserve top spot or was #3 stolen?",
       "commented": true
+    },
+    {
+      "date": "2026-10-21",
+      "topic": "Puppy Moments",
+      "title": "Ranking Most Savage Puppy Moments",
+      "video_id": "watch?v=2M75TYlMQaM",
+      "question": "Be honest, did #2 deserve the top spot?"
+    },
+    {
+      "date": "2026-10-21",
+      "topic": "Roblox Moments",
+      "title": "Ranking Wildest Roblox Moments",
+      "video_id": "watch?v=gUKk6dsIDRI",
+      "question": "Was #3 or #5 the wilder moment? Pick your fighter 👇"
+    },
+    {
+      "date": "2026-10-21",
+      "topic": "Horse Moments",
+      "title": "Ranking Most Savage Horse Moments",
+      "video_id": "watch?v=jH7YhV-Q4Ig",
+      "question": "Was #2 actually the most savage horse moment?"
+    },
+    {
+      "date": "2026-10-21",
+      "topic": "Fortnite Moments",
+      "title": "Ranking Most Unreal Fortnite Moments",
+      "video_id": "watch?v=KjdZQeY5quU",
+      "question": "Be honest, was #1 actually the most unreal or did #4 get robbed? 🤔"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-20",
+    "date": "2026-10-21",
     "slots": [
       "18:00",
       "19:00",
@@ -1876,6 +1876,6 @@
       "21:00"
     ]
   },
-  "hook_index": 9,
+  "hook_index": 13,
   "part_two_queue": []
 }
