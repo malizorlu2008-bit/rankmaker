@@ -266,41 +266,13 @@
     "Puppy Moments",
     "Roblox Moments",
     "Horse Moments",
-    "Fortnite Moments"
+    "Fortnite Moments",
+    "Puppy Moments",
+    "Minecraft Moments",
+    "Horse Moments",
+    "Lethal Company"
   ],
   "uploads": [
-    {
-      "date": "2026-08-31",
-      "topic": "Rocket League Moments",
-      "title": "Ranking Most Savage Rocket League Moments",
-      "video_id": "watch?v=C1wu7sHDbCg",
-      "question": "Be honest, did clip #1 or #5 deserve the top spot? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-08-31",
-      "topic": "Wedding",
-      "title": "Ranking Craziest Wedding Fails",
-      "video_id": "watch?v=S1PlYWjjeQY",
-      "question": "Be honest, was the bouquet toss crash #1 or was #4 worse? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-01",
-      "topic": "Trampoline Moments",
-      "title": "Ranking Craziest Trampoline Moments",
-      "video_id": "watch?v=V-2bmDCuyLM",
-      "question": "Be honest, was #4's insane save the right pick for #1? 🤸",
-      "commented": true
-    },
-    {
-      "date": "2026-09-01",
-      "topic": "Roblox Moments",
-      "title": "Ranking Wildest Roblox Moments",
-      "video_id": "watch?v=k2Y8jqnQUZo",
-      "question": "Which clip was actually the wildest, #2 or #5? 🤔",
-      "commented": true
-    },
     {
       "date": "2026-09-01",
       "topic": "Horror Game Reaction",
@@ -1868,11 +1840,39 @@
       "video_id": "watch?v=KjdZQeY5quU",
       "question": "Be honest, was #1 actually the most unreal or did #4 get robbed? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-10-22",
+      "topic": "Puppy Moments",
+      "title": "Ranking Weirdest Puppy Moments",
+      "video_id": "watch?v=mnOrdZWk5yk",
+      "question": "Did #3 or #5 have the worst fall? 😂"
+    },
+    {
+      "date": "2026-10-22",
+      "topic": "Minecraft Moments",
+      "title": "Ranking Weirdest Minecraft Moments",
+      "video_id": "watch?v=Cjjj2ipgdwk",
+      "question": "Be honest, was #5 actually the weirdest moment?"
+    },
+    {
+      "date": "2026-10-22",
+      "topic": "Horse Moments",
+      "title": "Ranking Most Awkward Horse Moments",
+      "video_id": "watch?v=cdGu1UBoUIE",
+      "question": "Did #1 deserve the top spot, or was #4 a worse fail? 🐴"
+    },
+    {
+      "date": "2026-10-22",
+      "topic": "Lethal Company",
+      "title": "Ranking Most Epic Lethal Company Moments",
+      "video_id": "watch?v=s9uwiwUD7-o",
+      "question": "Be honest, was #3 or #5 the most epic moment here? 🤔"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-21",
+    "date": "2026-10-22",
     "slots": [
       "18:00",
       "19:00",
@@ -1880,6 +1880,6 @@
       "21:00"
     ]
   },
-  "hook_index": 13,
+  "hook_index": 17,
   "part_two_queue": []
 }
