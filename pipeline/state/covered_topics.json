@@ -270,41 +270,13 @@
     "Puppy Moments",
     "Minecraft Moments",
     "Horse Moments",
-    "Lethal Company"
+    "Lethal Company",
+    "Horse Moments",
+    "Fortnite Moments",
+    "Ring Camera",
+    "Minecraft Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-09-01",
-      "topic": "Horror Game Reaction",
-      "title": "Ranking Funniest Horror Game Moments",
-      "video_id": "watch?v=Qcabzb2FX5g",
-      "question": "Did #4 deserve #1 just for vibing, or was #2 funnier? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-01",
-      "topic": "Roblox Moments",
-      "title": "Ranking Wildest Roblox Moments",
-      "video_id": "watch?v=Y6BkE9b5Dyw",
-      "question": "Which clip was actually the wildest, #2 or #5? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-02",
-      "topic": "GTA Moments",
-      "title": "Ranking Most Epic GTA Moments",
-      "video_id": "watch?v=XpyYKEEgFMs",
-      "question": "Which clip actually deserved the #1 spot? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-09-02",
-      "topic": "GTA Moments",
-      "title": "Ranking Craziest GTA Moments",
-      "video_id": "watch?v=DT8BpP4duj0",
-      "question": "Which GTA moment deserved #1, the heist fail or the spin? 🤔",
-      "commented": true
-    },
     {
       "date": "2026-09-02",
       "topic": "Fortnite Moments",
@@ -1872,11 +1844,39 @@
       "video_id": "watch?v=s9uwiwUD7-o",
       "question": "Be honest, was #3 or #5 the most epic moment here? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-10-23",
+      "topic": "Horse Moments",
+      "title": "Ranking Craziest Horse Moments",
+      "video_id": "watch?v=t9ou91l-ItI",
+      "question": "Be honest, which clip actually deserved the #1 spot? 🐎"
+    },
+    {
+      "date": "2026-10-23",
+      "topic": "Fortnite Moments",
+      "title": "Ranking Most Epic Fortnite Moments",
+      "video_id": "watch?v=104qnluIyX8",
+      "question": "Be honest, was #5's nostalgia moment really the #1 epic moment? 😭"
+    },
+    {
+      "date": "2026-10-23",
+      "topic": "Ring Camera",
+      "title": "Ranking Most Savage Ring Camera Moments",
+      "video_id": "watch?v=d_emNCp3Da8",
+      "question": "Which clip was actually the most savage? 🤔"
+    },
+    {
+      "date": "2026-10-23",
+      "topic": "Minecraft Moments",
+      "title": "Ranking Most Savage Minecraft Moments",
+      "video_id": "watch?v=FhwT36NBbFE",
+      "question": "Be honest, was #1 or #5 the most savage moment? 🤔"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-22",
+    "date": "2026-10-23",
     "slots": [
       "18:00",
       "19:00",
@@ -1884,6 +1884,6 @@
       "21:00"
     ]
   },
-  "hook_index": 17,
+  "hook_index": 21,
   "part_two_queue": []
 }
