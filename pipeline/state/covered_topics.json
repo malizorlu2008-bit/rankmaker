@@ -274,41 +274,13 @@
     "Horse Moments",
     "Fortnite Moments",
     "Ring Camera",
-    "Minecraft Moments"
+    "Minecraft Moments",
+    "Puppy Moments",
+    "Fortnite Moments",
+    "Freestyle Football",
+    "Horse Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-09-02",
-      "topic": "Fortnite Moments",
-      "title": "Ranking Most Awkward Fortnite Moments",
-      "video_id": "watch?v=G2GbTDtJPFk",
-      "question": "Be honest, was clip #1 or #3 the most awkward moment? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-09-03",
-      "topic": "Minecraft Moments",
-      "title": "Ranking Most Awkward Minecraft Moments",
-      "video_id": "watch?v=U91nDqPFFEE",
-      "question": "Was clip 2 or clip 5 the most awkward moment here? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-09-03",
-      "topic": "Call Of Duty Moments",
-      "title": "Ranking Most Savage Call Of Duty Moments",
-      "video_id": "watch?v=Kznc2aDEFHM",
-      "question": "Be honest, did #1 or #5 deserve the top spot? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-03",
-      "topic": "Parrot Talking",
-      "title": "Ranking Most Savage Parrot Moments",
-      "video_id": "watch?v=EajMaCfuTVE",
-      "question": "Did the Alexa alarm deserve #1, or was #2 way more savage? 💀",
-      "commented": true
-    },
     {
       "date": "2026-09-03",
       "topic": "Fortnite Moments",
@@ -1876,11 +1848,39 @@
       "video_id": "watch?v=FhwT36NBbFE",
       "question": "Be honest, was #1 or #5 the most savage moment? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-10-24",
+      "topic": "Puppy Moments",
+      "title": "Ranking Most Unreal Puppy Moments",
+      "video_id": "watch?v=z2BN3QOnNNg",
+      "question": "Be honest, was #5 the cutest puppy moment or did #1 win? 🐶"
+    },
+    {
+      "date": "2026-10-24",
+      "topic": "Fortnite Moments",
+      "title": "Ranking Most Savage Fortnite Moments",
+      "video_id": "watch?v=TlVidqhnrss",
+      "question": "Which clip was the most savage fail, #3 or #4? 💀"
+    },
+    {
+      "date": "2026-10-24",
+      "topic": "Freestyle Football",
+      "title": "Ranking Most Epic Freestyle Football Moments",
+      "video_id": "watch?v=0nTBQ6_Kk50",
+      "question": "Be honest, was #1 actually the most epic trick here?"
+    },
+    {
+      "date": "2026-10-24",
+      "topic": "Horse Moments",
+      "title": "Ranking Funniest Horse Moments",
+      "video_id": "watch?v=ZHZ6qhEcwds",
+      "question": "Which horse fail made you laugh the hardest? 🐴"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-23",
+    "date": "2026-10-24",
     "slots": [
       "18:00",
       "19:00",
@@ -1888,6 +1888,6 @@
       "21:00"
     ]
   },
-  "hook_index": 21,
+  "hook_index": 25,
   "part_two_queue": []
 }
