@@ -278,41 +278,13 @@
     "Puppy Moments",
     "Fortnite Moments",
     "Freestyle Football",
-    "Horse Moments"
+    "Horse Moments",
+    "Ring Camera",
+    "Lethal Company",
+    "Cat Jump Moments",
+    "Scared Cat"
   ],
   "uploads": [
-    {
-      "date": "2026-09-03",
-      "topic": "Fortnite Moments",
-      "title": "Ranking Most Unexpected Fortnite Moments",
-      "video_id": "watch?v=fiqV-ZPC67o",
-      "question": "Was #1 actually the most unexpected moment or was it completely staged?",
-      "commented": true
-    },
-    {
-      "date": "2026-09-04",
-      "topic": "Rage Quit",
-      "title": "Ranking Most Savage Rage Quit Moments",
-      "video_id": "watch?v=caZdt_NrUIE",
-      "question": "Which rage quit was the most justified?",
-      "commented": true
-    },
-    {
-      "date": "2026-09-04",
-      "topic": "Scare Cam",
-      "title": "Ranking Most Savage Scare Moments",
-      "video_id": "watch?v=wd7FqaJDnSQ",
-      "question": "Was #2 or #4 the jump scare that actually got you? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-04",
-      "topic": "Rocket League Moments",
-      "title": "Ranking Most Epic Rocket League Moments",
-      "video_id": "watch?v=lkkeDLTzgUc",
-      "question": "Was #4 really the best goal of the year or did #1 take it?",
-      "commented": true
-    },
     {
       "date": "2026-09-05",
       "topic": "Horse Moments",
@@ -1880,11 +1852,39 @@
       "video_id": "watch?v=ZHZ6qhEcwds",
       "question": "Which horse fail made you laugh the hardest? 🐴",
       "commented": true
+    },
+    {
+      "date": "2026-10-25",
+      "topic": "Ring Camera",
+      "title": "Ranking Wildest Ring Camera Moments",
+      "video_id": "watch?v=5oVl0mFXccw",
+      "question": "Was #4 really the creepiest or did #1 take the crown? 🤔"
+    },
+    {
+      "date": "2026-10-25",
+      "topic": "Lethal Company",
+      "title": "Ranking Funniest Lethal Company Moments",
+      "video_id": "watch?v=q2Rwcpxb_hE",
+      "question": "Be honest, was #1 or #4 the funniest? 💀"
+    },
+    {
+      "date": "2026-10-25",
+      "topic": "Cat Jump Moments",
+      "title": "Ranking Funniest Cat Jump Moments",
+      "video_id": "watch?v=FUVz3rKLPg8",
+      "question": "Was #1 really the biggest jump fail or did #4 steal the spot? 🤔"
+    },
+    {
+      "date": "2026-10-25",
+      "topic": "Scared Cat",
+      "title": "Ranking Most Unreal Scared Cat Moments",
+      "video_id": "watch?v=MEklyPbsYi8",
+      "question": "Be honest, was #1 actually the right pick? 🐱"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-24",
+    "date": "2026-10-25",
     "slots": [
       "18:00",
       "19:00",
@@ -1892,6 +1892,6 @@
       "21:00"
     ]
   },
-  "hook_index": 25,
+  "hook_index": 1,
   "part_two_queue": []
 }
