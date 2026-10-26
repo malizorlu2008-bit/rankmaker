@@ -282,41 +282,13 @@
     "Ring Camera",
     "Lethal Company",
     "Cat Jump Moments",
-    "Scared Cat"
+    "Scared Cat",
+    "Puppy Moments",
+    "CS2 Moments",
+    "Jet Ski Fail",
+    "Fortnite Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-09-05",
-      "topic": "Horse Moments",
-      "title": "Ranking Most Unreal Horse Moments",
-      "video_id": "watch?v=TeEeZO_o25A",
-      "question": "Did #2 deserve the #1 spot, or was the window horse way crazier?",
-      "commented": true
-    },
-    {
-      "date": "2026-09-05",
-      "topic": "Fortnite Moments",
-      "title": "Ranking Weirdest Fortnite Moments",
-      "video_id": "watch?v=u7fzXSVffN0",
-      "question": "Which clip deserved the #1 weirdest spot? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-05",
-      "topic": "Football Fail",
-      "title": "Ranking Most Epic Football Fails",
-      "video_id": "watch?v=r5W7FVbtwQM",
-      "question": "Did #4 deserve #1 for taking a soccer ball directly to the face? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-05",
-      "topic": "Call Of Duty Moments",
-      "title": "Ranking Most Epic Call Of Duty Moments",
-      "video_id": "watch?v=GZzHRgROOwo",
-      "question": "Be honest, was #5 really the most epic moment here?",
-      "commented": true
-    },
     {
       "date": "2026-09-06",
       "topic": "Puppy Moments",
@@ -1884,11 +1856,39 @@
       "video_id": "watch?v=MEklyPbsYi8",
       "question": "Be honest, was #1 actually the right pick? 🐱",
       "commented": true
+    },
+    {
+      "date": "2026-10-26",
+      "topic": "Puppy Moments",
+      "title": "Ranking Most Awkward Puppy Moments",
+      "video_id": "watch?v=PYJWyYnyOTc",
+      "question": "Which puppy had the most awkward moment, #2 or #5? 🐶"
+    },
+    {
+      "date": "2026-10-26",
+      "topic": "CS2 Moments",
+      "title": "Ranking Funniest CS2 Moments",
+      "video_id": "watch?v=pLOWJ1yZpFs",
+      "question": "Be honest, was #1 actually the funniest clip? 💀"
+    },
+    {
+      "date": "2026-10-26",
+      "topic": "Jet Ski Fail",
+      "title": "Ranking Most Painful Jet Ski Fails",
+      "video_id": "watch?v=9vriOpa18_o",
+      "question": "Which wipeout was actually the worst? 🤔"
+    },
+    {
+      "date": "2026-10-26",
+      "topic": "Fortnite Moments",
+      "title": "Ranking Weirdest Fortnite Moments",
+      "video_id": "watch?v=49GIepAYfRw",
+      "question": "Which clip was actually the weirdest: #3 or #5? 🤔"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-25",
+    "date": "2026-10-26",
     "slots": [
       "18:00",
       "19:00",
@@ -1896,6 +1896,6 @@
       "21:00"
     ]
   },
-  "hook_index": 1,
+  "hook_index": 5,
   "part_two_queue": []
 }
