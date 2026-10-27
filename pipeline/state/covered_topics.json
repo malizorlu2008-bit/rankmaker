@@ -286,41 +286,13 @@
     "Puppy Moments",
     "CS2 Moments",
     "Jet Ski Fail",
-    "Fortnite Moments"
+    "Fortnite Moments",
+    "Cat Jump Moments",
+    "Jet Ski Fail",
+    "Puppy Moments",
+    "GTA Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-09-06",
-      "topic": "Puppy Moments",
-      "title": "Ranking Most Savage Puppy Moments",
-      "video_id": "watch?v=mpC-s_ULaII",
-      "question": "Be honest, which puppy was actually the most savage?",
-      "commented": true
-    },
-    {
-      "date": "2026-09-06",
-      "topic": "Fall Guys",
-      "title": "Ranking Most Unexpected Fall Guys Moments",
-      "video_id": "watch?v=gECikTBJnQI",
-      "question": "Did clip #3 get robbed or was #1 actually the most unexpected? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-09-06",
-      "topic": "Jet Ski Fail",
-      "title": "Ranking Most Awkward Jet Ski Fails",
-      "video_id": "watch?v=XHrrjzzqbdU",
-      "question": "Which fail was actually the most painful: #4 or #5? 😳",
-      "commented": true
-    },
-    {
-      "date": "2026-09-06",
-      "topic": "Lethal Company",
-      "title": "Ranking Most Savage Lethal Company Moments",
-      "video_id": "watch?v=0rcMCzZdEx0",
-      "question": "Be honest, was clip #5 really the most savage moment?",
-      "commented": true
-    },
     {
       "date": "2026-09-07",
       "topic": "Golf Fail",
@@ -1888,11 +1860,39 @@
       "video_id": "watch?v=49GIepAYfRw",
       "question": "Which clip was actually the weirdest: #3 or #5? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-10-27",
+      "topic": "Cat Jump Moments",
+      "title": "Ranking Most Unreal Cat Jump Moments",
+      "video_id": "watch?v=Sw35zmyjxAI",
+      "question": "Did #4 deserve #1 or was #2 robbed?"
+    },
+    {
+      "date": "2026-10-27",
+      "topic": "Jet Ski Fail",
+      "title": "Ranking Most Epic Jet Ski Fails",
+      "video_id": "watch?v=XaG22mRCkOw",
+      "question": "Which clip deserved #1: the 30k spin out or the turbo fail? 😳"
+    },
+    {
+      "date": "2026-10-27",
+      "topic": "Puppy Moments",
+      "title": "Ranking Most Savage Puppy Moments",
+      "video_id": "watch?v=H7yNUZ_0J7U",
+      "question": "Was #5 getting humbled the most savage moment, or #2? 🐶"
+    },
+    {
+      "date": "2026-10-27",
+      "topic": "GTA Moments",
+      "title": "Ranking Most Epic GTA Moments",
+      "video_id": "watch?v=AiSr090_udc",
+      "question": "Did #4 deserve the top spot or was #2 way more iconic? 🎮"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-26",
+    "date": "2026-10-27",
     "slots": [
       "18:00",
       "19:00",
@@ -1900,6 +1900,6 @@
       "21:00"
     ]
   },
-  "hook_index": 5,
+  "hook_index": 9,
   "part_two_queue": []
 }
