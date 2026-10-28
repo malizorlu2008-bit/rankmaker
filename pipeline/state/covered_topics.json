@@ -290,41 +290,13 @@
     "Cat Jump Moments",
     "Jet Ski Fail",
     "Puppy Moments",
-    "GTA Moments"
+    "GTA Moments",
+    "Puppy Moments",
+    "Valorant Moments",
+    "Freestyle Football",
+    "Horse Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-09-07",
-      "topic": "Golf Fail",
-      "title": "Ranking Best Golf Fails",
-      "video_id": "watch?v=stOX9Ir7RcU",
-      "question": "Be honest, was #1 the ultimate fail or #5?",
-      "commented": true
-    },
-    {
-      "date": "2026-09-07",
-      "topic": "Valorant Moments",
-      "title": "Ranking Funniest Valorant Moments",
-      "video_id": "watch?v=2Zt2J0lK9yU",
-      "question": "Be honest, was #1 or #5 the worst fail in this video? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-07",
-      "topic": "Monkey Stealing",
-      "title": "Ranking Most Epic Monkey Moments",
-      "video_id": "watch?v=jDgX_HqkZt0",
-      "question": "Which clip deserved #1: the hero jump or the push? 🐒",
-      "commented": true
-    },
-    {
-      "date": "2026-09-07",
-      "topic": "CS2 Moments",
-      "title": "Ranking Most Unexpected CS2 Moments",
-      "video_id": "watch?v=jrW5LSLxqA8",
-      "question": "Was #5 really worse than #2, or did the knife inspect make it #1? 😂",
-      "commented": true
-    },
     {
       "date": "2026-09-08",
       "topic": "Sheep Moments",
@@ -1892,11 +1864,39 @@
       "video_id": "watch?v=AiSr090_udc",
       "question": "Did #4 deserve the top spot or was #2 way more iconic? 🎮",
       "commented": true
+    },
+    {
+      "date": "2026-10-28",
+      "topic": "Puppy Moments",
+      "title": "Ranking Weirdest Puppy Moments",
+      "video_id": "watch?v=3I1xSL1wbRg",
+      "question": "Be honest, was #3 or #1 the weirdest puppy moment? 👇"
+    },
+    {
+      "date": "2026-10-28",
+      "topic": "Valorant Moments",
+      "title": "Ranking Most Unexpected Valorant Moments",
+      "video_id": "watch?v=khtLeTgbQRI",
+      "question": "Which of these Valorant clips deserved the #1 spot? 💀"
+    },
+    {
+      "date": "2026-10-28",
+      "topic": "Freestyle Football",
+      "title": "Ranking Most Savage Freestyle Football Moments",
+      "video_id": "watch?v=BVRuw9_12mM",
+      "question": "Be honest, was #1 actually the most savage clip? 🤔"
+    },
+    {
+      "date": "2026-10-28",
+      "topic": "Horse Moments",
+      "title": "Ranking Funniest Horse Moments",
+      "video_id": "watch?v=UFzMBtjs-I4",
+      "question": "Did #1 actually belong in a funny ranking or was it just wholesome? 🤔"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-27",
+    "date": "2026-10-28",
     "slots": [
       "18:00",
       "19:00",
@@ -1904,6 +1904,6 @@
       "21:00"
     ]
   },
-  "hook_index": 9,
+  "hook_index": 13,
   "part_two_queue": []
 }
