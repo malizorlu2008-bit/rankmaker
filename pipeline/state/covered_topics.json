@@ -1898,7 +1898,8 @@
       "topic": "Cow Moments",
       "title": "Ranking Funniest Cow Moments",
       "video_id": "watch?v=gORwVgEgi5E",
-      "question": "Which cow moment definitely deserved #1? 🐮"
+      "question": "Which cow moment definitely deserved #1? 🐮",
+      "commented": true
     }
   ],
   "satisfying_index": 10,
