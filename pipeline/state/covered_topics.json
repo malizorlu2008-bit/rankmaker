@@ -294,41 +294,13 @@
     "Puppy Moments",
     "Valorant Moments",
     "Freestyle Football",
-    "Horse Moments"
+    "Horse Moments",
+    "Scared Cat",
+    "Puppy Moments",
+    "Horse Moments",
+    "Cow Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-09-08",
-      "topic": "Sheep Moments",
-      "title": "Ranking Weirdest Sheep Moments",
-      "video_id": "watch?v=gaXdp4Ar36c",
-      "question": "Which sheep moment deserved #1? 🐑",
-      "commented": true
-    },
-    {
-      "date": "2026-09-08",
-      "topic": "CS2 Moments",
-      "title": "Ranking Most Savage CS2 Moments",
-      "video_id": "watch?v=OUGbYS9MPwQ",
-      "question": "Which moment deserved #1: the horror clip or the cowboy duel? 🎯",
-      "commented": true
-    },
-    {
-      "date": "2026-09-08",
-      "topic": "Treadmill Fail",
-      "title": "Ranking Most Painful Treadmill Fails",
-      "video_id": "watch?v=HxXOA4ODp2U",
-      "question": "Did #3 deserve #1 or was #4 way worse? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-08",
-      "topic": "Valorant Moments",
-      "title": "Ranking Most Epic Valorant Moments",
-      "video_id": "watch?v=Ft3ILW_PB38",
-      "question": "Be honest, did clip #1 or #3 deserve the top spot? 💀",
-      "commented": true
-    },
     {
       "date": "2026-09-09",
       "topic": "Capybara",
@@ -1896,11 +1868,39 @@
       "video_id": "watch?v=UFzMBtjs-I4",
       "question": "Did #1 actually belong in a funny ranking or was it just wholesome? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-10-29",
+      "topic": "Scared Cat",
+      "title": "Ranking Most Savage Scared Cat Moments",
+      "video_id": "watch?v=iG9tHPtix7c",
+      "question": "Which scared cat clip deserved #1 on this list? 🤔"
+    },
+    {
+      "date": "2026-10-29",
+      "topic": "Puppy Moments",
+      "title": "Ranking Weirdest Puppy Moments",
+      "video_id": "watch?v=Yx-Qwyfm5D8",
+      "question": "Be honest, was #1 really the weirdest puppy moment? 🤔"
+    },
+    {
+      "date": "2026-10-29",
+      "topic": "Horse Moments",
+      "title": "Ranking Most Awkward Horse Moments",
+      "video_id": "watch?v=bZrTKaOGC2U",
+      "question": "Which clip was actually the most awkward? 🤔"
+    },
+    {
+      "date": "2026-10-29",
+      "topic": "Cow Moments",
+      "title": "Ranking Funniest Cow Moments",
+      "video_id": "watch?v=gORwVgEgi5E",
+      "question": "Which cow moment definitely deserved #1? 🐮"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-28",
+    "date": "2026-10-29",
     "slots": [
       "18:00",
       "19:00",
@@ -1908,6 +1908,6 @@
       "21:00"
     ]
   },
-  "hook_index": 13,
+  "hook_index": 17,
   "part_two_queue": []
 }
