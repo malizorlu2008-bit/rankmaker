@@ -298,41 +298,13 @@
     "Scared Cat",
     "Puppy Moments",
     "Horse Moments",
+    "Cow Moments",
+    "Cake Fail",
+    "Minecraft Moments",
+    "Puppy Moments",
     "Cow Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-09-09",
-      "topic": "Capybara",
-      "title": "Ranking Most Savage Capybara Moments",
-      "video_id": "watch?v=p8wHlxAZ-nU",
-      "question": "Be honest, was #1 actually the most savage capybara? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-09-09",
-      "topic": "Fall Guys",
-      "title": "Ranking Most Unexpected Fall Guys Moments",
-      "video_id": "watch?v=ew5kQhUw4Dk",
-      "question": "Be honest, was god mode at #3 really better than #5? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-09-09",
-      "topic": "Toddler And Dog",
-      "title": "Ranking Most Awkward Toddler And Dog Moments",
-      "video_id": "watch?v=OGckvINK8d8",
-      "question": "Be honest, was #1 really the most awkward moment? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-09-09",
-      "topic": "Lethal Company",
-      "title": "Ranking Funniest Lethal Company Moments",
-      "video_id": "watch?v=aW8wNlBOh_A",
-      "question": "Be honest, was #1 actually the funniest clip or was #3 better? 💀",
-      "commented": true
-    },
     {
       "date": "2026-09-10",
       "topic": "Cake Fail",
@@ -1900,11 +1872,39 @@
       "video_id": "watch?v=gORwVgEgi5E",
       "question": "Which cow moment definitely deserved #1? 🐮",
       "commented": true
+    },
+    {
+      "date": "2026-10-30",
+      "topic": "Cake Fail",
+      "title": "Ranking Craziest Cake Fails",
+      "video_id": "watch?v=wfnvRhrpHkM",
+      "question": "Which baking fail hurt your soul the most? 💀"
+    },
+    {
+      "date": "2026-10-30",
+      "topic": "Minecraft Moments",
+      "title": "Ranking Most Savage Minecraft Moments",
+      "video_id": "watch?v=gYt9hgE556c",
+      "question": "Be honest, was #3 more savage than #1? 🤔"
+    },
+    {
+      "date": "2026-10-30",
+      "topic": "Puppy Moments",
+      "title": "Ranking Craziest Puppy Moments",
+      "video_id": "watch?v=7BSW0Dwz2qw",
+      "question": "Did #3 deserve the top spot or was #1 crazier? 🐶"
+    },
+    {
+      "date": "2026-10-30",
+      "topic": "Cow Moments",
+      "title": "Ranking Most Unexpected Cow Moments",
+      "video_id": "watch?v=1HzpP_gZNmg",
+      "question": "Did #1 really deserve the top spot or was #4 crazier? 🤔"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-29",
+    "date": "2026-10-30",
     "slots": [
       "18:00",
       "19:00",
@@ -1912,6 +1912,6 @@
       "21:00"
     ]
   },
-  "hook_index": 17,
+  "hook_index": 21,
   "part_two_queue": []
 }
