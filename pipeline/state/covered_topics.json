@@ -302,41 +302,13 @@
     "Cake Fail",
     "Minecraft Moments",
     "Puppy Moments",
-    "Cow Moments"
+    "Cow Moments",
+    "Cow Moments",
+    "Horror Game Reaction",
+    "Wedding",
+    "GTA Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-09-10",
-      "topic": "Cake Fail",
-      "title": "Ranking Worst Cake Fails",
-      "video_id": "watch?v=fUMdwfWR3KA",
-      "question": "Which baking fail was honestly the worst, #2 or #5? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-10",
-      "topic": "CS2 Moments",
-      "title": "Ranking Weirdest CS2 Moments",
-      "video_id": "watch?v=hHhYutcuqRs",
-      "question": "Which fail deserved the #1 spot as the weirdest CS2 moment? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-09-10",
-      "topic": "Scared Cat",
-      "title": "Ranking Most Unexpected Scared Cat Moments",
-      "video_id": "watch?v=JVgWAfzWLfY",
-      "question": "Was #1 really the most unexpected scared cat, or did #3 deserve it?",
-      "commented": true
-    },
-    {
-      "date": "2026-09-10",
-      "topic": "Fall Guys",
-      "title": "Ranking Funniest Fall Guys Moments",
-      "video_id": "watch?v=GgJpnKSBNRo",
-      "question": "Be honest, was #5 or #1 the better glitch?",
-      "commented": true
-    },
     {
       "date": "2026-09-11",
       "topic": "Bike Fail",
@@ -1904,11 +1876,39 @@
       "video_id": "watch?v=1HzpP_gZNmg",
       "question": "Did #1 really deserve the top spot or was #4 crazier? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-10-31",
+      "topic": "Cow Moments",
+      "title": "Ranking Weirdest Cow Moments",
+      "video_id": "watch?v=wn2PPEPlrAs",
+      "question": "Which cow was truly the most unhinged, #2 or #5? 🐄"
+    },
+    {
+      "date": "2026-10-31",
+      "topic": "Horror Game Reaction",
+      "title": "Ranking Most Epic Horror Game Moments",
+      "video_id": "watch?v=BbYceDVRFI8",
+      "question": "Which of these Roblox horror game clips was actually the scariest? 💀"
+    },
+    {
+      "date": "2026-10-31",
+      "topic": "Wedding",
+      "title": "Ranking Worst Wedding Fails",
+      "video_id": "watch?v=3lLie0bouIw",
+      "question": "Which of these moments was actually the worst fail? 😅"
+    },
+    {
+      "date": "2026-10-31",
+      "topic": "GTA Moments",
+      "title": "Ranking Most Unreal GTA Moments",
+      "video_id": "watch?v=pJ1juoe0NWI",
+      "question": "Did #3 deserve top spot for the nostalgia alone? 👀"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-30",
+    "date": "2026-10-31",
     "slots": [
       "18:00",
       "19:00",
@@ -1916,6 +1916,6 @@
       "21:00"
     ]
   },
-  "hook_index": 21,
+  "hook_index": 25,
   "part_two_queue": []
 }

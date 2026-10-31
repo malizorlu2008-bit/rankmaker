@@ -1,12 +1,12 @@
 {
   "tarih": "2026-10-31",
   "pencere_gun": 60,
-  "kanal_orani": 56.0,
-  "olculen_video": 166,
+  "kanal_orani": 55.5,
+  "olculen_video": 162,
   "konular": {
     "Rocket League Moments": 59.7,
     "Golf Fail": 70.9,
-    "CS2 Moments": 58.9,
+    "CS2 Moments": 58.3,
     "Football Fail": 73.3,
     "Wedding": 57.4,
     "Fortnite Moments": 59.5,
@@ -18,11 +18,10 @@
     "Cat Jump Moments": 59.8,
     "Freestyle Football": 54.5,
     "Football Skills": 64.0,
-    "Scared Cat": 61.4,
+    "Scared Cat": 60.9,
     "Bike Fail": 60.5,
     "Minecraft Moments": 49.2,
-    "Cake Fail": 53.4,
-    "Fall Guys": 66.7,
+    "Fall Guys": 71.7,
     "Roblox Moments": 47.5,
     "Jet Ski Fail": 41.0,
     "Lethal Company": 47.5,
@@ -373,23 +372,11 @@
       "saniye": 34.0,
       "izlenme": 5223
     },
-    "fUMdwfWR3KA": {
-      "konu": "Cake Fail",
-      "oran": 72.2,
-      "saniye": 29.0,
-      "izlenme": 5218
-    },
     "Rcj3RzxN4Zg": {
       "konu": "Fall Guys",
       "oran": 71.7,
       "saniye": 34.0,
       "izlenme": 5139
-    },
-    "JVgWAfzWLfY": {
-      "konu": "Scared Cat",
-      "oran": 61.9,
-      "saniye": 26.0,
-      "izlenme": 5030
     },
     "I-JCMY6KnX4": {
       "konu": "Rocket League Moments",
@@ -456,12 +443,6 @@
       "oran": 52.8,
       "saniye": 23.0,
       "izlenme": 3959
-    },
-    "hHhYutcuqRs": {
-      "konu": "CS2 Moments",
-      "oran": 73.8,
-      "saniye": 35.0,
-      "izlenme": 3929
     },
     "dMrU6ACY-UE": {
       "konu": "Monkey Stealing",
@@ -666,12 +647,6 @@
       "oran": 48.1,
       "saniye": 23.0,
       "izlenme": 2312
-    },
-    "GgJpnKSBNRo": {
-      "konu": "Fall Guys",
-      "oran": 57.3,
-      "saniye": 26.0,
-      "izlenme": 2301
     },
     "UFzMBtjs-I4": {
       "konu": "Horse Moments",
