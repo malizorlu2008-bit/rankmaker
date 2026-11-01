@@ -306,41 +306,13 @@
     "Cow Moments",
     "Horror Game Reaction",
     "Wedding",
-    "GTA Moments"
+    "GTA Moments",
+    "Cow Moments",
+    "GTA Moments",
+    "Wedding",
+    "Valorant Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-09-11",
-      "topic": "Bike Fail",
-      "title": "Ranking Most Epic Bike Fails",
-      "video_id": "watch?v=2gZE7zwg72Y",
-      "question": "Did #1 really deserve top spot or was #5 worse? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-09-11",
-      "topic": "CS2 Moments",
-      "title": "Ranking Craziest CS2 Moments",
-      "video_id": "watch?v=0cQX4iTU44s",
-      "question": "Which clip deserved #1: the crazy reflex or the case opening? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-09-11",
-      "topic": "Cow Moments",
-      "title": "Ranking Most Unreal Cow Moments",
-      "video_id": "watch?v=N2xP31a3K-g",
-      "question": "Be honest, was #1 actually the cutest cow here? 🐮",
-      "commented": true
-    },
-    {
-      "date": "2026-09-11",
-      "topic": "Fall Guys",
-      "title": "Ranking Most Awkward Fall Guys Moments",
-      "video_id": "watch?v=6aDZTQUfuPM",
-      "question": "Be honest, did clip #4 deserve to be ranked #1?",
-      "commented": true
-    },
     {
       "date": "2026-09-12",
       "topic": "Snowboard Fail",
@@ -1908,11 +1880,39 @@
       "video_id": "watch?v=pJ1juoe0NWI",
       "question": "Did #3 deserve top spot for the nostalgia alone? 👀",
       "commented": true
+    },
+    {
+      "date": "2026-11-01",
+      "topic": "Cow Moments",
+      "title": "Ranking Craziest Cow Moments",
+      "video_id": "watch?v=pFIrAuH_PiI",
+      "question": "Which cow deserved #1, the fluffy calf or the zoomies? 🐮"
+    },
+    {
+      "date": "2026-11-01",
+      "topic": "GTA Moments",
+      "title": "Ranking Most Epic GTA Moments",
+      "video_id": "watch?v=VAu8Ks1YIME",
+      "question": "Which moment deserved #1: the $1B grind or English Dave calling? 🏆"
+    },
+    {
+      "date": "2026-11-01",
+      "topic": "Wedding",
+      "title": "Ranking Most Awkward Wedding Fails",
+      "video_id": "watch?v=96eZU6q0_Hs",
+      "question": "Be honest, was #2 or #3 the worst fail? 😳"
+    },
+    {
+      "date": "2026-11-01",
+      "topic": "Valorant Moments",
+      "title": "Ranking Most Unexpected Valorant Moments",
+      "video_id": "watch?v=sEwYzfhKI4o",
+      "question": "Which moment actually deserved the #1 spot?"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-10-31",
+    "date": "2026-11-01",
     "slots": [
       "18:00",
       "19:00",
@@ -1920,6 +1920,6 @@
       "21:00"
     ]
   },
-  "hook_index": 25,
+  "hook_index": 1,
   "part_two_queue": []
 }
