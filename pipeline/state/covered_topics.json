@@ -310,41 +310,13 @@
     "Cow Moments",
     "GTA Moments",
     "Wedding",
-    "Valorant Moments"
+    "Valorant Moments",
+    "Horse Moments",
+    "Horror Game Reaction",
+    "Wedding",
+    "Call Of Duty Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-09-12",
-      "topic": "Snowboard Fail",
-      "title": "Ranking Craziest Snowboard Fails",
-      "video_id": "watch?v=EviSPc0bI4Y",
-      "question": "Was #4 hitting the pole worse than #5 catching an edge? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-09-12",
-      "topic": "Rage Quit",
-      "title": "Ranking Most Epic Rage Quit Moments",
-      "video_id": "watch?v=_-UVhZigtOg",
-      "question": "Be honest, was clip #5 the ultimate rage quit or did #2 steal it? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-12",
-      "topic": "Golf Fail",
-      "title": "Ranking Craziest Golf Fails",
-      "video_id": "watch?v=FljV1VhvsDI",
-      "question": "Be honest, was the meltdown at #2 worse than #5 going backwards? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-12",
-      "topic": "Valorant Moments",
-      "title": "Ranking Most Awkward Valorant Moments",
-      "video_id": "watch?v=sfPt2Dl3fkc",
-      "question": "Was #3 really more awkward than the lag fail at #1? 🤔",
-      "commented": true
-    },
     {
       "date": "2026-09-13",
       "topic": "Cake Fail",
@@ -1912,11 +1884,39 @@
       "video_id": "watch?v=sEwYzfhKI4o",
       "question": "Which moment actually deserved the #1 spot?",
       "commented": true
+    },
+    {
+      "date": "2026-11-02",
+      "topic": "Horse Moments",
+      "title": "Ranking Funniest Horse Moments",
+      "video_id": "watch?v=mBoUBJ-F3sg",
+      "question": "Be honest, was #1 the funniest or did the fence clip get robbed? 🐴"
+    },
+    {
+      "date": "2026-11-02",
+      "topic": "Horror Game Reaction",
+      "title": "Ranking Most Savage Horror Game Moments",
+      "video_id": "watch?v=ZWCba4wMXbQ",
+      "question": "Was #2 the most savage moment or did #3 get robbed? 😱"
+    },
+    {
+      "date": "2026-11-02",
+      "topic": "Wedding",
+      "title": "Ranking Most Awkward Wedding Fails",
+      "video_id": "watch?v=dLI18PUmUCU",
+      "question": "Be honest, was the dog clip or the bad photographer worse for #1?"
+    },
+    {
+      "date": "2026-11-02",
+      "topic": "Call Of Duty Moments",
+      "title": "Ranking Most Unreal Call Of Duty Moments",
+      "video_id": "watch?v=otr35uyWp6w",
+      "question": "Be honest, did clip #1 actually deserve the top spot? 💀"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-11-01",
+    "date": "2026-11-02",
     "slots": [
       "18:00",
       "19:00",
@@ -1924,6 +1924,6 @@
       "21:00"
     ]
   },
-  "hook_index": 1,
+  "hook_index": 5,
   "part_two_queue": []
 }
