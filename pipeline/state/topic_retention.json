@@ -2,21 +2,20 @@
   "tarih": "2026-11-03",
   "pencere_gun": 60,
   "kanal_orani": 55.5,
-  "olculen_video": 163,
+  "olculen_video": 160,
   "konular": {
     "Rocket League Moments": 59.7,
     "Golf Fail": 68.7,
-    "Cake Fail": 53.4,
     "Football Fail": 73.3,
     "Minecraft Moments": 50.2,
     "Wedding": 51.8,
-    "Fortnite Moments": 59.5,
+    "Fortnite Moments": 60.9,
     "Puppy Moments": 53.9,
     "Horse Moments": 50.2,
     "Horror Game Reaction": 59.6,
     "GTA Moments": 47.5,
     "Cat Jump Moments": 59.8,
-    "CS2 Moments": 57.8,
+    "CS2 Moments": 54.1,
     "Freestyle Football": 54.6,
     "Football Skills": 64.0,
     "Scared Cat": 60.9,
@@ -304,12 +303,6 @@
       "saniye": 19.0,
       "izlenme": 7670
     },
-    "pYu3bvH4SC0": {
-      "konu": "Fortnite Moments",
-      "oran": 58.0,
-      "saniye": 27.0,
-      "izlenme": 7477
-    },
     "X4Ov6vznxU0": {
       "konu": "Puppy Moments",
       "oran": 48.6,
@@ -339,12 +332,6 @@
       "oran": 49.0,
       "saniye": 23.0,
       "izlenme": 6522
-    },
-    "kHyM9PQpX6I": {
-      "konu": "CS2 Moments",
-      "oran": 63.0,
-      "saniye": 26.0,
-      "izlenme": 6027
     },
     "Cjjj2ipgdwk": {
       "konu": "Minecraft Moments",
@@ -585,12 +572,6 @@
       "oran": 48.7,
       "saniye": 20.0,
       "izlenme": 3155
-    },
-    "uT3A5_R4PAE": {
-      "konu": "Cake Fail",
-      "oran": 53.4,
-      "saniye": 22.0,
-      "izlenme": 3149
     },
     "104qnluIyX8": {
       "konu": "Fortnite Moments",
