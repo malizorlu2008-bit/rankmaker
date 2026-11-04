@@ -318,41 +318,13 @@
     "Puppy Moments",
     "Rocket League Moments",
     "Trampoline Moments",
-    "Minecraft Moments"
+    "Minecraft Moments",
+    "Horse Moments",
+    "Jet Ski Fail",
+    "Snow Fail",
+    "Dog Zoomies"
   ],
   "uploads": [
-    {
-      "date": "2026-09-14",
-      "topic": "Jet Ski Fail",
-      "title": "Ranking Most Painful Jet Ski Fails",
-      "video_id": "watch?v=dymSoMlJdjk",
-      "question": "Which jet ski fail deserved #1 the most? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-09-14",
-      "topic": "CS2 Moments",
-      "title": "Ranking Most Unreal CS2 Moments",
-      "video_id": "watch?v=Lbe_X0_Mgio",
-      "question": "Which clip was the most unreal, #2 or #5?",
-      "commented": true
-    },
-    {
-      "date": "2026-09-14",
-      "topic": "Cow Moments",
-      "title": "Ranking Most Unreal Cow Moments",
-      "video_id": "watch?v=2MCrx2-_-k0",
-      "question": "Be honest, was #3 the ultimate #1 pick or #4? 🐮",
-      "commented": true
-    },
-    {
-      "date": "2026-09-14",
-      "topic": "Horror Game Reaction",
-      "title": "Ranking Craziest Horror Game Moments",
-      "video_id": "watch?v=CFJUrIQ5FUg",
-      "question": "Was #1 actually the craziest moment or did Roblox get robbed? 💀",
-      "commented": true
-    },
     {
       "date": "2026-09-15",
       "topic": "Sheep Moments",
@@ -1920,11 +1892,39 @@
       "video_id": "watch?v=5gwG-5MVGvY",
       "question": "Which clip was the most cursed, #1 or #3? 💀",
       "commented": true
+    },
+    {
+      "date": "2026-11-04",
+      "topic": "Horse Moments",
+      "title": "Ranking Most Savage Horse Moments",
+      "video_id": "watch?v=HuywT13uK48",
+      "question": "Was #5 the most savage moment or did #3 deserve the #1 spot? 🐴"
+    },
+    {
+      "date": "2026-11-04",
+      "topic": "Jet Ski Fail",
+      "title": "Ranking Most Painful Jet Ski Fails",
+      "video_id": "watch?v=lHghLZXl3YM",
+      "question": "Which jet ski fail made you wince the most? 🫣"
+    },
+    {
+      "date": "2026-11-04",
+      "topic": "Snow Fail",
+      "title": "Ranking Most Awkward Snow Fails",
+      "video_id": "watch?v=FJVYqGmkREU",
+      "question": "Which clip deserved #1: the ski lift chaos or the avalanche risker? 😳"
+    },
+    {
+      "date": "2026-11-04",
+      "topic": "Dog Zoomies",
+      "title": "Ranking Most Awkward Zoomies Moments",
+      "video_id": "watch?v=nNVZSBXzGms",
+      "question": "Was the drifting pug really #1, or did the pro dog get robbed? 🤔"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-11-03",
+    "date": "2026-11-04",
     "slots": [
       "18:00",
       "19:00",
@@ -1932,6 +1932,6 @@
       "21:00"
     ]
   },
-  "hook_index": 9,
+  "hook_index": 13,
   "part_two_queue": []
 }
