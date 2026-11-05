@@ -322,41 +322,13 @@
     "Horse Moments",
     "Jet Ski Fail",
     "Snow Fail",
-    "Dog Zoomies"
+    "Dog Zoomies",
+    "Cow Moments",
+    "Fortnite Moments",
+    "Jet Ski Fail",
+    "Roblox Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-09-15",
-      "topic": "Sheep Moments",
-      "title": "Ranking Most Awkward Sheep Moments",
-      "video_id": "watch?v=FHYbHwY8E-4",
-      "question": "Which sheep clip definitely deserved #1?",
-      "commented": true
-    },
-    {
-      "date": "2026-09-15",
-      "topic": "Lethal Company",
-      "title": "Ranking Funniest Lethal Company Moments",
-      "video_id": "watch?v=ZEgj7XzK0v4",
-      "question": "Was #1 really the funniest moment or did #5 get robbed? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-09-15",
-      "topic": "Puppy Moments",
-      "title": "Ranking Craziest Puppy Moments",
-      "video_id": "watch?v=whTvteO2x6s",
-      "question": "Be honest, did #5 deserve #1 for that dramatic attitude? 🐶",
-      "commented": true
-    },
-    {
-      "date": "2026-09-15",
-      "topic": "Rage Quit",
-      "title": "Ranking Weirdest Rage Quit Moments",
-      "video_id": "watch?v=DXEMPiG7W-s",
-      "question": "Which of these rage quits was the most ridiculous? 💀",
-      "commented": true
-    },
     {
       "date": "2026-09-16",
       "topic": "Toddler And Dog",
@@ -1924,11 +1896,39 @@
       "video_id": "watch?v=nNVZSBXzGms",
       "question": "Was the drifting pug really #1, or did the pro dog get robbed? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-11-05",
+      "topic": "Cow Moments",
+      "title": "Ranking Most Unreal Cow Moments",
+      "video_id": "watch?v=7D0uulqGGXY",
+      "question": "Did the zoomies clip deserve #1, or is house cow unbeatable? 🐮"
+    },
+    {
+      "date": "2026-11-05",
+      "topic": "Fortnite Moments",
+      "title": "Ranking Most Unexpected Fortnite Moments",
+      "video_id": "watch?v=a1jX0Mjjtl4",
+      "question": "Which clip deserved the #1 spot? 👇"
+    },
+    {
+      "date": "2026-11-05",
+      "topic": "Jet Ski Fail",
+      "title": "Ranking Craziest Jet Ski Fails",
+      "video_id": "watch?v=ZTRJY26fjBc",
+      "question": "Be honest, was #2 actually the worst fail on the list?"
+    },
+    {
+      "date": "2026-11-05",
+      "topic": "Roblox Moments",
+      "title": "Ranking Most Epic Roblox Moments",
+      "video_id": "watch?v=ASaWFOHlcXs",
+      "question": "Did the 4K Evade RTX edit deserve #1, or was clip 1 better?"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-11-04",
+    "date": "2026-11-05",
     "slots": [
       "18:00",
       "19:00",
@@ -1936,6 +1936,6 @@
       "21:00"
     ]
   },
-  "hook_index": 13,
+  "hook_index": 17,
   "part_two_queue": []
 }
