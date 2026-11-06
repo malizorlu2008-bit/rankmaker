@@ -326,41 +326,13 @@
     "Cow Moments",
     "Fortnite Moments",
     "Jet Ski Fail",
-    "Roblox Moments"
+    "Roblox Moments",
+    "Slip And Slide",
+    "Lethal Company",
+    "Wedding",
+    "Valorant Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-09-16",
-      "topic": "Toddler And Dog",
-      "title": "Ranking Weirdest Toddler And Dog Moments",
-      "video_id": "watch?v=UpNya2jwRgs",
-      "question": "Be honest, was #5 or #3 the weirdest moment? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-09-16",
-      "topic": "Valorant Moments",
-      "title": "Ranking Most Savage Valorant Moments",
-      "video_id": "watch?v=y0Am4JDYeW8",
-      "question": "Be honest, did #1 actually deserve the top spot or was #4 robbed? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-16",
-      "topic": "Treadmill Fail",
-      "title": "Ranking Wildest Treadmill Fails",
-      "video_id": "watch?v=_za5HvgCzJs",
-      "question": "Was #1 really the worst gym fail or did #2 take it? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-16",
-      "topic": "Minecraft Moments",
-      "title": "Ranking Weirdest Minecraft Moments",
-      "video_id": "watch?v=fgtNjEcNgUo",
-      "question": "Was #4 actually the saddest moment or is chat tripping?",
-      "commented": true
-    },
     {
       "date": "2026-09-17",
       "topic": "Capybara",
@@ -1928,11 +1900,39 @@
       "video_id": "watch?v=ASaWFOHlcXs",
       "question": "Did the 4K Evade RTX edit deserve #1, or was clip 1 better?",
       "commented": true
+    },
+    {
+      "date": "2026-11-06",
+      "topic": "Slip And Slide",
+      "title": "Ranking Most Epic Slip And Slide Fails",
+      "video_id": "watch?v=2H3kYB061JU",
+      "question": "Did #2 deserve #1, or was the ice fail clearly the winner? 🤔"
+    },
+    {
+      "date": "2026-11-06",
+      "topic": "Lethal Company",
+      "title": "Ranking Most Awkward Lethal Company Moments",
+      "video_id": "watch?v=rYaUQxNloMk",
+      "question": "Did clip #3 deserve the #1 spot for most awkward, or was #5 worse? 💀"
+    },
+    {
+      "date": "2026-11-06",
+      "topic": "Wedding",
+      "title": "Ranking Wildest Wedding Fails",
+      "video_id": "watch?v=ygEuiVin0hU",
+      "question": "Did #1 deserve the top spot or was the golf crash worse? 🤔"
+    },
+    {
+      "date": "2026-11-06",
+      "topic": "Valorant Moments",
+      "title": "Ranking Most Awkward Valorant Moments",
+      "video_id": "watch?v=u0Ab3HSocow",
+      "question": "Which clip was the most awkward: #1 or #4? 💀"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-11-05",
+    "date": "2026-11-06",
     "slots": [
       "18:00",
       "19:00",
@@ -1940,6 +1940,6 @@
       "21:00"
     ]
   },
-  "hook_index": 17,
+  "hook_index": 21,
   "part_two_queue": []
 }
