@@ -330,41 +330,13 @@
     "Slip And Slide",
     "Lethal Company",
     "Wedding",
-    "Valorant Moments"
+    "Valorant Moments",
+    "Wedding",
+    "Roblox Moments",
+    "Freestyle Football",
+    "Minecraft Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-09-17",
-      "topic": "Capybara",
-      "title": "Ranking Most Awkward Capybara Moments",
-      "video_id": "watch?v=oFhWayG9B6c",
-      "question": "Be honest, did #2 deserve the top spot?",
-      "commented": true
-    },
-    {
-      "date": "2026-09-17",
-      "topic": "CS2 Moments",
-      "title": "Ranking Most Unreal CS2 Moments",
-      "video_id": "watch?v=SqW7JNVbYSg",
-      "question": "Is Coldzera's play at #3 still the most unreal CS moment ever? 🐐",
-      "commented": true
-    },
-    {
-      "date": "2026-09-17",
-      "topic": "Scared Cat",
-      "title": "Ranking Most Savage Scared Cat Moments",
-      "video_id": "watch?v=Ps6WkroUZvs",
-      "question": "Be honest, was #2 actually the most savage scared cat?",
-      "commented": true
-    },
-    {
-      "date": "2026-09-17",
-      "topic": "Minecraft Moments",
-      "title": "Ranking Most Unexpected Minecraft Moments",
-      "video_id": "watch?v=JCYZhcxcOCs",
-      "question": "Be honest, was #1 or #5 the most unexpected moment? 🤔",
-      "commented": true
-    },
     {
       "date": "2026-09-18",
       "topic": "Horse Moments",
@@ -1932,11 +1904,39 @@
       "video_id": "watch?v=u0Ab3HSocow",
       "question": "Which clip was the most awkward: #1 or #4? 💀",
       "commented": true
+    },
+    {
+      "date": "2026-11-07",
+      "topic": "Wedding",
+      "title": "Ranking Best Wedding Fails",
+      "video_id": "watch?v=-73Yj6q8wb0",
+      "question": "Was #3 the worst fail or just pure bad luck? 😅"
+    },
+    {
+      "date": "2026-11-07",
+      "topic": "Roblox Moments",
+      "title": "Ranking Most Awkward Roblox Moments",
+      "video_id": "watch?v=ULU07HSz8Ew",
+      "question": "Be honest, was #3 really more awkward than #5? 💀"
+    },
+    {
+      "date": "2026-11-07",
+      "topic": "Freestyle Football",
+      "title": "Ranking Most Epic Freestyle Football Moments",
+      "video_id": "watch?v=Lh3M7ky6Fv4",
+      "question": "Be honest, was #4's footwork really better than #1's tackle? ⚽"
+    },
+    {
+      "date": "2026-11-07",
+      "topic": "Minecraft Moments",
+      "title": "Ranking Most Unexpected Minecraft Moments",
+      "video_id": "watch?v=5v_QxffscxM",
+      "question": "Be honest, was clip #1 or #3 the most unexpected moment? 🤔"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "slots": [
       "18:00",
       "19:00",
@@ -1944,6 +1944,6 @@
       "21:00"
     ]
   },
-  "hook_index": 21,
+  "hook_index": 25,
   "part_two_queue": []
 }
