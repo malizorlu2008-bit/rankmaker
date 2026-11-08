@@ -334,41 +334,13 @@
     "Wedding",
     "Roblox Moments",
     "Freestyle Football",
-    "Minecraft Moments"
+    "Minecraft Moments",
+    "Puppy Moments",
+    "Fortnite Moments",
+    "Scared Cat",
+    "Wedding"
   ],
   "uploads": [
-    {
-      "date": "2026-09-18",
-      "topic": "Horse Moments",
-      "title": "Ranking Most Awkward Horse Moments",
-      "video_id": "watch?v=hgMCDyNGyvQ",
-      "question": "Was #1 really the most awkward horse moment here? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-09-18",
-      "topic": "Fortnite Moments",
-      "title": "Ranking Craziest Fortnite Moments",
-      "video_id": "watch?v=V02N0Gh1pFs",
-      "question": "Be honest, was #1 actually the craziest moment or was it robbed?",
-      "commented": true
-    },
-    {
-      "date": "2026-09-18",
-      "topic": "Puppy Moments",
-      "title": "Ranking Most Unexpected Puppy Moments",
-      "video_id": "watch?v=nTeviOZ-WkY",
-      "question": "Which clip deserved #1: the sassy puppy or the avocado sleeper? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-09-18",
-      "topic": "CS2 Moments",
-      "title": "Ranking Most Awkward CS2 Moments",
-      "video_id": "watch?v=r3pS_wtPyu8",
-      "question": "Be honest, which clip was the most awkward at #1? 💀",
-      "commented": true
-    },
     {
       "date": "2026-09-19",
       "topic": "Horse Moments",
@@ -1936,11 +1908,39 @@
       "video_id": "watch?v=5v_QxffscxM",
       "question": "Be honest, was clip #1 or #3 the most unexpected moment? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-11-08",
+      "topic": "Puppy Moments",
+      "title": "Ranking Funniest Puppy Moments",
+      "video_id": "watch?v=Ak5n_bo8vvk",
+      "question": "Did clip #1 really deserve the top spot, or was the tiny howling pup robbed? 🐶"
+    },
+    {
+      "date": "2026-11-08",
+      "topic": "Fortnite Moments",
+      "title": "Ranking Most Epic Fortnite Moments",
+      "video_id": "watch?v=rHzZk0xwvF0",
+      "question": "Which clip actually deserved the #1 spot? 💀"
+    },
+    {
+      "date": "2026-11-08",
+      "topic": "Scared Cat",
+      "title": "Ranking Funniest Scared Cat Moments",
+      "video_id": "watch?v=rbNk-GB76Uw",
+      "question": "Which cat deserved #1: the screamer or the broken one? 😂"
+    },
+    {
+      "date": "2026-11-08",
+      "topic": "Wedding",
+      "title": "Ranking Most Epic Wedding Fails",
+      "video_id": "watch?v=xRGYgLwiNf4",
+      "question": "Did the confetti disaster deserve #1 or was the veil fail worse?"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "slots": [
       "18:00",
       "19:00",
@@ -1948,6 +1948,6 @@
       "21:00"
     ]
   },
-  "hook_index": 25,
+  "hook_index": 1,
   "part_two_queue": []
 }
