@@ -1,48 +1,48 @@
 {
-  "tarih": "2026-11-08",
+  "tarih": "2026-11-09",
   "pencere_gun": 60,
-  "kanal_orani": 55.4,
-  "olculen_video": 161,
+  "kanal_orani": 55.8,
+  "olculen_video": 160,
   "konular": {
-    "Rocket League Moments": 56.6,
+    "Rocket League Moments": 60.4,
     "Golf Fail": 68.7,
-    "Minecraft Moments": 56.5,
+    "Minecraft Moments": 64.4,
     "Football Fail": 73.3,
-    "Wedding": 54.6,
-    "Fortnite Moments": 60.6,
-    "Puppy Moments": 51.7,
-    "Horse Moments": 54.0,
+    "Wedding": 51.9,
+    "Fortnite Moments": 61.0,
+    "Puppy Moments": 50.4,
+    "Horse Moments": 56.0,
     "Horror Game Reaction": 64.8,
     "GTA Moments": 46.9,
     "Cow Moments": 71.4,
     "Cat Jump Moments": 59.8,
-    "Valorant Moments": 43.1,
+    "Valorant Moments": 44.8,
     "Freestyle Football": 54.6,
-    "CS2 Moments": 54.1,
+    "CS2 Moments": 50.5,
     "Football Skills": 63.9,
     "Roblox Moments": 49.3,
-    "Jet Ski Fail": 43.8,
+    "Jet Ski Fail": 44.3,
     "Lethal Company": 47.5,
-    "Call Of Duty Moments": 43.0
+    "Call Of Duty Moments": 42.9
   },
   "videolar": {
     "oGhOHRG9Jzk": {
       "konu": "Rocket League Moments",
       "oran": 79.1,
       "saniye": 35.0,
-      "izlenme": 1253721
+      "izlenme": 1260091
     },
     "nzCA2qv8oTg": {
       "konu": "Treadmill Fail",
       "oran": 79.1,
       "saniye": 30.0,
-      "izlenme": 106219
+      "izlenme": 106222
     },
     "S8RhHZLxlEQ": {
       "konu": "Ice Rink",
       "oran": 65.4,
       "saniye": 32.0,
-      "izlenme": 41277
+      "izlenme": 41291
     },
     "AzcG-d6YaMw": {
       "konu": "Golf Fail",
@@ -54,13 +54,13 @@
       "konu": "Cake Fail",
       "oran": 83.4,
       "saniye": 34.0,
-      "izlenme": 26776
+      "izlenme": 26778
     },
     "gYt9hgE556c": {
       "konu": "Minecraft Moments",
       "oran": 87.0,
       "saniye": 42.0,
-      "izlenme": 25289
+      "izlenme": 25296
     },
     "Xx3D1IwXjS0": {
       "konu": "Football Fail",
@@ -78,7 +78,7 @@
       "konu": "Fortnite Moments",
       "oran": 92.1,
       "saniye": 33.0,
-      "izlenme": 24814
+      "izlenme": 24816
     },
     "BtyK6qBaJOQ": {
       "konu": "Rocket League Moments",
@@ -96,7 +96,13 @@
       "konu": "Horse Moments",
       "oran": 80.2,
       "saniye": 38.0,
-      "izlenme": 23655
+      "izlenme": 23661
+    },
+    "2H3kYB061JU": {
+      "konu": "Slip And Slide",
+      "oran": 87.5,
+      "saniye": 33.0,
+      "izlenme": 23336
     },
     "aa9aWGJSbzA": {
       "konu": "Fortnite Moments",
@@ -114,7 +120,7 @@
       "konu": "Horse Moments",
       "oran": 72.5,
       "saniye": 28.0,
-      "izlenme": 21540
+      "izlenme": 21541
     },
     "2M75TYlMQaM": {
       "konu": "Puppy Moments",
@@ -132,19 +138,19 @@
       "konu": "Cow Moments",
       "oran": 79.3,
       "saniye": 27.0,
-      "izlenme": 19631
+      "izlenme": 19638
     },
     "FUVz3rKLPg8": {
       "konu": "Cat Jump Moments",
       "oran": 76.6,
       "saniye": 33.0,
-      "izlenme": 19608
+      "izlenme": 19612
     },
     "vm8SWzyQ2P0": {
       "konu": "Puppy Moments",
       "oran": 72.4,
       "saniye": 29.0,
-      "izlenme": 19452
+      "izlenme": 19453
     },
     "JcRdAwKDAdk": {
       "konu": "Puppy Moments",
@@ -156,7 +162,7 @@
       "konu": "Valorant Moments",
       "oran": 69.7,
       "saniye": 31.0,
-      "izlenme": 18444
+      "izlenme": 18445
     },
     "qpE03Vx8uD4": {
       "konu": "Cat Jump Moments",
@@ -166,15 +172,15 @@
     },
     "ZWCba4wMXbQ": {
       "konu": "Horror Game Reaction",
-      "oran": 70.1,
+      "oran": 70.0,
       "saniye": 35.0,
-      "izlenme": 16163
+      "izlenme": 16175
     },
     "KzHO0ioHTBQ": {
       "konu": "Puppy Moments",
       "oran": 68.2,
       "saniye": 34.0,
-      "izlenme": 15261
+      "izlenme": 15271
     },
     "ejXAqqeJdTY": {
       "konu": "Freestyle Football",
@@ -186,7 +192,7 @@
       "konu": "Puppy Moments",
       "oran": 71.2,
       "saniye": 31.0,
-      "izlenme": 13177
+      "izlenme": 13178
     },
     "qnPPIkv52_0": {
       "konu": "GTA Moments",
@@ -198,7 +204,7 @@
       "konu": "Puppy Moments",
       "oran": 67.3,
       "saniye": 28.0,
-      "izlenme": 12743
+      "izlenme": 12744
     },
     "gP09R2zM5Ks": {
       "konu": "CS2 Moments",
@@ -210,7 +216,7 @@
       "konu": "Puppy Moments",
       "oran": 46.0,
       "saniye": 21.0,
-      "izlenme": 12349
+      "izlenme": 12350
     },
     "MUCx8EJmf2s": {
       "konu": "CS2 Moments",
@@ -222,13 +228,13 @@
       "konu": "Cow Moments",
       "oran": 71.8,
       "saniye": 33.0,
-      "izlenme": 11104
+      "izlenme": 11113
     },
     "PYJWyYnyOTc": {
       "konu": "Puppy Moments",
       "oran": 38.5,
       "saniye": 18.0,
-      "izlenme": 11085
+      "izlenme": 11086
     },
     "xrB2MtSBDVU": {
       "konu": "Football Skills",
@@ -258,19 +264,25 @@
       "konu": "Puppy Moments",
       "oran": 48.3,
       "saniye": 21.0,
-      "izlenme": 10362
+      "izlenme": 10366
     },
     "w3AbeF_fHG0": {
       "konu": "Sheep Moments",
       "oran": 46.4,
       "saniye": 22.0,
-      "izlenme": 9971
+      "izlenme": 9972
     },
     "05j7rob4k_8": {
       "konu": "Animals Being Derps",
       "oran": 48.7,
       "saniye": 19.0,
       "izlenme": 9741
+    },
+    "nNVZSBXzGms": {
+      "konu": "Dog Zoomies",
+      "oran": 68.5,
+      "saniye": 28.0,
+      "izlenme": 9380
     },
     "MEklyPbsYi8": {
       "konu": "Scared Cat",
@@ -282,13 +294,13 @@
       "konu": "Horse Moments",
       "oran": 47.9,
       "saniye": 22.0,
-      "izlenme": 8796
+      "izlenme": 8813
     },
     "3lLie0bouIw": {
       "konu": "Wedding",
-      "oran": 51.3,
+      "oran": 51.2,
       "saniye": 23.0,
-      "izlenme": 8089
+      "izlenme": 8090
     },
     "cH9nxyZHrPE": {
       "konu": "Horse Moments",
@@ -302,6 +314,12 @@
       "saniye": 27.0,
       "izlenme": 7852
     },
+    "69Maa7orAas": {
+      "konu": "Trampoline Moments",
+      "oran": 62.1,
+      "saniye": 26.0,
+      "izlenme": 7814
+    },
     "2gR8u1BtaZM": {
       "konu": "Cat Jump Moments",
       "oran": 52.7,
@@ -313,12 +331,6 @@
       "oran": 48.6,
       "saniye": 21.0,
       "izlenme": 7286
-    },
-    "69Maa7orAas": {
-      "konu": "Trampoline Moments",
-      "oran": 62.2,
-      "saniye": 26.0,
-      "izlenme": 7040
     },
     "T_uA2XYTD6o": {
       "konu": "Dog Zoomies",
@@ -344,17 +356,11 @@
       "saniye": 23.0,
       "izlenme": 6522
     },
-    "nNVZSBXzGms": {
-      "konu": "Dog Zoomies",
-      "oran": 62.5,
-      "saniye": 25.0,
-      "izlenme": 6510
-    },
     "96eZU6q0_Hs": {
       "konu": "Wedding",
       "oran": 67.9,
       "saniye": 31.0,
-      "izlenme": 5981
+      "izlenme": 6023
     },
     "Cjjj2ipgdwk": {
       "konu": "Minecraft Moments",
@@ -366,13 +372,13 @@
       "konu": "Fortnite Moments",
       "oran": 67.4,
       "saniye": 31.0,
-      "izlenme": 5896
+      "izlenme": 5904
     },
     "BbYceDVRFI8": {
       "konu": "Horror Game Reaction",
       "oran": 75.8,
       "saniye": 33.0,
-      "izlenme": 5831
+      "izlenme": 5836
     },
     "uWm4lTSJcLU": {
       "konu": "Puppy Moments",
@@ -390,7 +396,7 @@
       "konu": "Ring Camera",
       "oran": 72.0,
       "saniye": 31.0,
-      "izlenme": 5529
+      "izlenme": 5530
     },
     "ge7--lM1amI": {
       "konu": "Bike Fail",
@@ -402,7 +408,7 @@
       "konu": "Horse Moments",
       "oran": 59.7,
       "saniye": 27.0,
-      "izlenme": 5232
+      "izlenme": 5233
     },
     "WBCuFHOY-aY": {
       "konu": "Golf Fail",
@@ -414,7 +420,7 @@
       "konu": "Fall Guys",
       "oran": 71.7,
       "saniye": 34.0,
-      "izlenme": 5162
+      "izlenme": 5163
     },
     "I-JCMY6KnX4": {
       "konu": "Rocket League Moments",
@@ -434,6 +440,12 @@
       "saniye": 23.0,
       "izlenme": 4924
     },
+    "HuywT13uK48": {
+      "konu": "Horse Moments",
+      "oran": 57.7,
+      "saniye": 25.0,
+      "izlenme": 4885
+    },
     "gORwVgEgi5E": {
       "konu": "Cow Moments",
       "oran": 71.4,
@@ -446,11 +458,11 @@
       "saniye": 22.0,
       "izlenme": 4715
     },
-    "Lh11rL_PWPs": {
-      "konu": "Puppy Moments",
-      "oran": 60.0,
-      "saniye": 26.0,
-      "izlenme": 4637
+    "a1jX0Mjjtl4": {
+      "konu": "Fortnite Moments",
+      "oran": 78.8,
+      "saniye": 36.0,
+      "izlenme": 4712
     },
     "196d1_EAHkk": {
       "konu": "Fortnite Moments",
@@ -474,13 +486,13 @@
       "konu": "Valorant Moments",
       "oran": 58.0,
       "saniye": 24.0,
-      "izlenme": 4313
+      "izlenme": 4314
     },
     "dLI18PUmUCU": {
       "konu": "Wedding",
-      "oran": 51.8,
+      "oran": 51.9,
       "saniye": 24.0,
-      "izlenme": 4211
+      "izlenme": 4280
     },
     "XrJKUsFCqYM": {
       "konu": "Rocket League Moments",
@@ -488,17 +500,35 @@
       "saniye": 19.0,
       "izlenme": 4168
     },
+    "ASaWFOHlcXs": {
+      "konu": "Roblox Moments",
+      "oran": 63.1,
+      "saniye": 29.0,
+      "izlenme": 4028
+    },
     "lWPAnCKOwP0": {
       "konu": "Horse Moments",
       "oran": 52.8,
       "saniye": 23.0,
       "izlenme": 3959
     },
+    "FJVYqGmkREU": {
+      "konu": "Snow Fail",
+      "oran": 55.2,
+      "saniye": 25.0,
+      "izlenme": 3947
+    },
     "dMrU6ACY-UE": {
       "konu": "Monkey Stealing",
       "oran": 60.6,
       "saniye": 29.0,
-      "izlenme": 3926
+      "izlenme": 3928
+    },
+    "FlKwIglqKOk": {
+      "konu": "Rocket League Moments",
+      "oran": 60.4,
+      "saniye": 30.0,
+      "izlenme": 3877
     },
     "axuY5ahVXh8": {
       "konu": "Roblox Moments",
@@ -511,12 +541,6 @@
       "oran": 38.6,
       "saniye": 18.0,
       "izlenme": 3692
-    },
-    "FJVYqGmkREU": {
-      "konu": "Snow Fail",
-      "oran": 55.1,
-      "saniye": 25.0,
-      "izlenme": 3636
     },
     "5vPgYdVFU_k": {
       "konu": "Skate Fail",
@@ -534,7 +558,7 @@
       "konu": "Jet Ski Fail",
       "oran": 42.3,
       "saniye": 20.0,
-      "izlenme": 3569
+      "izlenme": 3571
     },
     "q2Rwcpxb_hE": {
       "konu": "Lethal Company",
@@ -546,7 +570,7 @@
       "konu": "Jet Ski Fail",
       "oran": 54.0,
       "saniye": 24.0,
-      "izlenme": 3508
+      "izlenme": 3509
     },
     "Yg0CdnNqUGM": {
       "konu": "Rocket League Moments",
@@ -554,17 +578,17 @@
       "saniye": 28.0,
       "izlenme": 3498
     },
+    "5gwG-5MVGvY": {
+      "konu": "Minecraft Moments",
+      "oran": 76.0,
+      "saniye": 32.0,
+      "izlenme": 3479
+    },
     "mwmcL6XM0hw": {
       "konu": "Fortnite Moments",
       "oran": 71.0,
       "saniye": 34.0,
       "izlenme": 3452
-    },
-    "5gwG-5MVGvY": {
-      "konu": "Minecraft Moments",
-      "oran": 75.7,
-      "saniye": 32.0,
-      "izlenme": 3302
     },
     "AiSr090_udc": {
       "konu": "GTA Moments",
@@ -632,12 +656,6 @@
       "saniye": 26.0,
       "izlenme": 3020
     },
-    "HuywT13uK48": {
-      "konu": "Horse Moments",
-      "oran": 54.0,
-      "saniye": 23.0,
-      "izlenme": 2985
-    },
     "sskvxgPys0g": {
       "konu": "Call Of Duty Moments",
       "oran": 49.3,
@@ -674,18 +692,6 @@
       "saniye": 20.0,
       "izlenme": 2695
     },
-    "FlKwIglqKOk": {
-      "konu": "Rocket League Moments",
-      "oran": 51.3,
-      "saniye": 25.0,
-      "izlenme": 2595
-    },
-    "ASaWFOHlcXs": {
-      "konu": "Roblox Moments",
-      "oran": 52.4,
-      "saniye": 24.0,
-      "izlenme": 2550
-    },
     "TlVidqhnrss": {
       "konu": "Fortnite Moments",
       "oran": 55.4,
@@ -698,11 +704,11 @@
       "saniye": 31.0,
       "izlenme": 2406
     },
-    "OiTxRFE7i08": {
-      "konu": "Minecraft Moments",
-      "oran": 48.1,
-      "saniye": 23.0,
-      "izlenme": 2314
+    "otr35uyWp6w": {
+      "konu": "Call Of Duty Moments",
+      "oran": 42.9,
+      "saniye": 18.0,
+      "izlenme": 2330
     },
     "Q4rzmxY7d_Y": {
       "konu": "Horse Moments",
@@ -710,17 +716,17 @@
       "saniye": 21.0,
       "izlenme": 2284
     },
-    "otr35uyWp6w": {
-      "konu": "Call Of Duty Moments",
-      "oran": 43.0,
-      "saniye": 18.0,
-      "izlenme": 2258
+    "7D0uulqGGXY": {
+      "konu": "Cow Moments",
+      "oran": 29.6,
+      "saniye": 14.0,
+      "izlenme": 2274
     },
     "mBoUBJ-F3sg": {
       "konu": "Horse Moments",
-      "oran": 55.6,
+      "oran": 55.8,
       "saniye": 23.0,
-      "izlenme": 2213
+      "izlenme": 2233
     },
     "gyYW6mEDyhk": {
       "konu": "Fortnite Moments",
@@ -746,6 +752,12 @@
       "saniye": 20.0,
       "izlenme": 2111
     },
+    "Y50CQ7PHJz0": {
+      "konu": "Puppy Moments",
+      "oran": 38.2,
+      "saniye": 19.0,
+      "izlenme": 2070
+    },
     "_gR4_zrzGIE": {
       "konu": "Wedding",
       "oran": 46.2,
@@ -770,17 +782,11 @@
       "saniye": 22.0,
       "izlenme": 2022
     },
-    "Ju4SeEwNMms": {
-      "konu": "CS2 Moments",
-      "oran": 57.8,
-      "saniye": 25.0,
-      "izlenme": 1980
-    },
-    "Y50CQ7PHJz0": {
-      "konu": "Puppy Moments",
-      "oran": 38.1,
-      "saniye": 19.0,
-      "izlenme": 1976
+    "u0Ab3HSocow": {
+      "konu": "Valorant Moments",
+      "oran": 46.4,
+      "saniye": 21.0,
+      "izlenme": 1974
     },
     "GOAq8UUgajs": {
       "konu": "Golf Fail",
@@ -788,17 +794,17 @@
       "saniye": 30.0,
       "izlenme": 1972
     },
+    "ZTRJY26fjBc": {
+      "konu": "Jet Ski Fail",
+      "oran": 40.7,
+      "saniye": 19.0,
+      "izlenme": 1903
+    },
     "gUKk6dsIDRI": {
       "konu": "Roblox Moments",
       "oran": 43.5,
       "saniye": 20.0,
       "izlenme": 1844
-    },
-    "BnMrnZIZsAk": {
-      "konu": "Horse Moments",
-      "oran": 43.9,
-      "saniye": 19.0,
-      "izlenme": 1828
     },
     "lMQGP4NjmGc": {
       "konu": "Roblox Moments",
@@ -823,6 +829,12 @@
       "oran": 45.9,
       "saniye": 22.0,
       "izlenme": 1784
+    },
+    "lHghLZXl3YM": {
+      "konu": "Jet Ski Fail",
+      "oran": 46.3,
+      "saniye": 21.0,
+      "izlenme": 1745
     },
     "kHN4uRsIqag": {
       "konu": "Fortnite Moments",
@@ -859,12 +871,6 @@
       "oran": 33.4,
       "saniye": 16.0,
       "izlenme": 1597
-    },
-    "7D0uulqGGXY": {
-      "konu": "Cow Moments",
-      "oran": 32.0,
-      "saniye": 15.0,
-      "izlenme": 1576
     },
     "BVRuw9_12mM": {
       "konu": "Freestyle Football",
@@ -920,23 +926,17 @@
       "saniye": 20.0,
       "izlenme": 1499
     },
-    "a1jX0Mjjtl4": {
-      "konu": "Fortnite Moments",
-      "oran": 60.6,
-      "saniye": 27.0,
-      "izlenme": 1463
+    "ygEuiVin0hU": {
+      "konu": "Wedding",
+      "oran": 42.3,
+      "saniye": 20.0,
+      "izlenme": 1456
     },
     "FhwT36NBbFE": {
       "konu": "Minecraft Moments",
       "oran": 48.5,
       "saniye": 24.0,
       "izlenme": 1445
-    },
-    "lHghLZXl3YM": {
-      "konu": "Jet Ski Fail",
-      "oran": 45.4,
-      "saniye": 21.0,
-      "izlenme": 1444
     },
     "z2BN3QOnNNg": {
       "konu": "Puppy Moments",
@@ -961,12 +961,6 @@
       "oran": 32.6,
       "saniye": 14.0,
       "izlenme": 1335
-    },
-    "ZTRJY26fjBc": {
-      "konu": "Jet Ski Fail",
-      "oran": 40.6,
-      "saniye": 19.0,
-      "izlenme": 1329
     },
     "L-nNIQ_HrWs": {
       "konu": "Horror Game Reaction",

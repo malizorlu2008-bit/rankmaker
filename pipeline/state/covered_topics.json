@@ -338,41 +338,13 @@
     "Puppy Moments",
     "Fortnite Moments",
     "Scared Cat",
-    "Wedding"
+    "Wedding",
+    "Scared Cat",
+    "Rocket League Moments",
+    "Cat Jump Moments",
+    "Valorant Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-09-19",
-      "topic": "Horse Moments",
-      "title": "Ranking Weirdest Horse Moments",
-      "video_id": "watch?v=BnMrnZIZsAk",
-      "question": "Which horse moment deserved the #1 spot? 🐴",
-      "commented": true
-    },
-    {
-      "date": "2026-09-19",
-      "topic": "CS2 Moments",
-      "title": "Ranking Wildest CS2 Moments",
-      "video_id": "watch?v=Ju4SeEwNMms",
-      "question": "Which clip was the wildest: #3 cheater duel or #1 chat leaks? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-19",
-      "topic": "Puppy Moments",
-      "title": "Ranking Most Savage Puppy Moments",
-      "video_id": "watch?v=Lh11rL_PWPs",
-      "question": "Be honest, was #2 or #5 the most savage moment?",
-      "commented": true
-    },
-    {
-      "date": "2026-09-19",
-      "topic": "Minecraft Moments",
-      "title": "Ranking Most Unexpected Minecraft Moments",
-      "video_id": "watch?v=OiTxRFE7i08",
-      "question": "Which clip actually deserved the #1 spot? 💀",
-      "commented": true
-    },
     {
       "date": "2026-09-20",
       "topic": "Horse Moments",
@@ -1940,11 +1912,39 @@
       "video_id": "watch?v=xRGYgLwiNf4",
       "question": "Did the confetti disaster deserve #1 or was the veil fail worse?",
       "commented": true
+    },
+    {
+      "date": "2026-11-09",
+      "topic": "Scared Cat",
+      "title": "Ranking Craziest Scared Cat Moments",
+      "video_id": "watch?v=qfP68DIMsc4",
+      "question": "Be honest, which clip was actually the craziest? 😳"
+    },
+    {
+      "date": "2026-11-09",
+      "topic": "Rocket League Moments",
+      "title": "Ranking Most Unreal Rocket League Moments",
+      "video_id": "watch?v=-yUNvPPSn_w",
+      "question": "Which clip was the most unreal, #4 or #5? 🤔"
+    },
+    {
+      "date": "2026-11-09",
+      "topic": "Cat Jump Moments",
+      "title": "Ranking Funniest Cat Jump Moments",
+      "video_id": "watch?v=WyKzj2OZ7fw",
+      "question": "Be honest, did #4 or #1 have the funniest jump fail? 😼"
+    },
+    {
+      "date": "2026-11-09",
+      "topic": "Valorant Moments",
+      "title": "Ranking Craziest Valorant Moments",
+      "video_id": "watch?v=RTiwpHXhwO4",
+      "question": "Be honest, was #3 or #5 the craziest Valorant moment? 💀"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "slots": [
       "18:00",
       "19:00",
@@ -1952,6 +1952,6 @@
       "21:00"
     ]
   },
-  "hook_index": 1,
+  "hook_index": 5,
   "part_two_queue": []
 }
