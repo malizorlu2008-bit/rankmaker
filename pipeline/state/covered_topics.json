@@ -342,41 +342,13 @@
     "Scared Cat",
     "Rocket League Moments",
     "Cat Jump Moments",
-    "Valorant Moments"
+    "Valorant Moments",
+    "Puppy Moments",
+    "Fortnite Moments",
+    "Horse Moments",
+    "Wedding"
   ],
   "uploads": [
-    {
-      "date": "2026-09-20",
-      "topic": "Horse Moments",
-      "title": "Ranking Craziest Horse Moments",
-      "video_id": "watch?v=Jz4EAcwWMKE",
-      "question": "Did #5 deserve the top spot or was #3 crazier? 🐎",
-      "commented": true
-    },
-    {
-      "date": "2026-09-20",
-      "topic": "GTA Moments",
-      "title": "Ranking Funniest GTA Moments",
-      "video_id": "watch?v=xwljICZKF6A",
-      "question": "Be honest, did Trevor or the stroller moment deserve #1? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-09-20",
-      "topic": "Puppy Moments",
-      "title": "Ranking Most Unexpected Puppy Moments",
-      "video_id": "watch?v=ifsA64qqSpM",
-      "question": "Which puppy moment deserved the #1 spot?",
-      "commented": true
-    },
-    {
-      "date": "2026-09-20",
-      "topic": "Horror Game Reaction",
-      "title": "Ranking Most Unexpected Horror Game Moments",
-      "video_id": "watch?v=QJUMypkv5mc",
-      "question": "Which clip was genuinely the scariest, #2 or #5? 🤔",
-      "commented": true
-    },
     {
       "date": "2026-09-21",
       "topic": "Wedding",
@@ -1944,11 +1916,39 @@
       "video_id": "watch?v=RTiwpHXhwO4",
       "question": "Be honest, was #3 or #5 the craziest Valorant moment? 💀",
       "commented": true
+    },
+    {
+      "date": "2026-11-10",
+      "topic": "Puppy Moments",
+      "title": "Ranking Most Unexpected Puppy Moments",
+      "video_id": "watch?v=Cpyp9BHIS1Q",
+      "question": "Be honest, was #2 or #5 the most relatable moment? 🐶"
+    },
+    {
+      "date": "2026-11-10",
+      "topic": "Fortnite Moments",
+      "title": "Ranking Weirdest Fortnite Moments",
+      "video_id": "watch?v=XJgVeu-Olvs",
+      "question": "Which moment deserved #1: the roadkill or the random slingshot death? 🤔"
+    },
+    {
+      "date": "2026-11-10",
+      "topic": "Horse Moments",
+      "title": "Ranking Most Epic Horse Moments",
+      "video_id": "watch?v=1utTltVwIsQ",
+      "question": "Be honest, did #3 or #4 deserve the #1 spot? 🐴"
+    },
+    {
+      "date": "2026-11-10",
+      "topic": "Wedding",
+      "title": "Ranking Most Painful Wedding Fails",
+      "video_id": "watch?v=MnL7aXao2lE",
+      "question": "Did the cash carpet really deserve #1 or was the dog clip better? 💍"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "slots": [
       "18:00",
       "19:00",
@@ -1956,6 +1956,6 @@
       "21:00"
     ]
   },
-  "hook_index": 5,
+  "hook_index": 9,
   "part_two_queue": []
 }
