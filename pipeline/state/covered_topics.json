@@ -346,41 +346,13 @@
     "Puppy Moments",
     "Fortnite Moments",
     "Horse Moments",
-    "Wedding"
+    "Wedding",
+    "Wedding",
+    "GTA Moments",
+    "Cow Moments",
+    "Golf Fail"
   ],
   "uploads": [
-    {
-      "date": "2026-09-21",
-      "topic": "Wedding",
-      "title": "Ranking Weirdest Wedding Fails",
-      "video_id": "watch?v=Ws38jczl9Zk",
-      "question": "Did #5 deserve the top spot or was #3 way weirder? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-09-21",
-      "topic": "Call Of Duty Moments",
-      "title": "Ranking Most Epic Call Of Duty Moments",
-      "video_id": "watch?v=X8sOATgVjv8",
-      "question": "Was #1 actually the most epic moment or is #3 way better? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-21",
-      "topic": "Puppy Moments",
-      "title": "Ranking Wildest Puppy Moments",
-      "video_id": "watch?v=JcRdAwKDAdk",
-      "question": "Was #5 the real winner, or did #1 get robbed? 🐶",
-      "commented": true
-    },
-    {
-      "date": "2026-09-21",
-      "topic": "Lethal Company",
-      "title": "Ranking Most Savage Lethal Company Moments",
-      "video_id": "watch?v=AZsBdmnu7Uk",
-      "question": "Be honest, was clip #2 or clip #4 the most savage moment?",
-      "commented": true
-    },
     {
       "date": "2026-09-22",
       "topic": "Wedding",
@@ -1948,11 +1920,39 @@
       "video_id": "watch?v=MnL7aXao2lE",
       "question": "Did the cash carpet really deserve #1 or was the dog clip better? 💍",
       "commented": true
+    },
+    {
+      "date": "2026-11-11",
+      "topic": "Wedding",
+      "title": "Ranking Weirdest Wedding Fails",
+      "video_id": "watch?v=fHLfqGthyzA",
+      "question": "Be honest, did the kid in #3 ruin the wedding or make it better? 💀"
+    },
+    {
+      "date": "2026-11-11",
+      "topic": "GTA Moments",
+      "title": "Ranking Most Savage GTA Moments",
+      "video_id": "watch?v=rokKI8CCpJg",
+      "question": "Be honest, did #2 deserve the #1 spot or was #5 better? 💀"
+    },
+    {
+      "date": "2026-11-11",
+      "topic": "Cow Moments",
+      "title": "Ranking Most Savage Cow Moments",
+      "video_id": "watch?v=fpjwcGVnYbw",
+      "question": "Which clip deserved #1: the purring cow or the haircut? 🤔"
+    },
+    {
+      "date": "2026-11-11",
+      "topic": "Golf Fail",
+      "title": "Ranking Most Awkward Golf Fails",
+      "video_id": "watch?v=-2QyVkjRHks",
+      "question": "Be honest, was #3 or #5 the worse fail? ⛳"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "slots": [
       "18:00",
       "19:00",
@@ -1960,6 +1960,6 @@
       "21:00"
     ]
   },
-  "hook_index": 9,
+  "hook_index": 13,
   "part_two_queue": []
 }
