@@ -350,41 +350,13 @@
     "Wedding",
     "GTA Moments",
     "Cow Moments",
-    "Golf Fail"
+    "Golf Fail",
+    "Horse Moments",
+    "Rocket League Moments",
+    "Wedding",
+    "GTA Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-09-22",
-      "topic": "Wedding",
-      "title": "Ranking Most Awkward Wedding Fails",
-      "video_id": "watch?v=X8Q0nEfOlTc",
-      "question": "Be honest, was #3 actually the most awkward wedding fail?",
-      "commented": true
-    },
-    {
-      "date": "2026-09-22",
-      "topic": "GTA Moments",
-      "title": "Ranking Wildest GTA Moments",
-      "video_id": "watch?v=wNY8MxF9VS8",
-      "question": "Be honest, which clip had the most insane moment?",
-      "commented": true
-    },
-    {
-      "date": "2026-09-22",
-      "topic": "Waterslide",
-      "title": "Ranking Most Unexpected Waterslide Moments",
-      "video_id": "watch?v=WlRVJWEThvw",
-      "question": "Which waterslide moment was actually the most unexpected? 😱",
-      "commented": true
-    },
-    {
-      "date": "2026-09-22",
-      "topic": "Fall Guys",
-      "title": "Ranking Most Unreal Fall Guys Moments",
-      "video_id": "watch?v=Rcj3RzxN4Zg",
-      "question": "Be honest, was clip #3 or clip #5 the most unreal moment? 🤔",
-      "commented": true
-    },
     {
       "date": "2026-09-23",
       "topic": "Wedding",
@@ -1952,11 +1924,39 @@
       "video_id": "watch?v=-2QyVkjRHks",
       "question": "Be honest, was #3 or #5 the worse fail? ⛳",
       "commented": true
+    },
+    {
+      "date": "2026-11-12",
+      "topic": "Horse Moments",
+      "title": "Ranking Most Savage Horse Moments",
+      "video_id": "watch?v=Nvn5DtyBnWM",
+      "question": "Be honest, was #4 the most savage moment or did #3 take it? 🐴"
+    },
+    {
+      "date": "2026-11-12",
+      "topic": "Rocket League Moments",
+      "title": "Ranking Most Awkward Rocket League Moments",
+      "video_id": "watch?v=fMdgD7_kYsY",
+      "question": "Be honest, which awkward clip deserved the #1 spot?"
+    },
+    {
+      "date": "2026-11-12",
+      "topic": "Wedding",
+      "title": "Ranking Unluckiest Wedding Fails",
+      "video_id": "watch?v=dDMGd3HCHdg",
+      "question": "Be honest, was #1 really worse than the photographer highjack at #5? 😳"
+    },
+    {
+      "date": "2026-11-12",
+      "topic": "GTA Moments",
+      "title": "Ranking Most Unexpected GTA Moments",
+      "video_id": "watch?v=2QqE74fojro",
+      "question": "Was #1 actually the most unexpected moment here, or did #5 rob it? 🤔"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "slots": [
       "18:00",
       "19:00",
@@ -1964,6 +1964,6 @@
       "21:00"
     ]
   },
-  "hook_index": 13,
+  "hook_index": 17,
   "part_two_queue": []
 }
