@@ -354,41 +354,13 @@
     "Horse Moments",
     "Rocket League Moments",
     "Wedding",
-    "GTA Moments"
+    "GTA Moments",
+    "Wedding",
+    "Rocket League Moments",
+    "Freestyle Football",
+    "Cow Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-09-23",
-      "topic": "Wedding",
-      "title": "Ranking Craziest Wedding Fails",
-      "video_id": "watch?v=_gR4_zrzGIE",
-      "question": "Was the ankle twist worse than falling down the steps? Pick your #1! 😬",
-      "commented": true
-    },
-    {
-      "date": "2026-09-23",
-      "topic": "Fortnite Moments",
-      "title": "Ranking Most Unreal Fortnite Moments",
-      "video_id": "watch?v=2sEeDmJMrNs",
-      "question": "Was grandma at #1 the right choice or should 5 RPGs have won? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-23",
-      "topic": "Bike Fail",
-      "title": "Ranking Most Epic Bike Fails",
-      "video_id": "watch?v=ge7--lM1amI",
-      "question": "Which fail was actually the worst, #3 or #4? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-09-23",
-      "topic": "Rocket League Moments",
-      "title": "Ranking Most Savage Rocket League Moments",
-      "video_id": "watch?v=I-JCMY6KnX4",
-      "question": "Was clip #1 the most savage Rocket League moment here? 💀",
-      "commented": true
-    },
     {
       "date": "2026-09-24",
       "topic": "Horse Moments",
@@ -1956,11 +1928,39 @@
       "video_id": "watch?v=2QqE74fojro",
       "question": "Was #1 actually the most unexpected moment here, or did #5 rob it? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-11-13",
+      "topic": "Wedding",
+      "title": "Ranking Most Epic Wedding Fails",
+      "video_id": "watch?v=CwkIApaBc-8",
+      "question": "Which fail was worse, #1 forgetting the cake or #3 at the reception? 😅"
+    },
+    {
+      "date": "2026-11-13",
+      "topic": "Rocket League Moments",
+      "title": "Ranking Most Savage Rocket League Moments",
+      "video_id": "watch?v=6sA3DgsR8q0",
+      "question": "Was #1 actually the greatest goal ever scored?"
+    },
+    {
+      "date": "2026-11-13",
+      "topic": "Freestyle Football",
+      "title": "Ranking Wildest Freestyle Football Moments",
+      "video_id": "watch?v=lrtsnFXEWRA",
+      "question": "Was #5 in jeans harder than #4 heel to toe? ⚽"
+    },
+    {
+      "date": "2026-11-13",
+      "topic": "Cow Moments",
+      "title": "Ranking Wildest Cow Moments",
+      "video_id": "watch?v=bGJ_e_pSrSg",
+      "question": "Be honest, did the porch cow deserve #1 or was it the mini groom? 🐮"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "slots": [
       "18:00",
       "19:00",
@@ -1968,6 +1968,6 @@
       "21:00"
     ]
   },
-  "hook_index": 17,
+  "hook_index": 21,
   "part_two_queue": []
 }
