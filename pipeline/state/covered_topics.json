@@ -358,41 +358,13 @@
     "Wedding",
     "Rocket League Moments",
     "Freestyle Football",
-    "Cow Moments"
+    "Cow Moments",
+    "Cat Jump Moments",
+    "Fortnite Moments",
+    "Wedding",
+    "Freestyle Football"
   ],
   "uploads": [
-    {
-      "date": "2026-09-24",
-      "topic": "Horse Moments",
-      "title": "Ranking Most Savage Horse Moments",
-      "video_id": "watch?v=cH9nxyZHrPE",
-      "question": "Was #1 really the most savage horse here? 🐴",
-      "commented": true
-    },
-    {
-      "date": "2026-09-25",
-      "topic": "Gender Reveal",
-      "title": "Ranking Wildest Gender Reveal Fails",
-      "video_id": "watch?v=hWImVV4gwUc",
-      "question": "Was the Amazon mix-up actually the worst one on the list?",
-      "commented": true
-    },
-    {
-      "date": "2026-09-25",
-      "topic": "Valorant Moments",
-      "title": "Ranking Most Savage Valorant Moments",
-      "video_id": "watch?v=B_RMMQ4JwZM",
-      "question": "Be honest, was #5 the most savage clip or did #1 deserve top spot? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-25",
-      "topic": "Horse Moments",
-      "title": "Ranking Most Awkward Horse Moments",
-      "video_id": "watch?v=ILZfqlj4ns0",
-      "question": "Which horse had the most awkward moment: #1 or #4? 🐴",
-      "commented": true
-    },
     {
       "date": "2026-09-25",
       "topic": "Minecraft Moments",
@@ -1960,11 +1932,39 @@
       "video_id": "watch?v=bGJ_e_pSrSg",
       "question": "Be honest, did the porch cow deserve #1 or was it the mini groom? 🐮",
       "commented": true
+    },
+    {
+      "date": "2026-11-14",
+      "topic": "Cat Jump Moments",
+      "title": "Ranking Most Unexpected Cat Jump Moments",
+      "video_id": "watch?v=AwripBOPPxk",
+      "question": "Which clip was the most unexpected, #3 or #5? 🤔"
+    },
+    {
+      "date": "2026-11-14",
+      "topic": "Fortnite Moments",
+      "title": "Ranking Most Epic Fortnite Moments",
+      "video_id": "watch?v=vPfTwwyxp8o",
+      "question": "Be honest, did #2 deserve the top spot or was #5 better? 🤔"
+    },
+    {
+      "date": "2026-11-14",
+      "topic": "Wedding",
+      "title": "Ranking Worst Wedding Fails",
+      "video_id": "watch?v=mn2nCmcS9Ok",
+      "question": "Be honest, was #1 the bridezilla or the entrance crash? 😳"
+    },
+    {
+      "date": "2026-11-14",
+      "topic": "Freestyle Football",
+      "title": "Ranking Most Unexpected Freestyle Football Moments",
+      "video_id": "watch?v=jPA-lB9-GC4",
+      "question": "Be honest, was #1 actually the cleanest trick or did #4 take it? ⚽"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "slots": [
       "18:00",
       "19:00",
@@ -1972,6 +1972,6 @@
       "21:00"
     ]
   },
-  "hook_index": 21,
+  "hook_index": 25,
   "part_two_queue": []
 }
