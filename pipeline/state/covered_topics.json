@@ -362,41 +362,13 @@
     "Cat Jump Moments",
     "Fortnite Moments",
     "Wedding",
-    "Freestyle Football"
+    "Freestyle Football",
+    "Wedding",
+    "Horror Game Reaction",
+    "Freestyle Football",
+    "Minecraft Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-09-25",
-      "topic": "Minecraft Moments",
-      "title": "Ranking Craziest Minecraft Moments",
-      "video_id": "watch?v=DTqwejOzMWs",
-      "question": "Which fail was actually the most painful, #1 or #4?",
-      "commented": true
-    },
-    {
-      "date": "2026-09-26",
-      "topic": "Horse Moments",
-      "title": "Ranking Most Epic Horse Moments",
-      "video_id": "watch?v=Q4rzmxY7d_Y",
-      "question": "Did #3 win most dramatic horse or what? 🐴",
-      "commented": true
-    },
-    {
-      "date": "2026-09-26",
-      "topic": "Rocket League Moments",
-      "title": "Ranking Most Awkward Rocket League Moments",
-      "video_id": "watch?v=sXjEzZoYjRc",
-      "question": "Which of these awkward RL moments was actually the worst? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-26",
-      "topic": "Puppy Moments",
-      "title": "Ranking Most Unreal Puppy Moments",
-      "video_id": "watch?v=iDAOh1dtXmA",
-      "question": "Which puppy clip deserved the #1 spot? 🐶",
-      "commented": true
-    },
     {
       "date": "2026-09-26",
       "topic": "Horror Game Reaction",
@@ -1964,11 +1936,39 @@
       "video_id": "watch?v=jPA-lB9-GC4",
       "question": "Be honest, was #1 actually the cleanest trick or did #4 take it? ⚽",
       "commented": true
+    },
+    {
+      "date": "2026-11-15",
+      "topic": "Wedding",
+      "title": "Ranking Most Epic Wedding Fails",
+      "video_id": "watch?v=PSQ5HamE-6Y",
+      "question": "Be honest, did #1 deserve the top spot or was #4 worse? 🤔"
+    },
+    {
+      "date": "2026-11-15",
+      "topic": "Horror Game Reaction",
+      "title": "Ranking Weirdest Horror Game Moments",
+      "video_id": "watch?v=mxwnERlLhvk",
+      "question": "Which clip actually scared you the most? 💀"
+    },
+    {
+      "date": "2026-11-15",
+      "topic": "Freestyle Football",
+      "title": "Ranking Most Awkward Freestyle Football Moments",
+      "video_id": "watch?v=ZHQXj7nmFr8",
+      "question": "Which clip was actually the most awkward moment? 💀"
+    },
+    {
+      "date": "2026-11-15",
+      "topic": "Minecraft Moments",
+      "title": "Ranking Weirdest Minecraft Moments",
+      "video_id": "watch?v=DqlAPSBlBJE",
+      "question": "Be honest, was #2 or #5 the weirdest moment here?"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-11-14",
+    "date": "2026-11-15",
     "slots": [
       "18:00",
       "19:00",
@@ -1976,6 +1976,6 @@
       "21:00"
     ]
   },
-  "hook_index": 25,
+  "hook_index": 1,
   "part_two_queue": []
 }
