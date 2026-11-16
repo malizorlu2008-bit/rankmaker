@@ -366,41 +366,13 @@
     "Wedding",
     "Horror Game Reaction",
     "Freestyle Football",
-    "Minecraft Moments"
+    "Minecraft Moments",
+    "Wedding",
+    "Fortnite Moments",
+    "Horse Moments",
+    "GTA Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-09-26",
-      "topic": "Horror Game Reaction",
-      "title": "Ranking Most Savage Horror Game Moments",
-      "video_id": "watch?v=TJ_zXxoLQlk",
-      "question": "Which jumpscare was actually the most savage? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-27",
-      "topic": "Horse Moments",
-      "title": "Ranking Most Unreal Horse Moments",
-      "video_id": "watch?v=lWPAnCKOwP0",
-      "question": "Which horse deserved #1, the hedge jump or the water bite?",
-      "commented": true
-    },
-    {
-      "date": "2026-09-27",
-      "topic": "Call Of Duty Moments",
-      "title": "Ranking Wildest Call Of Duty Moments",
-      "video_id": "watch?v=DU_y9wUJSR8",
-      "question": "Be honest, was #3 or #1 the wilder moment? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-27",
-      "topic": "Puppy Moments",
-      "title": "Ranking Craziest Puppy Moments",
-      "video_id": "watch?v=X4Ov6vznxU0",
-      "question": "Be honest, did Walter's lake fail deserve #1? 🐶",
-      "commented": true
-    },
     {
       "date": "2026-09-27",
       "topic": "Rage Quit",
@@ -1968,11 +1940,39 @@
       "video_id": "watch?v=DqlAPSBlBJE",
       "question": "Be honest, was #2 or #5 the weirdest moment here?",
       "commented": true
+    },
+    {
+      "date": "2026-11-16",
+      "topic": "Wedding",
+      "title": "Ranking Most Awkward Wedding Fails",
+      "video_id": "watch?v=5WHpyo7m5yU",
+      "question": "Be honest, was #4 or #5 the biggest wedding fail? 😬"
+    },
+    {
+      "date": "2026-11-16",
+      "topic": "Fortnite Moments",
+      "title": "Ranking Most Savage Fortnite Moments",
+      "video_id": "watch?v=2aQ8DR0rYdQ",
+      "question": "Did #4 deserve #1 for that instant karma, or was #1 undisputed? 🤔"
+    },
+    {
+      "date": "2026-11-16",
+      "topic": "Horse Moments",
+      "title": "Ranking Most Awkward Horse Moments",
+      "video_id": "watch?v=ekpUq3MWqqU",
+      "question": "Be honest, did #3 stuck in the tank deserve the #1 spot? 🐴"
+    },
+    {
+      "date": "2026-11-16",
+      "topic": "GTA Moments",
+      "title": "Ranking Funniest GTA Moments",
+      "video_id": "watch?v=jx_0vkSOOTQ",
+      "question": "Be honest, did clip #1 take the W or was clip #3 funnier? 💀"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "slots": [
       "18:00",
       "19:00",
@@ -1980,6 +1980,6 @@
       "21:00"
     ]
   },
-  "hook_index": 1,
+  "hook_index": 5,
   "part_two_queue": []
 }
