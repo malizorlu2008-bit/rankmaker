@@ -370,41 +370,13 @@
     "Wedding",
     "Fortnite Moments",
     "Horse Moments",
+    "GTA Moments",
+    "Puppy Moments",
+    "Horse Moments",
+    "Dog Zoomies",
     "GTA Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-09-27",
-      "topic": "Rage Quit",
-      "title": "Ranking Craziest Rage Quit Moments",
-      "video_id": "watch?v=XorRcRpSOM8",
-      "question": "Be honest, was #1 the craziest rage quit here? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-28",
-      "topic": "Football Fail",
-      "title": "Ranking Funniest Football Fails",
-      "video_id": "watch?v=Xx3D1IwXjS0",
-      "question": "Was #5 the biggest fail or does #2 take the crown? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-28",
-      "topic": "Roblox Moments",
-      "title": "Ranking Most Unexpected Roblox Moments",
-      "video_id": "watch?v=lMQGP4NjmGc",
-      "question": "Be honest, was clip #2 the right pick for #1? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-28",
-      "topic": "Cat Jump Moments",
-      "title": "Ranking Craziest Cat Jump Moments",
-      "video_id": "watch?v=2gR8u1BtaZM",
-      "question": "Be honest, which cat deserved the #1 spot? 😼",
-      "commented": true
-    },
     {
       "date": "2026-09-28",
       "topic": "Fortnite Moments",
@@ -1972,11 +1944,39 @@
       "video_id": "watch?v=jx_0vkSOOTQ",
       "question": "Be honest, did clip #1 take the W or was clip #3 funnier? 💀",
       "commented": true
+    },
+    {
+      "date": "2026-11-17",
+      "topic": "Puppy Moments",
+      "title": "Ranking Wildest Puppy Moments",
+      "video_id": "watch?v=uX2WUJM_Fr8",
+      "question": "Was #1 actually the wildest, or did the lab puppy get robbed? 🤔"
+    },
+    {
+      "date": "2026-11-17",
+      "topic": "Horse Moments",
+      "title": "Ranking Funniest Horse Moments",
+      "video_id": "watch?v=tU_8xQXOO24",
+      "question": "Did clip #4 deserve the #1 spot, or was #3 crazier?"
+    },
+    {
+      "date": "2026-11-17",
+      "topic": "Dog Zoomies",
+      "title": "Ranking Weirdest Zoomies Moments",
+      "video_id": "watch?v=Ex7-aFTuVRA",
+      "question": "Which clip had the most unhinged zoomies energy? 🤣"
+    },
+    {
+      "date": "2026-11-17",
+      "topic": "GTA Moments",
+      "title": "Ranking Funniest GTA Moments",
+      "video_id": "watch?v=kM7O4M5APHQ",
+      "question": "Be honest, was #2 actually the funniest moment?"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-11-16",
+    "date": "2026-11-17",
     "slots": [
       "18:00",
       "19:00",
@@ -1984,6 +1984,6 @@
       "21:00"
     ]
   },
-  "hook_index": 5,
+  "hook_index": 9,
   "part_two_queue": []
 }
