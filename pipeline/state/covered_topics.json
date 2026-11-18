@@ -374,41 +374,13 @@
     "Puppy Moments",
     "Horse Moments",
     "Dog Zoomies",
-    "GTA Moments"
+    "GTA Moments",
+    "Puppy Moments",
+    "Rocket League Moments",
+    "Horse Moments",
+    "Roblox Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-09-28",
-      "topic": "Fortnite Moments",
-      "title": "Ranking Weirdest Fortnite Moments",
-      "video_id": "watch?v=mwmcL6XM0hw",
-      "question": "Did #3 deserve the top spot or was #1 weirder? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-09-29",
-      "topic": "Football Fail",
-      "title": "Ranking Unluckiest Football Fails",
-      "video_id": "watch?v=cfa_QWFxDRc",
-      "question": "Did #4 deserve a straight red or was #5 worse? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-29",
-      "topic": "Fortnite Moments",
-      "title": "Ranking Funniest Fortnite Moments",
-      "video_id": "watch?v=Tv6hoyb8L0Y",
-      "question": "Be honest, did #2 deserve the top spot?",
-      "commented": true
-    },
-    {
-      "date": "2026-09-29",
-      "topic": "Cat Jump Moments",
-      "title": "Ranking Most Awkward Cat Jump Moments",
-      "video_id": "watch?v=qpE03Vx8uD4",
-      "question": "Be honest, did #1 deserve the top spot or #5? 🤔",
-      "commented": true
-    },
     {
       "date": "2026-09-30",
       "topic": "Football Fail",
@@ -1976,11 +1948,39 @@
       "video_id": "watch?v=kM7O4M5APHQ",
       "question": "Be honest, was #2 actually the funniest moment?",
       "commented": true
+    },
+    {
+      "date": "2026-11-18",
+      "topic": "Puppy Moments",
+      "title": "Ranking Weirdest Puppy Moments",
+      "video_id": "watch?v=0JPl-eebFGg",
+      "question": "Was #5 definitely the weirdest or did #2 get robbed? 🤔"
+    },
+    {
+      "date": "2026-11-18",
+      "topic": "Rocket League Moments",
+      "title": "Ranking Weirdest Rocket League Moments",
+      "video_id": "watch?v=sXh_5DORA_w",
+      "question": "Be honest, was #1 actually the weirdest moment or did #5 deserve it? 💀"
+    },
+    {
+      "date": "2026-11-18",
+      "topic": "Horse Moments",
+      "title": "Ranking Most Awkward Horse Moments",
+      "video_id": "watch?v=R7J6ANTQpRE",
+      "question": "Was #5 really the most awkward horse moment or #3? 🐴"
+    },
+    {
+      "date": "2026-11-18",
+      "topic": "Roblox Moments",
+      "title": "Ranking Most Unexpected Roblox Moments",
+      "video_id": "watch?v=nQttX3a-Azo",
+      "question": "Was #1 really the most unexpected or did #3 rob the spot? 🤔"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-11-17",
+    "date": "2026-11-18",
     "slots": [
       "18:00",
       "19:00",
@@ -1988,6 +1988,6 @@
       "21:00"
     ]
   },
-  "hook_index": 9,
+  "hook_index": 13,
   "part_two_queue": []
 }

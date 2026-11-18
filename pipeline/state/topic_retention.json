@@ -1,17 +1,17 @@
 {
   "tarih": "2026-11-18",
   "pencere_gun": 60,
-  "kanal_orani": 57.1,
-  "olculen_video": 160,
+  "kanal_orani": 56.4,
+  "olculen_video": 157,
   "konular": {
     "Rocket League Moments": 75.8,
     "Golf Fail": 68.6,
     "Minecraft Moments": 64.3,
-    "Fortnite Moments": 59.3,
+    "Fortnite Moments": 57.6,
     "Freestyle Football": 59.1,
     "Puppy Moments": 53.8,
     "Cow Moments": 64.5,
-    "Cat Jump Moments": 66.8,
+    "Cat Jump Moments": 57.5,
     "Valorant Moments": 58.2,
     "Wedding": 51.8,
     "Horror Game Reaction": 64.8,
@@ -138,12 +138,6 @@
       "oran": 72.9,
       "saniye": 35.0,
       "izlenme": 17198
-    },
-    "qpE03Vx8uD4": {
-      "konu": "Cat Jump Moments",
-      "oran": 66.8,
-      "saniye": 30.0,
-      "izlenme": 16826
     },
     "ZWCba4wMXbQ": {
       "konu": "Horror Game Reaction",
@@ -601,12 +595,6 @@
       "saniye": 21.0,
       "izlenme": 3493
     },
-    "mwmcL6XM0hw": {
-      "konu": "Fortnite Moments",
-      "oran": 71.0,
-      "saniye": 34.0,
-      "izlenme": 3453
-    },
     "AiSr090_udc": {
       "konu": "GTA Moments",
       "oran": 37.1,
@@ -756,12 +744,6 @@
       "oran": 55.4,
       "saniye": 27.0,
       "izlenme": 2437
-    },
-    "cfa_QWFxDRc": {
-      "konu": "Football Fail",
-      "oran": 63.7,
-      "saniye": 31.0,
-      "izlenme": 2407
     },
     "RTiwpHXhwO4": {
       "konu": "Valorant Moments",
