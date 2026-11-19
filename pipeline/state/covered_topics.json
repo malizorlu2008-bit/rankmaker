@@ -378,41 +378,13 @@
     "Puppy Moments",
     "Rocket League Moments",
     "Horse Moments",
-    "Roblox Moments"
+    "Roblox Moments",
+    "Cow Moments",
+    "Fortnite Moments",
+    "Slip And Slide",
+    "Football Fail"
   ],
   "uploads": [
-    {
-      "date": "2026-09-30",
-      "topic": "Football Fail",
-      "title": "Ranking Craziest Football Fails",
-      "video_id": "watch?v=wHr0ctSQSZM",
-      "question": "Be honest, was #1 really the worst fail here?",
-      "commented": true
-    },
-    {
-      "date": "2026-09-30",
-      "topic": "Fortnite Moments",
-      "title": "Ranking Craziest Fortnite Moments",
-      "video_id": "watch?v=LMynveCKq24",
-      "question": "Be honest, was #1 the most relatable Fortnite moment here? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-09-30",
-      "topic": "Cat Jump Moments",
-      "title": "Ranking Funniest Cat Jump Moments",
-      "video_id": "watch?v=t92Lt25TzYk",
-      "question": "Be honest, did #5 deserve the top spot for that fly jump? 😹",
-      "commented": true
-    },
-    {
-      "date": "2026-09-30",
-      "topic": "GTA Moments",
-      "title": "Ranking Most Awkward GTA Moments",
-      "video_id": "watch?v=FPFHY2BAypI",
-      "question": "Be honest, was #4 or #5 the most awkward GTA moment? 😂",
-      "commented": true
-    },
     {
       "date": "2026-10-01",
       "topic": "Freestyle Football",
@@ -1980,11 +1952,39 @@
       "video_id": "watch?v=nQttX3a-Azo",
       "question": "Was #1 really the most unexpected or did #3 rob the spot? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-11-19",
+      "topic": "Cow Moments",
+      "title": "Ranking Most Epic Cow Moments",
+      "video_id": "watch?v=9i40vjcPlTw",
+      "question": "Be honest, did #3 or #5 deserve the top spot?"
+    },
+    {
+      "date": "2026-11-19",
+      "topic": "Fortnite Moments",
+      "title": "Ranking Wildest Fortnite Moments",
+      "video_id": "watch?v=Q-LovDmc_Rs",
+      "question": "Which moment deserved to be #1?"
+    },
+    {
+      "date": "2026-11-19",
+      "topic": "Slip And Slide",
+      "title": "Ranking Wildest Slip And Slide Fails",
+      "video_id": "watch?v=mWHjJcefeEc",
+      "question": "Was #4 the most painful fail, or did #2 take the crown? 💀"
+    },
+    {
+      "date": "2026-11-19",
+      "topic": "Football Fail",
+      "title": "Ranking Most Embarrassing Football Fails",
+      "video_id": "watch?v=DuGfNKWFjZ0",
+      "question": "Be honest, which fail deserved #1 the most? 🤔"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-11-18",
+    "date": "2026-11-19",
     "slots": [
       "18:00",
       "19:00",
@@ -1992,6 +1992,6 @@
       "21:00"
     ]
   },
-  "hook_index": 13,
+  "hook_index": 17,
   "part_two_queue": []
 }
