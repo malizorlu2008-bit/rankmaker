@@ -382,41 +382,13 @@
     "Cow Moments",
     "Fortnite Moments",
     "Slip And Slide",
-    "Football Fail"
+    "Football Fail",
+    "Cow Moments",
+    "Fortnite Moments",
+    "Horse Moments",
+    "GTA Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-10-01",
-      "topic": "Freestyle Football",
-      "title": "Ranking Funniest Freestyle Football Moments",
-      "video_id": "watch?v=2Uftuz0dc7g",
-      "question": "Which freestyle clip deserved the #1 spot? ⚽",
-      "commented": true
-    },
-    {
-      "date": "2026-10-01",
-      "topic": "GTA Moments",
-      "title": "Ranking Wildest GTA Moments",
-      "video_id": "watch?v=mMJUDyMPJtM",
-      "question": "Was #1 really the wildest moment or did #4 get robbed? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-10-01",
-      "topic": "Football Skills",
-      "title": "Ranking Most Epic Football Skills",
-      "video_id": "watch?v=zc2PjpvWYaY",
-      "question": "Be honest, was #1 really better than #5? ⚽",
-      "commented": true
-    },
-    {
-      "date": "2026-10-01",
-      "topic": "Valorant Moments",
-      "title": "Ranking Funniest Valorant Moments",
-      "video_id": "watch?v=rP_Z8I959tA",
-      "question": "Be honest, was #1 actually the funniest clip? 💀",
-      "commented": true
-    },
     {
       "date": "2026-10-02",
       "topic": "Football Skills",
@@ -1984,11 +1956,39 @@
       "video_id": "watch?v=DuGfNKWFjZ0",
       "question": "Be honest, which fail deserved #1 the most? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-11-20",
+      "topic": "Cow Moments",
+      "title": "Ranking Most Savage Cow Moments",
+      "video_id": "watch?v=8PDlQFqhMkI",
+      "question": "Did #1 really deserve top spot or was #3 more savage? 🤔"
+    },
+    {
+      "date": "2026-11-20",
+      "topic": "Fortnite Moments",
+      "title": "Ranking Most Epic Fortnite Moments",
+      "video_id": "watch?v=1PHygc_RMrc",
+      "question": "Be honest, was #2 or #5 the most painful moment here? 🤔"
+    },
+    {
+      "date": "2026-11-20",
+      "topic": "Horse Moments",
+      "title": "Ranking Funniest Horse Moments",
+      "video_id": "watch?v=-CI_5tUnZ20",
+      "question": "Be honest, was #1 the best save ever or did #5 deserve the top spot? 🐴"
+    },
+    {
+      "date": "2026-11-20",
+      "topic": "GTA Moments",
+      "title": "Ranking Most Epic GTA Moments",
+      "video_id": "watch?v=EndlWMFznyQ",
+      "question": "Be honest, was #1 really the most epic GTA moment? 🎮"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-11-19",
+    "date": "2026-11-20",
     "slots": [
       "18:00",
       "19:00",
@@ -1996,6 +1996,6 @@
       "21:00"
     ]
   },
-  "hook_index": 17,
+  "hook_index": 21,
   "part_two_queue": []
 }
