@@ -390,41 +390,13 @@
     "Ring Camera",
     "Call Of Duty Moments",
     "Football Fail",
-    "Football Skills"
+    "Football Skills",
+    "Ring Camera",
+    "Fall Guys",
+    "Scared Cat",
+    "Fortnite Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-10-03",
-      "topic": "Football Skills",
-      "title": "Ranking Most Awkward Football Skills",
-      "video_id": "watch?v=xrB2MtSBDVU",
-      "question": "Which skill was actually the most awkward: #1 or #5? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-10-03",
-      "topic": "Roblox Moments",
-      "title": "Ranking Craziest Roblox Moments",
-      "video_id": "watch?v=axuY5ahVXh8",
-      "question": "Which clip was actually the craziest, #2 or #5? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-10-03",
-      "topic": "Golf Fail",
-      "title": "Ranking Most Painful Golf Fails",
-      "video_id": "watch?v=AzcG-d6YaMw",
-      "question": "Which fail was actually the most painful? 😳",
-      "commented": true
-    },
-    {
-      "date": "2026-10-03",
-      "topic": "Fortnite Moments",
-      "title": "Ranking Most Epic Fortnite Moments",
-      "video_id": "watch?v=196d1_EAHkk",
-      "question": "Be honest, did #1 or #5 deserve the top spot? 💀",
-      "commented": true
-    },
     {
       "date": "2026-10-04",
       "topic": "Capybara",
@@ -1992,11 +1964,39 @@
       "video_id": "watch?v=UmZhitPkiXE",
       "question": "Be honest, was the first skill actually unreal or just mid?",
       "commented": true
+    },
+    {
+      "date": "2026-11-22",
+      "topic": "Ring Camera",
+      "title": "Ranking Craziest Ring Camera Moments",
+      "video_id": "watch?v=R5_HgV7tNPU",
+      "question": "Was #1 actually the scariest or did the dog tackle deserve the top spot? 😳"
+    },
+    {
+      "date": "2026-11-22",
+      "topic": "Fall Guys",
+      "title": "Ranking Most Awkward Fall Guys Moments",
+      "video_id": "watch?v=f3Go_Dopb70",
+      "question": "Be honest, was clip #4 the most awkward moment here? 👑"
+    },
+    {
+      "date": "2026-11-22",
+      "topic": "Scared Cat",
+      "title": "Ranking Wildest Scared Cat Moments",
+      "video_id": "watch?v=9EPeS8N3te4",
+      "question": "Be honest, was #4 being scared of the frother the clear #1?"
+    },
+    {
+      "date": "2026-11-22",
+      "topic": "Fortnite Moments",
+      "title": "Ranking Funniest Fortnite Moments",
+      "video_id": "watch?v=o0rdGQtmP9c",
+      "question": "Which clip was actually the funniest, #2 or #5? 🤔"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-11-21",
+    "date": "2026-11-22",
     "slots": [
       "18:00",
       "19:00",
@@ -2004,6 +2004,6 @@
       "21:00"
     ]
   },
-  "hook_index": 25,
+  "hook_index": 1,
   "part_two_queue": []
 }
