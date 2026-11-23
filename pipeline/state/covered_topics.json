@@ -394,41 +394,13 @@
     "Ring Camera",
     "Fall Guys",
     "Scared Cat",
+    "Fortnite Moments",
+    "Dog Zoomies",
+    "Valorant Moments",
+    "Football Fail",
     "Fortnite Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-10-04",
-      "topic": "Capybara",
-      "title": "Ranking Craziest Capybara Moments",
-      "video_id": "watch?v=hlQgZx8WKlI",
-      "question": "Be honest, was #1 the craziest capybara moment or should the party have won?",
-      "commented": true
-    },
-    {
-      "date": "2026-10-04",
-      "topic": "Fortnite Moments",
-      "title": "Ranking Most Epic Fortnite Moments",
-      "video_id": "watch?v=mrHud1WxdrY",
-      "question": "Be honest, was #2 or #5 the most epic moment? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-10-04",
-      "topic": "Raccoon Stealing",
-      "title": "Ranking Funniest Raccoon Moments",
-      "video_id": "watch?v=Kbys9PQkblU",
-      "question": "Which raccoon deserved the #1 spot? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-10-04",
-      "topic": "GTA Moments",
-      "title": "Ranking Most Awkward GTA Moments",
-      "video_id": "watch?v=C6Fk4l89bqc",
-      "question": "Which clip deserved #1: the mountain spawn or the cop car escape?",
-      "commented": true
-    },
     {
       "date": "2026-10-05",
       "topic": "Dog Zoomies",
@@ -1996,11 +1968,39 @@
       "video_id": "watch?v=o0rdGQtmP9c",
       "question": "Which clip was actually the funniest, #2 or #5? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-11-23",
+      "topic": "Dog Zoomies",
+      "title": "Ranking Most Savage Zoomies Moments",
+      "video_id": "watch?v=QRdRgUSqdug",
+      "question": "Did #3's lightning speed deserve the #1 spot?"
+    },
+    {
+      "date": "2026-11-23",
+      "topic": "Valorant Moments",
+      "title": "Ranking Most Savage Valorant Moments",
+      "video_id": "watch?v=Ddb5PZlBZo4",
+      "question": "Was #1 really the most savage clip or did #4 get robbed? 💀"
+    },
+    {
+      "date": "2026-11-23",
+      "topic": "Football Fail",
+      "title": "Ranking Funniest Football Fails",
+      "video_id": "watch?v=OnC4b46ruV8",
+      "question": "Be honest, was clip #4 the most embarrassing football fail here? 💀"
+    },
+    {
+      "date": "2026-11-23",
+      "topic": "Fortnite Moments",
+      "title": "Ranking Weirdest Fortnite Moments",
+      "video_id": "watch?v=W5m1AmHPEmI",
+      "question": "Be honest, was #5's aim really the worst Fortnite moment?"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "slots": [
       "18:00",
       "19:00",
@@ -2008,6 +2008,6 @@
       "21:00"
     ]
   },
-  "hook_index": 1,
+  "hook_index": 5,
   "part_two_queue": []
 }
