@@ -402,41 +402,13 @@
     "Dog Zoomies",
     "Football Skills",
     "Football Fail",
-    "Fortnite Moments"
+    "Fortnite Moments",
+    "Cow Moments",
+    "GTA Moments",
+    "Football Skills",
+    "Roblox Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-10-06",
-      "topic": "Ice Rink",
-      "title": "Ranking Wildest Ice Skating Moments",
-      "video_id": "watch?v=S8RhHZLxlEQ",
-      "question": "Be honest, did the slush skate or that crazy throw deserve #1? ⛸️",
-      "commented": true
-    },
-    {
-      "date": "2026-10-06",
-      "topic": "Fortnite Moments",
-      "title": "Ranking Craziest Fortnite Moments",
-      "video_id": "watch?v=p39DFRkzBNY",
-      "question": "Be honest, was #1 actually the craziest clip here? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-10-06",
-      "topic": "Freestyle Football",
-      "title": "Ranking Most Epic Freestyle Football Moments",
-      "video_id": "watch?v=DFBmap7c83s",
-      "question": "Which panna was dirtier, #4 or #5? ⚽",
-      "commented": true
-    },
-    {
-      "date": "2026-10-06",
-      "topic": "GTA Moments",
-      "title": "Ranking Most Savage GTA Moments",
-      "video_id": "watch?v=Fhazm-oXXos",
-      "question": "Did that ultra instinct guard deserve #1, or was the flying car more savage? 🤔",
-      "commented": true
-    },
     {
       "date": "2026-10-07",
       "topic": "Freestyle Football",
@@ -2004,11 +1976,39 @@
       "video_id": "watch?v=FAVQ_uVUv58",
       "question": "Be honest, was #2's edit really the most savage moment?",
       "commented": true
+    },
+    {
+      "date": "2026-11-25",
+      "topic": "Cow Moments",
+      "title": "Ranking Weirdest Cow Moments",
+      "video_id": "watch?v=6iOtBXKiujc",
+      "question": "Was #1 really the weirdest, or did the house cow deserve the top spot? 🐮"
+    },
+    {
+      "date": "2026-11-25",
+      "topic": "GTA Moments",
+      "title": "Ranking Most Awkward GTA Moments",
+      "video_id": "watch?v=U_Oo2iutDSs",
+      "question": "Be honest, did #2 hit you the hardest or was it #1?"
+    },
+    {
+      "date": "2026-11-25",
+      "topic": "Football Skills",
+      "title": "Ranking Funniest Football Skills",
+      "video_id": "watch?v=yvViy9SKfHk",
+      "question": "Be honest, did #3 or #4 deserve the #1 spot?"
+    },
+    {
+      "date": "2026-11-25",
+      "topic": "Roblox Moments",
+      "title": "Ranking Funniest Roblox Moments",
+      "video_id": "watch?v=dgl0Ucwj9v4",
+      "question": "Be honest, did #1 actually deserve the top spot? 🤔"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "slots": [
       "18:00",
       "19:00",
@@ -2016,6 +2016,6 @@
       "21:00"
     ]
   },
-  "hook_index": 9,
+  "hook_index": 13,
   "part_two_queue": []
 }
