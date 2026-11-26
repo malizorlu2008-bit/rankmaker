@@ -406,41 +406,13 @@
     "Cow Moments",
     "GTA Moments",
     "Football Skills",
-    "Roblox Moments"
+    "Roblox Moments",
+    "Football Skills",
+    "CS2 Moments",
+    "Football Fail",
+    "Fortnite Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-10-07",
-      "topic": "Freestyle Football",
-      "title": "Ranking Most Unexpected Freestyle Football Moments",
-      "video_id": "watch?v=ejXAqqeJdTY",
-      "question": "Which unexpected moment totally deserved the #1 spot?",
-      "commented": true
-    },
-    {
-      "date": "2026-10-07",
-      "topic": "Rocket League Moments",
-      "title": "Ranking Most Unexpected Rocket League Moments",
-      "video_id": "watch?v=Yg0CdnNqUGM",
-      "question": "Be honest, was clip #1 actually the most unexpected?",
-      "commented": true
-    },
-    {
-      "date": "2026-10-07",
-      "topic": "Scared Cat",
-      "title": "Ranking Wildest Scared Cat Moments",
-      "video_id": "watch?v=KPnWM87MznA",
-      "question": "Be honest, was #3 actually the scariest one?",
-      "commented": true
-    },
-    {
-      "date": "2026-10-07",
-      "topic": "Minecraft Moments",
-      "title": "Ranking Most Savage Minecraft Moments",
-      "video_id": "watch?v=riiqtC8DUvw",
-      "question": "Was #3 really more savage than #5?",
-      "commented": true
-    },
     {
       "date": "2026-10-08",
       "topic": "Cake Fail",
@@ -2008,11 +1980,39 @@
       "video_id": "watch?v=dgl0Ucwj9v4",
       "question": "Be honest, did #1 actually deserve the top spot? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-11-26",
+      "topic": "Football Skills",
+      "title": "Ranking Weirdest Football Skills",
+      "video_id": "watch?v=YHl-CYwA1po",
+      "question": "Was #2 actually the weirdest skill on this list?"
+    },
+    {
+      "date": "2026-11-26",
+      "topic": "CS2 Moments",
+      "title": "Ranking Most Unexpected CS2 Moments",
+      "video_id": "watch?v=Mk6hQQ-wZrU",
+      "question": "Be honest, was #5 the most unexpected moment here? 💀"
+    },
+    {
+      "date": "2026-11-26",
+      "topic": "Football Fail",
+      "title": "Ranking Most Embarrassing Football Fails",
+      "video_id": "watch?v=_sAkYGNqE9Y",
+      "question": "Be honest, which clip was the most embarrassing fail?"
+    },
+    {
+      "date": "2026-11-26",
+      "topic": "Fortnite Moments",
+      "title": "Ranking Craziest Fortnite Moments",
+      "video_id": "watch?v=nu177brbRvw",
+      "question": "Was #3 really more savage than #1? 💀"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-11-25",
+    "date": "2026-11-26",
     "slots": [
       "18:00",
       "19:00",
@@ -2020,6 +2020,6 @@
       "21:00"
     ]
   },
-  "hook_index": 13,
+  "hook_index": 17,
   "part_two_queue": []
 }
