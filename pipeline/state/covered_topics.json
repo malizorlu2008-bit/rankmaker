@@ -414,41 +414,13 @@
     "Cat Jump Moments",
     "Fortnite Moments",
     "Football Skills",
-    "Minecraft Moments"
+    "Minecraft Moments",
+    "Waterslide",
+    "Fortnite Moments",
+    "Dog Zoomies",
+    "Roblox Moments"
   ],
   "uploads": [
-    {
-      "date": "2026-10-09",
-      "topic": "Goat Screaming",
-      "title": "Ranking Craziest Goat Moments",
-      "video_id": "watch?v=b77zXg3sNpU",
-      "question": "Be honest, was #1 really the craziest goat moment? 🐐",
-      "commented": true
-    },
-    {
-      "date": "2026-10-09",
-      "topic": "Rocket League Moments",
-      "title": "Ranking Most Unexpected Rocket League Moments",
-      "video_id": "watch?v=oGhOHRG9Jzk",
-      "question": "Be honest, was #1 really the most unexpected clip? 🤔",
-      "commented": true
-    },
-    {
-      "date": "2026-10-09",
-      "topic": "Jet Ski Fail",
-      "title": "Ranking Most Embarrassing Jet Ski Fails",
-      "video_id": "watch?v=fvVFNYYcjR4",
-      "question": "Which jet ski fail was actually the most embarrassing? 💀",
-      "commented": true
-    },
-    {
-      "date": "2026-10-09",
-      "topic": "CS2 Moments",
-      "title": "Ranking Most Unreal CS2 Moments",
-      "video_id": "watch?v=Uz-LSxcyuNQ",
-      "question": "Which moment was actually the most unreal, #2 or #5? 💀",
-      "commented": true
-    },
     {
       "date": "2026-10-10",
       "topic": "Parrot Talking",
@@ -2016,11 +1988,39 @@
       "video_id": "watch?v=iZdakQf-nZQ",
       "question": "Which moment deserved #1 spot, the cat or the PC lag? 🤔",
       "commented": true
+    },
+    {
+      "date": "2026-11-28",
+      "topic": "Waterslide",
+      "title": "Ranking Craziest Waterslide Moments",
+      "video_id": "watch?v=xdt2l2uTMGg",
+      "question": "Which slide was actually the scariest, #2 or #4? 😱"
+    },
+    {
+      "date": "2026-11-28",
+      "topic": "Fortnite Moments",
+      "title": "Ranking Craziest Fortnite Moments",
+      "video_id": "watch?v=bZ5HN7eSEpg",
+      "question": "Was clip #3 or #1 the craziest moment here? 🤔"
+    },
+    {
+      "date": "2026-11-28",
+      "topic": "Dog Zoomies",
+      "title": "Ranking Most Unexpected Zoomies Moments",
+      "video_id": "watch?v=v915Cu7vYk8",
+      "question": "Which clip had the most insane zoomies, #3 or #5? 🤔"
+    },
+    {
+      "date": "2026-11-28",
+      "topic": "Roblox Moments",
+      "title": "Ranking Most Unreal Roblox Moments",
+      "video_id": "watch?v=6OhrP8_-r2Y",
+      "question": "Be honest, did #5 deserve the top spot over #4? 🤔"
     }
   ],
   "satisfying_index": 10,
   "filled_slots": {
-    "date": "2026-11-27",
+    "date": "2026-11-28",
     "slots": [
       "18:00",
       "19:00",
@@ -2028,6 +2028,6 @@
       "21:00"
     ]
   },
-  "hook_index": 21,
+  "hook_index": 25,
   "part_two_queue": []
 }
